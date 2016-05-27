@@ -236,8 +236,11 @@ article{
 			width: 49%;
 			border-right: 10px solid $fields;
 		}
-		#follow-right{
-			background-color: pink;
+		#instafeed{
+			//background-color: pink;
+			img{
+				padding: 5px;
+			}
 		}
 	}
 }
