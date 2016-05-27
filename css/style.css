@@ -228,7 +228,7 @@ body {
     float: left;
     margin-bottom: 50px; }
     #container-menu #option2 .three-row h3 {
-      font-size: 30px;
+      font-size: 25px;
       font-family: "Sigmar One", cursive; }
     #container-menu #option2 .three-row p {
       font-family: "PT Sans", sans-serif;
@@ -247,7 +247,7 @@ body {
   #container-menu .food-row .food-block {
     width: 400px;
     height: 400px;
-    margin: 30px;
+    margin: 20px;
     background-color: pink;
     display: inline-block;
     background-size: cover;
