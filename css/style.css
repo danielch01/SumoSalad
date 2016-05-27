@@ -1,0 +1,474 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif; }
+
+body {
+  background-color: #c0c0c0; }
+
+.header {
+  background-color: white;
+  min-width: 1000px;
+  position: relative;
+  height: 170px;
+  width: 100%; }
+  .header #logo {
+    padding: 10px;
+    margin-left: 10px; }
+    .header #logo img {
+      height: 150px;
+      width: 255px;
+      border-radius: 50%; }
+  .header nav ul {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    text-align: center;
+    top: 60%; }
+    .header nav ul li {
+      margin: 0 30px;
+      display: inline-block; }
+      .header nav ul li a {
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        color: #324851; }
+        .header nav ul li a:hover {
+          color: #7da3a1; }
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 800px;
+  height: 100%;
+  background-image: url("../images/Texture/wood_80.jpg");
+  background-attachment: fixed; }
+
+.bcg {
+  height: 1000px;
+  background-image: url("../images/Truck/truck1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+  .bcg .bcg_label {
+    position: absolute;
+    height: 70px;
+    width: 500px;
+    background-color: white;
+    margin-top: 200px;
+    right: 10%;
+    margin-right: -100px;
+    border-radius: 10px; }
+    .bcg .bcg_label span {
+      font-family: "PT Sans", sans-serif;
+      letter-spacing: 5px; }
+    .bcg .bcg_label h1 {
+      font-size: 40px;
+      margin-top: 15px;
+      font-weight: 100;
+      text-align: center; }
+    .bcg .bcg_label h3 {
+      margin-top: 10px;
+      font-size: 20px;
+      text-align: center; }
+  .bcg #caption {
+    margin-top: 300px;
+    height: 40px; }
+
+.container {
+  border-top: 10px solid #f69454;
+  border-bottom: 10px solid #f69454;
+  height: 800px;
+  min-width: 1000px;
+  width: 90%;
+  background-color: #fcfdfe;
+  margin: 200px auto;
+  text-align: center; }
+  .container .divide {
+    position: relative;
+    height: 100%;
+    width: 50%; }
+  .container .left {
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .container .right {
+    overflow: auto;
+    float: right; }
+
+.msg {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10%; }
+  .msg h1 {
+    padding: 50px;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 5px; }
+  .msg p {
+    line-height: 1.7em;
+    margin-bottom: 50px;
+    font-family: "PT Sans", sans-serif; }
+
+#story-left {
+  background-image: url("../images/Truck/future.jpg"); }
+
+#menu-left {
+  float: left; }
+
+#menu-right {
+  float: right;
+  background-image: url("../images/Menu/food5.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#follow {
+  position: relative; }
+  #follow .msg {
+    margin-top: 50px; }
+    #follow .msg h1 {
+      padding: 30px; }
+  #follow #social {
+    margin-top: 100px;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    bottom: 10px; }
+    #follow #social #follow-left {
+      width: 49%;
+      border-right: 10px solid #b3c100; }
+    #follow #social #follow-right {
+      background-color: pink; }
+
+.nav {
+  height: 100px; }
+  .nav #logo img {
+    height: 80px;
+    width: 80px; }
+
+.bcg-other {
+  height: 400px; }
+  .bcg-other h1 {
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    top: 45%;
+    color: white;
+    letter-spacing: 5px; }
+  .bcg-other h1 {
+    background-color: white;
+    width: 60%;
+    color: black;
+    padding: 15px;
+    float: left;
+    border-radius: 0 10px 10px 0px; }
+    .bcg-other h1 span {
+      float: right;
+      font-family: "PT Sans", sans-serif; }
+
+#bcg-menu {
+  background-image: url("../images/Menu/pasta.jpg");
+  background-size: cover; }
+
+.container-other {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+#container-menu {
+  height: 100%;
+  width: 90%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center; }
+  #container-menu #start {
+    font-family: "Sigmar One", cursive;
+    padding: 50px 0;
+    font-size: 40px; }
+    #container-menu #start span {
+      font-size: 30px; }
+  #container-menu .option {
+    width: 60%;
+    margin: 0 auto; }
+    #container-menu .option h2 {
+      text-decoration: underline;
+      padding: 30px 0;
+      font-family: "Sigmar One", cursive; }
+    #container-menu .option h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-family: "Sigmar One", cursive; }
+    #container-menu .option table {
+      margin-bottom: 40px;
+      padding: 20px 25px; }
+      #container-menu .option table td {
+        font-family: "PT Sans", sans-serif;
+        font-size: 20px;
+        padding: 2px 15px; }
+  #container-menu #option1 {
+    margin-bottom: 100px; }
+    #container-menu #option1 #regOrLrg {
+      height: 100px;
+      width: 70%;
+      margin: 0 auto; }
+      #container-menu #option1 #regOrLrg .divide h3 {
+        font-size: 30px;
+        font-family: "Sigmar One", cursive; }
+      #container-menu #option1 #regOrLrg .divide p {
+        font-family: "PT Sans", sans-serif;
+        font-size: 20px; }
+  #container-menu #option2 .three-row {
+    width: 33.3%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 50px; }
+    #container-menu #option2 .three-row h3 {
+      font-size: 30px;
+      font-family: "Sigmar One", cursive; }
+    #container-menu #option2 .three-row p {
+      font-family: "PT Sans", sans-serif;
+      font-size: 20px;
+      margin-bottom: 100px; }
+  #container-menu #option2 p {
+    font-style: italic;
+    padding: 20px 0; }
+  #container-menu #drinks {
+    margin-bottom: 100px; }
+  #container-menu table {
+    margin: 0 auto;
+    border: 3px solid; }
+  #container-menu .orange {
+    color: #F88017; }
+  #container-menu .food-row .food-block {
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+    background-color: pink;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  #container-menu .food-row #food1 {
+    background-image: url("../images/Menu/food1.jpg"); }
+  #container-menu .food-row #food2 {
+    background-image: url("../images/Menu/food2.jpg"); }
+  #container-menu .food-row #food3 {
+    background-image: url("../images/Menu/food3.jpg"); }
+  #container-menu .food-row #food4 {
+    background-image: url("../images/Menu/food4.jpg"); }
+  #container-menu .food-row #food5 {
+    background-image: url("../images/Menu/food5.jpg"); }
+  #container-menu .food-row #food6 {
+    background-image: url("../images/Menu/drinks.jpg"); }
+
+#bcg-cal {
+  background-image: url("../images/Truck/sujan.jpg");
+  background-size: cover;
+  background-position: center top; }
+
+#container-cal {
+  height: 100%;
+  text-align: center; }
+  #container-cal h1 {
+    font-size: 40px;
+    font-family: "PT Sans", sans-serif;
+    padding: 50px; }
+  #container-cal iframe {
+    width: 90%;
+    height: 500px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 20%;
+    border: 1px solid;
+    padding: 15px; }
+
+#content-contact {
+  height: 100%; }
+  #content-contact .container {
+    margin-bottom: 0; }
+    #content-contact .container h1 {
+      margin: 70px 0px;
+      font-size: 50px;
+      font-family: "PT Sans", sans-serif; }
+    #content-contact .container hr {
+      width: 80%;
+      margin: 0 auto;
+      font-weight: bold; }
+
+#bcg-contact {
+  background-color: white;
+  background-image: url("../images/Truck/forest.jpg");
+  background-size: cover; }
+
+#contact-menu {
+  height: 5%;
+  width: 100%; }
+  #contact-menu h3 {
+    margin-top: 5px;
+    font-family: "PT Sans", sans-serif;
+    color: white;
+    padding: 10px 0; }
+  #contact-menu #contactForm {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: #b3c100; }
+    #contact-menu #contactForm:hover {
+      background-color: #739f3d; }
+  #contact-menu #booking {
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: #4cb5f5; }
+    #contact-menu #booking:hover {
+      background-color: #34675c; }
+
+.input {
+  margin: 0 auto;
+  height: 70%;
+  width: 90%; }
+  .input .truckimg {
+    float: left;
+    width: 50%; }
+    .input .truckimg p {
+      font-size: 25px;
+      font-family: "PT Sans", sans-serif;
+      padding: 10px 0; }
+
+.info {
+  float: right;
+  width: 50%;
+  height: 100%; }
+  .info input {
+    height: 50px;
+    width: 90%;
+    margin: 10px 0;
+    font-size: 20px;
+    padding: 0 5px; }
+    .info input[type=submit] {
+      border: 0 none;
+      width: 100px;
+      font-size: 15px;
+      border-radius: 10px;
+      background-color: #739f3d;
+      color: white;
+      cursor: pointer; }
+  .info textarea {
+    height: 180px;
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px 10px;
+    font-size: 20px; }
+
+#bcg-about {
+  background-image: url("../images/Truck/maico_amorim.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; }
+
+#container-about {
+  height: 100%; }
+  #container-about .about-msg {
+    height: 800px;
+    width: 100%; }
+    #container-about .about-msg .box-msg {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      clear: both; }
+      #container-about .about-msg .box-msg img {
+        margin-left: 10%;
+        height: auto;
+        width: 60%;
+        float: left;
+        border-radius: 30%; }
+      #container-about .about-msg .box-msg div {
+        width: 30%;
+        height: 100%;
+        float: right; }
+        #container-about .about-msg .box-msg div p {
+          font-size: 16px;
+          width: 200px;
+          float: left;
+          padding: 20px;
+          background-color: #ffffff;
+          text-align: left;
+          margin-top: 20%; }
+        #container-about .about-msg .box-msg div p, #container-about .about-msg .box-msg div span {
+          font-family: "PT Sans", sans-serif; }
+        #container-about .about-msg .box-msg div span {
+          font-size: 30px;
+          font-weight: 1200; }
+  #container-about #first {
+    margin-top: 100px; }
+
+#container-booking {
+  height: 100%; }
+  #container-booking #booking-form {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 5%; }
+    #container-booking #booking-form h1 {
+      font-family: "Sigmar One", cursive;
+      margin-top: 100px;
+      text-decoration: underline; }
+    #container-booking #booking-form p {
+      margin: 0 auto;
+      text-align: justify;
+      padding: 0px 50px;
+      margin-bottom: 100px;
+      font-size: 20px;
+      line-height: 2em; }
+    #container-booking #booking-form span {
+      font-size: 22px;
+      font-weight: bold; }
+    #container-booking #booking-form form h2 {
+      border: 3px solid;
+      width: 100%;
+      padding: 15px 0; }
+    #container-booking #booking-form form div {
+      margin: 0px 20% 10%; }
+    #container-booking #booking-form form #contact {
+      margin-bottom: 0; }
+    #container-booking #booking-form form #submitButton {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      font-size: 40px; }
+
+footer {
+  border-top: 10px solid #ee693f;
+  border-bottom: 10px solid #ee693f;
+  background-color: #739f3d;
+  text-align: center; }
+  footer h1 {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 7px;
+    padding-top: 50px;
+    padding-bottom: 20px; }
+  footer .social {
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    top: 50%;
+    margin: 20px; }
+    footer .social img {
+      height: 80%;
+      width: 80%;
+      position: relative;
+      top: 50%;
+      margin-top: -20px; }
+  footer figcaption {
+    margin-top: 50px;
+    font-size: 12px; }
