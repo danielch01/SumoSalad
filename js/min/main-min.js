@@ -1,0 +1,1 @@
+$(window).scroll(function(){var e=$(this).scrollTop();e>1117?($(".header").fadeIn(),$(".header").css({position:"fixed"})):e>0?$(".header").fadeOut():$(".header").fadeIn()});

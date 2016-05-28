@@ -1,4 +1,16 @@
-// $(document).ready(function(){
-// 	window.alert('Hello!');
-// });
-
+$(window).scroll(function(){
+	var wScroll = $(this).scrollTop();
+	if(wScroll > 1117){
+		$('.header').fadeIn();
+		$('.header').css({
+			'position' : 'fixed'
+		});
+	} else {
+		if(wScroll > 0){ 
+			$('.header').fadeOut();
+		}
+		else{
+			$('.header').fadeIn();
+		}
+	}
+});
