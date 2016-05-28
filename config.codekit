@@ -360,6 +360,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Social_Media\/instagram.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42497,
+		"inputAbbreviatedPath": "\/images\/Social_Media\/instagram.jpg",
+		"outputAbbreviatedPath": "\/images\/Social_Media\/instagram.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/Social_Media\/instagram.png": {
 		"fileType": 32768,
 		"ignore": 0,

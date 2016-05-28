@@ -143,8 +143,10 @@ body {
     #follow #social #follow-left {
       width: 49%;
       border-right: 10px solid #b3c100; }
-    #follow #social #instafeed img {
-      padding: 5px; }
+    #follow #social #instafeed {
+      margin-top: 5%; }
+      #follow #social #instafeed img {
+        padding: 5px; }
 
 .nav {
   height: 100px; }
