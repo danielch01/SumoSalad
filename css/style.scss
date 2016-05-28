@@ -389,40 +389,87 @@ article{
 	.orange{
 		color: #F88017;
 	}
-	.food-row{
-		.food-block{
-			width: 400px;
-			height: 400px;
-			margin: 20px;
-			background-color: pink;
-			display: inline-block;
-			background:{
-				size: cover;
-				//attachment: fixed;
-				position: center center;
-				repeat: no-repeat;
-			}
-		}
-		#food1{
-			background-image: url('../images/Menu/food1.jpg')
-		}
-		#food2{
-			background-image: url('../images/Menu/food2.jpg')
-		}
-		#food3{
-			background-image: url('../images/Menu/food3.jpg')
-		}
-		#food4{
-			background-image: url('../images/Menu/food4.jpg')
-		}
-		#food5{
-			background-image: url('../images/Menu/food5.jpg')
-		}
-		#food6{
-			background-image: url('../images/Menu/drinks.jpg')
-		}
 
+	img{
+		max-width: 100%;
+		height: auto;
 	}
+
+	figure{
+		margin: auto;
+	}
+
+	.menu-pics{
+		figure{
+			//border: 1px solid;
+			margin: 20px 40px;
+			position: relative;
+			width: 400px;
+			display: inline-block;
+			cursor: pointer;
+			img{
+				display: block;
+			}
+
+			&:hover{
+				figcaption{
+					left: 0%;
+				}
+				img{
+					opacity: 0.7;
+					transition: opacity 0.4s;
+				}
+			}
+			overflow: hidden;
+		}
+		figcaption{
+			position: absolute;
+			height: 100px;
+			top: 50%;
+			margin-top: -50px;
+			left: -110%;
+			background: white;
+			color: black;
+			padding: 10px 20px;
+			font-size: 30px;
+			transition: all 0.3s ease-in-out
+		}
+	}
+
+	// .food-row{
+	// 	.food-block{
+	// 		width: 400px;
+	// 		height: 400px;
+	// 		margin: 20px;
+	// 		background-color: pink;
+	// 		display: inline-block;
+	// 		background:{
+	// 			size: cover;
+	// 			//attachment: fixed;
+	// 			position: center center;
+	// 			repeat: no-repeat;
+	// 		}
+	// 	}
+	// 	#food1{
+	// 		background-image: url('../images/Menu/food1.jpg')
+	// 	}
+	// 	#food2{
+	// 		background-image: url('../images/Menu/food2.jpg')
+	// 	}
+	// 	#food3{
+	// 		background-image: url('../images/Menu/food3.jpg')
+	// 	}
+	// 	#food4{
+	// 		background-image: url('../images/Menu/food4.jpg')
+	// 	}
+	// 	#food5{
+	// 		background-image: url('../images/Menu/food5.jpg')
+	// 	}
+	// 	#food6{
+	// 		background-image: url('../images/Menu/drinks.jpg')
+	// 	}
+
+	// }
 }
 
 

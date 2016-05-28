@@ -246,27 +246,36 @@ body {
     border: 3px solid; }
   #container-menu .orange {
     color: #F88017; }
-  #container-menu .food-row .food-block {
+  #container-menu img {
+    max-width: 100%;
+    height: auto; }
+  #container-menu figure {
+    margin: auto; }
+  #container-menu .menu-pics figure {
+    margin: 20px 40px;
+    position: relative;
     width: 400px;
-    height: 400px;
-    margin: 20px;
-    background-color: pink;
     display: inline-block;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; }
-  #container-menu .food-row #food1 {
-    background-image: url("../images/Menu/food1.jpg"); }
-  #container-menu .food-row #food2 {
-    background-image: url("../images/Menu/food2.jpg"); }
-  #container-menu .food-row #food3 {
-    background-image: url("../images/Menu/food3.jpg"); }
-  #container-menu .food-row #food4 {
-    background-image: url("../images/Menu/food4.jpg"); }
-  #container-menu .food-row #food5 {
-    background-image: url("../images/Menu/food5.jpg"); }
-  #container-menu .food-row #food6 {
-    background-image: url("../images/Menu/drinks.jpg"); }
+    cursor: pointer;
+    overflow: hidden; }
+    #container-menu .menu-pics figure img {
+      display: block; }
+    #container-menu .menu-pics figure:hover figcaption {
+      left: 0%; }
+    #container-menu .menu-pics figure:hover img {
+      opacity: 0.7;
+      transition: opacity 0.4s; }
+  #container-menu .menu-pics figcaption {
+    position: absolute;
+    height: 100px;
+    top: 50%;
+    margin-top: -50px;
+    left: -110%;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out; }
 
 #bcg-cal {
   background-image: url("../images/Truck/sujan.jpg");
