@@ -1,3 +1,10 @@
+<?php
+if($_POST["message"]) {
+	$fromEmail = "From: " . $_POST['email'];
+    mail("dhrchoi@gmail.com", $_POST["subject"], $_POST["message"], $fromEmail);
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,32 +33,12 @@
 		</div>
 		<div class = "container container-other" id = "container-contact">
 			<div id = "contact-menu">
-				<a href = "#contactToHere"><div id = "contactForm"><h3>Contact</h3></div></a>
+				<a href = "index.html#contactToHere"><div id = "contactForm"><h3>Contact</h3></div></a>
 				<a href = "../booking/index.html#bookingToHere"><div id = "booking"><h3>Booking</h3></div></a>
 			</div>
 			<div id = "contactToHere"></div>
-			<h1>Get In Touch</h1>
-			<div class = "input">
-				<div class = "truckimg">
-					<h3>If you have any inquiries or comments,<br> please let us know!</h3>
-					<img src="../images/Logo/vectorTruck.png">
-					<p>(323) 555 - 7777</p>
-					<p>jeff@sumosalad.com</p>
-				</div>
-				<div class = "info">
-					<form action = "contact.php" method = "post" name = "emailMsg">
-						<input type="text" name="name" placeholder="Name">
-						<br>
-						<input type="text" name="email" placeholder="Email">
-						<br>
-						<input type="text" name="subject" placeholder="Subject">
-						<br>
-						<textarea name = "message" placeholder="Message"></textarea>
-						<br>
-						<input type="submit" name="submit" value = "Submit">
-					</form>
-				</div>
-			</div>
+			<h1>Your Message Has Been Received<br>Thank You!</h1>
+			
 		</div>
 	</div>
 </article>

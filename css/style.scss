@@ -679,6 +679,7 @@ article{
 // ---- Booking --------
 #container-booking{
 	height: 100%;
+	//background-color: grey;
 	#booking-form{
 		width: 90%;
 		float: none;
@@ -721,6 +722,9 @@ article{
 				font-size: 40px;
 			}
 		}
+	}
+	#bookingEntered{
+		background-color: grey;
 	}
 }
 

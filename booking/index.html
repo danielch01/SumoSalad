@@ -36,14 +36,14 @@
 				<div class = 'info' id = "booking-form">
 					<h1>Event Request Form</h1>
 					<p><span>Thank you for choosing Sumo Salad to host your event.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi sapien, placerat at justo in, sodales malesuada dolor. Cras elementum felis a nibh hendrerit venenatis. Sed sed odio in mi lacinia blandit vitae sed ipsum. Sed erat elit, dictum a facilisis a, efficitur et quam. Proin vel nunc ac sem posuere sagittis. Integer non ultricies diam. Praesent efficitur mattis sodales. In id pellentesque mauris. Aliquam at dolor metus. Nunc dui mi, iaculis sit amet egestas quis, vehicula sed lorem. Donec suscipit turpis dolor, at maximus turpis lobortis ac. Vivamus accumsan enim in arcu egestas sagittis. Mauris at neque venenatis, vehicula velit vel, porta nibh. Phasellus pellentesque risus ac augue dapibus euismod. Cras consequat, justo eu condimentum sodales, nisi leo lobortis est, eget imperdiet turpis est et sapien. <span>Please fill out the form below completely and we will be more than happy to cater your event.</span></p>
-					<form>
+					<form action = "booking.php" method = "post">
 						<div><h2>Event Information:</h2>
 												<br>
 												<input type="text" name="eName" placeholder="Event Name">
 												<br>
-												<input type="text" name="eDate" placeholder="Event Date">
+												<input type="date" name="eDate" placeholder="Event Date">
 												<br>
-												<input type="text" name="eTime" placeholder="Event Time">
+												<input type="time" name="eTime" placeholder="Event Time">
 												<br>
 												<input type="text" name="eAddress" placeholder="Street, City, Zip"></div>
 						<div id  ="contact"><h2>Contact Information</h2>
@@ -56,11 +56,11 @@
 												<br>
 												<input type="text" name="altPhone" placeholder="Alternate Phone">
 												<br>
-												<input type="text" name="attendance" placeholder="Number of People">
+												<input type="number" name="attendance" placeholder="Number of People">
 												<br>
 												<input type="text" name="billing" placeholder="Billing Address (Street, City, Zip)">
 												<br>						
-												<textarea placeholder="Additional Information"></textarea>
+												<textarea name = "extra" placeholder="Additional Information"></textarea>
 												<br></div>
 						<input id = "submitButton" type="submit" name="submit" value = ">">
 					</form>
