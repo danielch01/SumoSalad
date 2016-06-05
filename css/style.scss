@@ -7,12 +7,10 @@
 
 
 // Variables for dimensions
-$img-height: 150px; // height and width of logo in nav bar
+$navHeight: 150px;
+$img-height: $navHeight - 20; // height and width of logo in nav bar
 $img-width: $img-height*1.7;
 $minWidth: 1000px;
-
-
-
 
 // Colors
 $bluePine: #324851;
@@ -52,115 +50,122 @@ $ptsans: 'PT Sans', sans-serif;
 }
 
 body{
+	width: 100vw;
+	height: 100%;
 	background-color: #c0c0c0;
 }
 
 // ----- Navigation Bar -------
-
-.header {
-  background-color: white;
-  min-width: 1000px;
-  position: relative;
-  height: $img-height+20;
-  width: 100%;
-  z-index: 99;
-  #logo {
-	  padding: 10px;
-	  margin-left: 10px;
-	  img {
-	    height: $img-height;
-	    width: $img-width;
-	    border-radius: 50%;
-	  }
+.header{
+	background-color: white;
+	position: relative;
+	height: 15vh;
+	width: 100%;
+	//z-index: 99;
+	#logo{
+		padding: 10px;
+		margin-left: 10px;
+		#mainLogo{
+			height: $img-height;
+			width: $img-width;
+			border-radius: 50%;
+		}
+		.otherLogo{
+			height: 100px;
+			width: 100px;
+			margin-top: 10px;
+			margin-left: 5vw;
+		}
 	}
-	nav {
-	  ul {
-	    position: absolute;
-	    width: 800px;
-	    left: 50%;
-	    margin-left: -400px;
-	    text-align: center;
-	    top: 60%;
-	    li {
-
-	      margin: 0 30px;
-	      display: inline-block;
-	      a{
-	      	font-family: $ptsans;
-	      	font-size: 18px;
-	      	text-decoration: none;
-	      	color: $bluePine;
-	      	// font-family: $oswald;
-	      	// letter-spacing: 2px;
-	      	&:hover{
-	      		color: $mist;
-	      	}
-	      }
-	    }
-	  }
+	ul{
+		position: absolute;
+		width: 800px;
+		left: 50%;
+		margin-left: -400px;
+		text-align: center;
+		top: 60%;
+		li{
+			margin: 0 30px;
+			display: inline-block;
+			a{
+				font-family: $ptsans;
+				font-size: 18px;
+				text-decoration: none;
+				color: $bluePine;
+				&:hover{
+					color: $mist;
+				}
+			}
+		}
 	}
 }
 
-article{
-}
 
 // ----- Index.html -----------
+
+article{
+	top: 100%;
+}
 
 .content{
 	margin: 0 auto;
 	width: 100%;
-	min-width: 800px;
+	//min-width: 800px;
 	height: 100%;
 	background-image: url('../images/Texture/wood_80.jpg');
 	background-attachment: fixed;
 }
 
 .bcg{
-	height: 1000px;
+	height: 72vw;
+	width: 100vw;
+	max-height: 1000px;
 	//opacity: .95;
 	background:{
+		color: black;
 		image: url('../images/Truck/truck1.jpg');
 		size: cover;
 		repeat: no-repeat;
-		attachment: fixed;
+		//attachment: fixed;
 		position: center;
 	}
+	font-size: 10vw;
 	.bcg_label{
-		position: absolute;
-		height: 70px;
-		width: 500px;
+		position: relative;
+		height: auto;
+		//width: 80vw;
+		max-width: 800px;
 		background-color: white;
-		margin-top: 200px;
-		right: 10%;
-		margin-right: -100px;
-		border-radius: 10px;
-		span{
-			font-family: $ptsans;
-			letter-spacing: 5px;
-		}
-		h1{
-			font-size: 40px;
-			margin-top: 15px;
-			font-weight: 100;
-			text-align: center;
-		}
-		h3{
-			margin-top: 10px;
-			font-size: 20px;
-			text-align: center;
-		}
+		float: right;
+		clear: both;
+		border-radius: 10px 0 0 10px;
+		font-family: $ptsans;
+		letter-spacing: 5px;
 	}
+
+	#label{
+		top: 20%;
+		font-size: 30%;
+		font-weight: 100;
+		text-align: center;
+		padding: 1% 5%;
+	}
+
 	#caption{
-		margin-top: 300px;
-		height: 40px;
+		padding: 0.5% 5%;
+		top: 30%;
+		font-size: 20%;
+		max-width: 600px;
+		float: right;
+		text-align: center;
 	}
 }
+
 
 .container{
 	border-top: 10px solid $tangerine;
 	border-bottom: 10px solid $tangerine;
 	height: 800px;
-	min-width: $minWidth;
 	width: 90%;
 	background-color: $offwhite;
 	margin: 200px auto;
@@ -169,6 +174,7 @@ article{
 		position: relative;
 		height: 100%;
 		width: 50%;
+		//clear: both;
 	}
 	.left{
 		float: left;
@@ -235,10 +241,12 @@ article{
 		#follow-left{
 			//background-color: $fields;
 			width: 49%;
-			border-right: 10px solid $fields;
+			//border-right: 10px solid $fields;
 		}
 		.right{
+			position: relative;
 			overflow: auto;
+			width: 50%;
 			img{margin-bottom: 40px;}
 		}
 		#instafeed{
@@ -265,26 +273,35 @@ article{
 }
 
 .bcg-other{
-	height: 400px;
+	height: 40vh;
+	font-size: 20vw;
+	min-height: 200px;
 	h1{
-		text-align: center;
-		font-size: 60px;
 		position: relative;
-		top: 45%;
-		color: white;
-		letter-spacing: 5px;
-	}
-	h1{
 		background-color: white;
 		width: 60%;
+		max-width: 700px;
+		height: 30%;
+		max-height: 100px;
+		top: 80px;
 		color: black;
-		padding: 15px;
+		padding: 0 5%;
 		float: left;
 		border-radius: 0 10px 10px 0px;
+		font-size: 20%;
 		span{
-			float: right;
+			position: relative;
 			font-family: $ptsans;
+			float: right;
+			margin-right: 10%;
+			margin-top: 2%;
 		}
+	}
+}
+
+@media(max-width:500px){
+	.bcg-other h1{
+		font-size: 30px;
 	}
 }
 #bcg-menu{
@@ -412,13 +429,15 @@ article{
 	.menu-pics{
 		figure{
 			position: relative;
+			height: 300px;
 			width: 40%;
 			display: inline-block;
 			cursor: pointer;
-			margin: 0 30px;
+			margin: 50px 30px;
 			img{
-				margin-top: -10%;
-				margin-bottom: -10%;
+				height: 100%;
+				width: auto;
+				margin: 0 auto;
 				display: block;
 			}
 
@@ -436,53 +455,19 @@ article{
 		}
 		figcaption{
 			position: absolute;
-			height: 100px;
+			height: 80px;
+			width: 100%;
 			top: 50%;
 			margin-top: -50px;
-			left: -115%;
+			left: -105%;
 			background: white;
 			color: black;
 			padding: 10px 20px;
 			font-size: 30px;
-			font-family: $ptsans;
+			font-family: $oswald;
 			transition: all 0.3s ease-in-out
 		}
 	}
-
-	// .food-row{
-	// 	.food-block{
-	// 		width: 400px;
-	// 		height: 400px;
-	// 		margin: 20px;
-	// 		background-color: pink;
-	// 		display: inline-block;
-	// 		background:{
-	// 			size: cover;
-	// 			//attachment: fixed;
-	// 			position: center center;
-	// 			repeat: no-repeat;
-	// 		}
-	// 	}
-	// 	#food1{
-	// 		background-image: url('../images/Menu/food1.jpg')
-	// 	}
-	// 	#food2{
-	// 		background-image: url('../images/Menu/food2.jpg')
-	// 	}
-	// 	#food3{
-	// 		background-image: url('../images/Menu/food3.jpg')
-	// 	}
-	// 	#food4{
-	// 		background-image: url('../images/Menu/food4.jpg')
-	// 	}
-	// 	#food5{
-	// 		background-image: url('../images/Menu/food5.jpg')
-	// 	}
-	// 	#food6{
-	// 		background-image: url('../images/Menu/drinks.jpg')
-	// 	}
-
-	// }
 }
 
 
@@ -534,6 +519,7 @@ article{
 		margin-bottom: 0;
 	}
 }
+
 #bcg-contact{
 	background:{
 		color: white;
@@ -632,51 +618,40 @@ article{
 #container-about{
 	height: 100%;
 	.about-msg{
-		height: 800px;
-		width: 100%;
-		.box-msg{
-			width: 80%;
-			height: 100%;
-			margin: 0 auto;
-			//margin-top: 100px;
-			clear: both;
-			img{
-				margin-left: 10%;
-				height: auto;
-				width: 60%;
-				float: left;
-				border-radius: 30%;
-			}
-			div{
-				width: 30%;
-				height: 100%;
-				float: right;
-				p{
-					font-size: 16px;
-					width: 200px;
-					float: left;
-					padding: 20px;
-					background-color: #ffffff;
-					text-align: left;
-					margin-top: 20%;
-				}
-				p, span{
-					font-family: $ptsans;
-				}
-
-				span{
-					font-size: 30px;
-					font-weight: 1200;
-				}
-			}
+		height: 100%;
+		margin: 2% 3%;
+		position: relative;
+		overflow: auto;
+		clear: both;
+		img{
+			position: relative;
+			width: 40vw;
+			min-width: 400px;
+			float: left;
+			border-radius: 10%;
 		}
-	}
-	#first{
-		margin-top: 100px;
+		p{
+			font-family: $ptsans;
+			position: relative;
+			width: 40%;
+			min-width: 100px;
+			overflow: auto;
+			float: right;
+			font-size: 16px;
+			line-height: 2.5vw;
+		}
+		.first{
+			margin-top: 2vh;
+		}
+		span{
+			font-size: 25px;
+			font-weight: 1200;
+		}
 	}
 }
 
 // ---- Booking --------
+
 #container-booking{
 	height: 100%;
 	//background-color: grey;
@@ -771,7 +746,105 @@ footer{
 }
 
 
+@media(max-width: 800px){
+	*{
+		padding: 0;
+		margin: 0;
+	}
 
+	// ---- Nav Panel ----
+
+	.header{
+		background-color: white;
+		//position: relative;
+		//height: $img-height + 20;
+		height: 20vh;
+		width: 100%;
+		//z-index: 99;
+		#logo{
+			position: relative;
+			padding: 0;
+			margin-left: 0;
+			float: left;
+			width: 50%;
+			height: 100%;
+			text-align: center;
+			#mainLogo{
+				height: $img-height;
+				width: $img-width;
+				border-radius: 50%;
+				margin-top: 10px;
+				//margin: 0 auto;
+			}
+			.otherLogo{
+				height: 17vh;
+				width: 17vh;
+				margin-top: 10px;
+			}
+		}
+		ul{
+			position: relative;
+			height: 100%;
+			width: 50%;
+			left: 0;
+			margin-left: 0;
+			text-align: center;
+			top: 0;
+			//background-color: cyan;
+			float: right;
+			li{
+				margin: 20px auto;
+				display: block;
+				a{
+					font-family: $ptsans;
+					font-size: 18px;
+					text-decoration: none;
+					color: $bluePine;
+					&:hover{
+						color: $mist;
+					}
+				}
+			}
+		}
+	}
+
+	// ----- About ------
+
+	#container-about{
+		height: 100%;
+		.about-msg{
+			height: 100%;
+			position: relative;
+			//background-color: pink;
+			//overflow: auto;
+			//clear: both;
+			img{
+				position: relative;
+				width: 100%;
+				min-width: 50vw;
+				float: none;
+				border-radius: 10%;
+			}
+			p{
+				width: 80%;
+				margin-right: 8vw;
+				margin-top: 3vh;
+				line-height: 30px;
+			}
+
+			.msgSpan{
+				margin: 0 auto;
+				background-color: gray;
+			}
+
+			.first{
+				margin-top: 2vh;
+			}
+		}
+	}
+
+
+}
 
 
 

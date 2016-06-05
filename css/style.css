@@ -7,85 +7,93 @@
   font-family: "Arial", sans-serif; }
 
 body {
+  width: 100vw;
+  height: 100%;
   background-color: #c0c0c0; }
 
 .header {
   background-color: white;
-  min-width: 1000px;
   position: relative;
-  height: 170px;
-  width: 100%;
-  z-index: 99; }
+  height: 15vh;
+  width: 100%; }
   .header #logo {
     padding: 10px;
     margin-left: 10px; }
-    .header #logo img {
-      height: 150px;
-      width: 255px;
+    .header #logo #mainLogo {
+      height: 130px;
+      width: 221px;
       border-radius: 50%; }
-  .header nav ul {
+    .header #logo .otherLogo {
+      height: 100px;
+      width: 100px;
+      margin-top: 10px;
+      margin-left: 5vw; }
+  .header ul {
     position: absolute;
     width: 800px;
     left: 50%;
     margin-left: -400px;
     text-align: center;
     top: 60%; }
-    .header nav ul li {
+    .header ul li {
       margin: 0 30px;
       display: inline-block; }
-      .header nav ul li a {
+      .header ul li a {
         font-family: "PT Sans", sans-serif;
         font-size: 18px;
         text-decoration: none;
         color: #324851; }
-        .header nav ul li a:hover {
+        .header ul li a:hover {
           color: #7da3a1; }
+
+article {
+  top: 100%; }
 
 .content {
   margin: 0 auto;
   width: 100%;
-  min-width: 800px;
   height: 100%;
   background-image: url("../images/Texture/wood_80.jpg");
   background-attachment: fixed; }
 
 .bcg {
-  height: 1000px;
+  height: 72vw;
+  width: 100vw;
+  max-height: 1000px;
+  background-color: black;
   background-image: url("../images/Truck/truck1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  font-size: 10vw; }
   .bcg .bcg_label {
-    position: absolute;
-    height: 70px;
-    width: 500px;
+    position: relative;
+    height: auto;
+    max-width: 800px;
     background-color: white;
-    margin-top: 200px;
-    right: 10%;
-    margin-right: -100px;
-    border-radius: 10px; }
-    .bcg .bcg_label span {
-      font-family: "PT Sans", sans-serif;
-      letter-spacing: 5px; }
-    .bcg .bcg_label h1 {
-      font-size: 40px;
-      margin-top: 15px;
-      font-weight: 100;
-      text-align: center; }
-    .bcg .bcg_label h3 {
-      margin-top: 10px;
-      font-size: 20px;
-      text-align: center; }
+    float: right;
+    clear: both;
+    border-radius: 10px 0 0 10px;
+    font-family: "PT Sans", sans-serif;
+    letter-spacing: 5px; }
+  .bcg #label {
+    top: 20%;
+    font-size: 30%;
+    font-weight: 100;
+    text-align: center;
+    padding: 1% 5%; }
   .bcg #caption {
-    margin-top: 300px;
-    height: 40px; }
+    padding: 0.5% 5%;
+    top: 30%;
+    font-size: 20%;
+    max-width: 600px;
+    float: right;
+    text-align: center; }
 
 .container {
   border-top: 10px solid #f69454;
   border-bottom: 10px solid #f69454;
   height: 800px;
-  min-width: 1000px;
   width: 90%;
   background-color: #fcfdfe;
   margin: 200px auto;
@@ -142,10 +150,11 @@ body {
     position: absolute;
     bottom: 10px; }
     #follow #social #follow-left {
-      width: 49%;
-      border-right: 10px solid #b3c100; }
+      width: 49%; }
     #follow #social .right {
-      overflow: auto; }
+      position: relative;
+      overflow: auto;
+      width: 50%; }
       #follow #social .right img {
         margin-bottom: 40px; }
     #follow #social #instafeed {
@@ -160,25 +169,32 @@ body {
     width: 80px; }
 
 .bcg-other {
-  height: 400px; }
+  height: 40vh;
+  font-size: 20vw;
+  min-height: 200px; }
   .bcg-other h1 {
-    text-align: center;
-    font-size: 60px;
     position: relative;
-    top: 45%;
-    color: white;
-    letter-spacing: 5px; }
-  .bcg-other h1 {
     background-color: white;
     width: 60%;
+    max-width: 700px;
+    height: 30%;
+    max-height: 100px;
+    top: 80px;
     color: black;
-    padding: 15px;
+    padding: 0 5%;
     float: left;
-    border-radius: 0 10px 10px 0px; }
+    border-radius: 0 10px 10px 0px;
+    font-size: 20%; }
     .bcg-other h1 span {
+      position: relative;
+      font-family: "PT Sans", sans-serif;
       float: right;
-      font-family: "PT Sans", sans-serif; }
+      margin-right: 10%;
+      margin-top: 2%; }
 
+@media (max-width: 500px) {
+  .bcg-other h1 {
+    font-size: 30px; } }
 #bcg-menu {
   background-image: url("../images/Menu/pasta.jpg");
   background-size: cover; }
@@ -261,14 +277,16 @@ body {
     margin: auto; }
   #container-menu .menu-pics figure {
     position: relative;
+    height: 300px;
     width: 40%;
     display: inline-block;
     cursor: pointer;
-    margin: 0 30px;
+    margin: 50px 30px;
     overflow: hidden; }
     #container-menu .menu-pics figure img {
-      margin-top: -10%;
-      margin-bottom: -10%;
+      height: 100%;
+      width: auto;
+      margin: 0 auto;
       display: block; }
     #container-menu .menu-pics figure:hover figcaption {
       left: 0%; }
@@ -277,15 +295,16 @@ body {
       transition: opacity 0.4s; }
   #container-menu .menu-pics figcaption {
     position: absolute;
-    height: 100px;
+    height: 80px;
+    width: 100%;
     top: 50%;
     margin-top: -50px;
-    left: -115%;
+    left: -105%;
     background: white;
     color: black;
     padding: 10px 20px;
     font-size: 30px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     transition: all 0.3s ease-in-out; }
 
 #bcg-cal {
@@ -396,38 +415,31 @@ body {
 #container-about {
   height: 100%; }
   #container-about .about-msg {
-    height: 800px;
-    width: 100%; }
-    #container-about .about-msg .box-msg {
-      width: 80%;
-      height: 100%;
-      margin: 0 auto;
-      clear: both; }
-      #container-about .about-msg .box-msg img {
-        margin-left: 10%;
-        height: auto;
-        width: 60%;
-        float: left;
-        border-radius: 30%; }
-      #container-about .about-msg .box-msg div {
-        width: 30%;
-        height: 100%;
-        float: right; }
-        #container-about .about-msg .box-msg div p {
-          font-size: 16px;
-          width: 200px;
-          float: left;
-          padding: 20px;
-          background-color: #ffffff;
-          text-align: left;
-          margin-top: 20%; }
-        #container-about .about-msg .box-msg div p, #container-about .about-msg .box-msg div span {
-          font-family: "PT Sans", sans-serif; }
-        #container-about .about-msg .box-msg div span {
-          font-size: 30px;
-          font-weight: 1200; }
-  #container-about #first {
-    margin-top: 100px; }
+    height: 100%;
+    margin: 2% 3%;
+    position: relative;
+    overflow: auto;
+    clear: both; }
+    #container-about .about-msg img {
+      position: relative;
+      width: 40vw;
+      min-width: 400px;
+      float: left;
+      border-radius: 10%; }
+    #container-about .about-msg p {
+      font-family: "PT Sans", sans-serif;
+      position: relative;
+      width: 40%;
+      min-width: 100px;
+      overflow: auto;
+      float: right;
+      font-size: 16px;
+      line-height: 2.5vw; }
+    #container-about .about-msg .first {
+      margin-top: 2vh; }
+    #container-about .about-msg span {
+      font-size: 25px;
+      font-weight: 1200; }
 
 #container-booking {
   height: 100%; }
@@ -496,3 +508,71 @@ footer {
   footer figcaption {
     margin-top: 50px;
     font-size: 12px; }
+
+@media (max-width: 800px) {
+  * {
+    padding: 0;
+    margin: 0; }
+
+  .header {
+    background-color: white;
+    height: 20vh;
+    width: 100%; }
+    .header #logo {
+      position: relative;
+      padding: 0;
+      margin-left: 0;
+      float: left;
+      width: 50%;
+      height: 100%;
+      text-align: center; }
+      .header #logo #mainLogo {
+        height: 130px;
+        width: 221px;
+        border-radius: 50%;
+        margin-top: 10px; }
+      .header #logo .otherLogo {
+        height: 17vh;
+        width: 17vh;
+        margin-top: 10px; }
+    .header ul {
+      position: relative;
+      height: 100%;
+      width: 50%;
+      left: 0;
+      margin-left: 0;
+      text-align: center;
+      top: 0;
+      float: right; }
+      .header ul li {
+        margin: 20px auto;
+        display: block; }
+        .header ul li a {
+          font-family: "PT Sans", sans-serif;
+          font-size: 18px;
+          text-decoration: none;
+          color: #324851; }
+          .header ul li a:hover {
+            color: #7da3a1; }
+
+  #container-about {
+    height: 100%; }
+    #container-about .about-msg {
+      height: 100%;
+      position: relative; }
+      #container-about .about-msg img {
+        position: relative;
+        width: 100%;
+        min-width: 50vw;
+        float: none;
+        border-radius: 10%; }
+      #container-about .about-msg p {
+        width: 80%;
+        margin-right: 8vw;
+        margin-top: 3vh;
+        line-height: 30px; }
+      #container-about .about-msg .msgSpan {
+        margin: 0 auto;
+        background-color: gray; }
+      #container-about .about-msg .first {
+        margin-top: 2vh; } }
