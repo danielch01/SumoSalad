@@ -147,13 +147,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Logo\/freeRange.png": {
-		"fileType": 32768,
+	"\/images\/Logo\/freeRange.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 143443,
-		"inputAbbreviatedPath": "\/images\/Logo\/freeRange.png",
-		"outputAbbreviatedPath": "\/images\/Logo\/freeRange.png",
+		"initialSize": 177379,
+		"inputAbbreviatedPath": "\/images\/Logo\/freeRange.jpg",
+		"outputAbbreviatedPath": "\/images\/Logo\/freeRange.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -169,28 +169,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Logo\/img-round.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 74287,
-		"inputAbbreviatedPath": "\/images\/Logo\/img-round.jpg",
-		"outputAbbreviatedPath": "\/images\/Logo\/img-round.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Logo\/SUM13062_FA01_Logomark_RGB.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 35046,
-		"inputAbbreviatedPath": "\/images\/Logo\/SUM13062_FA01_Logomark_RGB.jpg",
-		"outputAbbreviatedPath": "\/images\/Logo\/SUM13062_FA01_Logomark_RGB.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/Logo\/sumo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -198,17 +176,6 @@
 		"initialSize": 41344,
 		"inputAbbreviatedPath": "\/images\/Logo\/sumo.jpg",
 		"outputAbbreviatedPath": "\/images\/Logo\/sumo.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Logo\/sumo_countdown_flag.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 210063,
-		"inputAbbreviatedPath": "\/images\/Logo\/sumo_countdown_flag.jpg",
-		"outputAbbreviatedPath": "\/images\/Logo\/sumo_countdown_flag.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -224,24 +191,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Logo\/sumo_togo.jpg": {
+	"\/images\/Logo\/sumoTogo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 610739,
-		"inputAbbreviatedPath": "\/images\/Logo\/sumo_togo.jpg",
-		"outputAbbreviatedPath": "\/images\/Logo\/sumo_togo.jpg",
+		"initialSize": 600885,
+		"inputAbbreviatedPath": "\/images\/Logo\/sumoTogo.jpg",
+		"outputAbbreviatedPath": "\/images\/Logo\/sumoTogo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Logo\/vectorTruck.png": {
-		"fileType": 32768,
+	"\/images\/Logo\/vectorTruck.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 123261,
-		"inputAbbreviatedPath": "\/images\/Logo\/vectorTruck.png",
-		"outputAbbreviatedPath": "\/images\/Logo\/vectorTruck.png",
+		"initialSize": 43339,
+		"inputAbbreviatedPath": "\/images\/Logo\/vectorTruck.jpg",
+		"outputAbbreviatedPath": "\/images\/Logo\/vectorTruck.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -635,9 +602,20 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 15353,
+		"initialSize": 6535,
 		"inputAbbreviatedPath": "\/images\/Social_Media\/fb1.jpg",
 		"outputAbbreviatedPath": "\/images\/Social_Media\/fb1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Social_Media\/instag.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4303,
+		"inputAbbreviatedPath": "\/images\/Social_Media\/instag.jpg",
+		"outputAbbreviatedPath": "\/images\/Social_Media\/instag.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -649,17 +627,6 @@
 		"initialSize": 42497,
 		"inputAbbreviatedPath": "\/images\/Social_Media\/instagram.jpg",
 		"outputAbbreviatedPath": "\/images\/Social_Media\/instagram.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Social_Media\/instagram.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9990,
-		"inputAbbreviatedPath": "\/images\/Social_Media\/instagram.png",
-		"outputAbbreviatedPath": "\/images\/Social_Media\/instagram.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
