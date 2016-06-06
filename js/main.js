@@ -16,9 +16,9 @@
 // });
 
 
-$('.menu-button').on('click', function() {
+// $('.menu-button').on('click', function() {
 
-$(this).toggleClass('active');
-$('.menu').toggleClass('active');
+// $(this).toggleClass('active');
+// $('.menu').toggleClass('active');
 
-});
+// });
