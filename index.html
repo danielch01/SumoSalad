@@ -9,7 +9,7 @@
 		var feed = new Instafeed({
 			get: "user",
 			userId: "2009958092",
-			limit: '5',
+			limit: '8',
 			accessToken: "2009958092.17d3ba4.406b3cb967de4f4682acd0c46cccb03a"
 		});
 		feed.run();
@@ -19,7 +19,7 @@
 
 <div class = "header">
 	<div class = 'navHalf' id = "logo">
- 			<a href = "../index.html"><img id = "mainLogo" src="images/Logo/vertical_logo.jpg"><a>
+ 			<a href = "index.html#logoLink"><img id = "mainLogo" src="images/Logo/vertical_logo.jpg"><a>
 		</div>
 	<a href = "#" class = "menu-button"></a>
 	<ul class = 'navHalf' id = "menu">
@@ -31,7 +31,7 @@
 </div>
 
 <article>
-	<div class = "content">
+	<div class = "content" id = "logoLink">
 
 		<div class = "bcg">
 			<div class = "bcg_label" id = "label">@sumosaladtruck</div>
@@ -104,29 +104,7 @@
 		<figcaption>jeff@sumosaladtruck.com <hr width="20%" style= "margin: 0 auto"> Website by Daniel Choi</figcaption>
 	</div>
 </footer>
-	
-<!-- <script type="text/javascript">
-	window.addEventListener('resize', function(){
-		if($(window).width() < 500){
-			$('.header').css({
-				'height' : '20vh',
-				'width' : '100vw'
-			});
-			$('.header nav ul').css({
-				'margin' : '0 auto'
-			});
 
-			$('.header nav ul li').css({
-				'display' : 'block',
-				'text-align' : 'center'
-			});
-		} else{
-			$('.header').css({
-				
-			});
-		}
-	}, true);
-</script> -->
 <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
