@@ -59,7 +59,7 @@ body{
 .header{
 	background-color: white;
 	position: relative;
-	height: 15vh;
+	height: 100%;
 	width: 100%;
 	//z-index: 99;
 	#logo{
@@ -101,7 +101,7 @@ body{
 }
 
 
-// ----- Index.html -----------
+// ----- Home -----------
 
 article{
 	top: 100%;
@@ -120,6 +120,7 @@ article{
 	height: 72vw;
 	width: 100vw;
 	max-height: 1000px;
+	min-height: 600px;
 	//opacity: .95;
 	background:{
 		color: black;
@@ -260,17 +261,8 @@ article{
 }
 
 
-// ---- Menu --------
+// ---- Background of Other pages --------
 
-.nav{
-	height: 100px;
-	#logo{
-		img{
-			height: 80px;
-			width: 80px;
-		}
-	}
-}
 
 .bcg-other{
 	height: 40vh;
@@ -288,7 +280,7 @@ article{
 		padding: 0 5%;
 		float: left;
 		border-radius: 0 10px 10px 0px;
-		font-size: 20%;
+		font-size: 5vh;
 		span{
 			position: relative;
 			font-family: $ptsans;
@@ -299,9 +291,12 @@ article{
 	}
 }
 
-@media(max-width:500px){
+@media(max-width:800px){
 	.bcg-other h1{
-		font-size: 30px;
+		font-size: 50px;
+		span{
+			margin-top: 20px;
+		}
 	}
 }
 #bcg-menu{
@@ -373,6 +368,14 @@ article{
 					font-family: $ptsans;
 					font-size: 20px;
 				}
+			}
+			.left{
+				background-color: pink;
+				margin-right: 30vw;
+
+			}
+			.right{
+				background-color: cyan;
 			}
 		}
 	}
@@ -654,7 +657,6 @@ article{
 
 #container-booking{
 	height: 100%;
-	//background-color: grey;
 	#booking-form{
 		width: 90%;
 		float: none;
@@ -758,7 +760,7 @@ footer{
 		background-color: white;
 		//position: relative;
 		//height: $img-height + 20;
-		height: 20vh;
+		height: 25vh;
 		width: 100%;
 		//z-index: 99;
 		#logo{
@@ -792,6 +794,7 @@ footer{
 			top: 0;
 			//background-color: cyan;
 			float: right;
+			background-color: white;
 			li{
 				margin: 20px auto;
 				display: block;
@@ -803,6 +806,108 @@ footer{
 					&:hover{
 						color: $mist;
 					}
+				}
+			}
+		}
+	}
+
+	// ----- Home ------
+	.container{
+		//border-top: 10px solid $tangerine;
+		//border-bottom: 10px solid $tangerine;
+		height: 100vh;
+		overflow: auto;
+		//width: 90%;
+		//background-color: $offwhite;
+		//margin: 200px auto;
+		text-align: center;
+		.divide{
+			position: relative;
+			width: 100%;
+			//clear: both;
+		}
+		.left{
+			float: none;
+			height: 50%;
+			background:{
+				size: cover;
+				repeat: no-repeat;
+			}
+		}
+		.right{
+			height: 70%;
+			overflow: auto;
+			float: none;
+		}
+	}
+
+	.msg{
+		position: relative;
+		width: 80%;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 10%;
+		h1{
+			padding: 50px;
+			font-size: 50px;
+			font-family: $oswald;
+			letter-spacing: 5px;
+		}
+		p{
+			line-height: 1.7em;
+			margin-bottom: 0;
+			font-family: $ptsans;
+		}
+	}
+
+	#story-left{
+		background-image: url('../images/Truck/future.jpg');
+	}
+
+	#menu-left{
+		float: left;
+	}
+
+	#menu-right{
+		float: right;
+		background-image: url('../images/Menu/food5.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	#follow{
+		position: relative;
+		//height: 100%;
+		.msg{
+			margin-top: 50px;
+			h1{
+				padding: 30px;
+			}
+		}
+		#social{
+			margin-top: 100px;
+			height: 70%;
+			width: 100%;
+			position: none;
+			//border-bottom: 10px solid $carrot;
+			bottom: 10px;
+			#follow-left{
+				//background-color: $fields;
+				width: 100%;
+				height: 600px;
+				//border-right: 10px solid $fields;
+			}
+			.right{
+				position: relative;
+				overflow: auto;
+				width: 100%;
+				img{margin-bottom: 40px;}
+			}
+			#instafeed{
+				//background-color: pink;
+				margin-top: 5%;
+				img{
+					padding: 5px;
 				}
 			}
 		}

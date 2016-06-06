@@ -14,7 +14,7 @@ body {
 .header {
   background-color: white;
   position: relative;
-  height: 15vh;
+  height: 100%;
   width: 100%; }
   .header #logo {
     padding: 10px;
@@ -60,6 +60,7 @@ article {
   height: 72vw;
   width: 100vw;
   max-height: 1000px;
+  min-height: 600px;
   background-color: black;
   background-image: url("../images/Truck/truck1.jpg");
   background-size: cover;
@@ -162,12 +163,6 @@ article {
       #follow #social #instafeed img {
         padding: 5px; }
 
-.nav {
-  height: 100px; }
-  .nav #logo img {
-    height: 80px;
-    width: 80px; }
-
 .bcg-other {
   height: 40vh;
   font-size: 20vw;
@@ -184,7 +179,7 @@ article {
     padding: 0 5%;
     float: left;
     border-radius: 0 10px 10px 0px;
-    font-size: 20%; }
+    font-size: 5vh; }
     .bcg-other h1 span {
       position: relative;
       font-family: "PT Sans", sans-serif;
@@ -192,9 +187,11 @@ article {
       margin-right: 10%;
       margin-top: 2%; }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .bcg-other h1 {
-    font-size: 30px; } }
+    font-size: 50px; }
+    .bcg-other h1 span {
+      margin-top: 20px; } }
 #bcg-menu {
   background-image: url("../images/Menu/pasta.jpg");
   background-size: cover; }
@@ -245,6 +242,11 @@ article {
       #container-menu #option1 #regOrLrg .divide p {
         font-family: "PT Sans", sans-serif;
         font-size: 20px; }
+      #container-menu #option1 #regOrLrg .left {
+        background-color: pink;
+        margin-right: 30vw; }
+      #container-menu #option1 #regOrLrg .right {
+        background-color: cyan; }
   #container-menu #option2 .three-row {
     width: 33.3%;
     display: inline-block;
@@ -516,7 +518,7 @@ footer {
 
   .header {
     background-color: white;
-    height: 20vh;
+    height: 25vh;
     width: 100%; }
     .header #logo {
       position: relative;
@@ -543,7 +545,8 @@ footer {
       margin-left: 0;
       text-align: center;
       top: 0;
-      float: right; }
+      float: right;
+      background-color: white; }
       .header ul li {
         margin: 20px auto;
         display: block; }
@@ -554,6 +557,77 @@ footer {
           color: #324851; }
           .header ul li a:hover {
             color: #7da3a1; }
+
+  .container {
+    height: 100vh;
+    overflow: auto;
+    text-align: center; }
+    .container .divide {
+      position: relative;
+      width: 100%; }
+    .container .left {
+      float: none;
+      height: 50%;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .container .right {
+      height: 70%;
+      overflow: auto;
+      float: none; }
+
+  .msg {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10%; }
+    .msg h1 {
+      padding: 50px;
+      font-size: 50px;
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 5px; }
+    .msg p {
+      line-height: 1.7em;
+      margin-bottom: 0;
+      font-family: "PT Sans", sans-serif; }
+
+  #story-left {
+    background-image: url("../images/Truck/future.jpg"); }
+
+  #menu-left {
+    float: left; }
+
+  #menu-right {
+    float: right;
+    background-image: url("../images/Menu/food5.jpg");
+    background-size: cover;
+    background-position: center; }
+
+  #follow {
+    position: relative; }
+    #follow .msg {
+      margin-top: 50px; }
+      #follow .msg h1 {
+        padding: 30px; }
+    #follow #social {
+      margin-top: 100px;
+      height: 70%;
+      width: 100%;
+      position: none;
+      bottom: 10px; }
+      #follow #social #follow-left {
+        width: 100%;
+        height: 600px; }
+      #follow #social .right {
+        position: relative;
+        overflow: auto;
+        width: 100%; }
+        #follow #social .right img {
+          margin-bottom: 40px; }
+      #follow #social #instafeed {
+        margin-top: 5%; }
+        #follow #social #instafeed img {
+          padding: 5px; }
 
   #container-about {
     height: 100%; }
