@@ -6,6 +6,219 @@
 <!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
  -->	<link rel="stylesheet" type="text/css" href="../css/style.css">
  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT +Sans|Oswald|Sigmar+One">
+ <style type="text/css">
+ 	#bcg-menu {
+	  background-image: url("../images/Food/menubcg.jpg");
+	  background-size: cover;
+	  background-position: center;
+	}
+
+	#container-menu {
+	  height: 100%;
+	  width: 90%;
+	  margin-top: 0px;
+	  margin-bottom: 0px;
+	  text-align: center;
+	}
+
+	#container-menu #start {
+	  font-family: "Sigmar One", cursive;
+	  padding: 50px 0;
+	  font-size: 40px;
+	}
+
+	#container-menu #start span {
+	  font-size: 30px;
+	}
+
+	#container-menu .option {
+	  width: 60%;
+	  margin: 0 auto;
+	  position: relative;
+	}
+
+	#container-menu .option h2 {
+	  text-decoration: underline;
+	  padding: 30px 0;
+	  font-family: "Sigmar One", cursive;
+	}
+
+	#container-menu .option h1 {
+	  font-size: 30px;
+	  margin-bottom: 20px;
+	  font-family: "Sigmar One", cursive;
+	}
+
+	#container-menu .option table {
+	  margin-bottom: 40px;
+	  padding: 20px 25px;
+	}
+
+	#container-menu .option table td {
+	  font-family: "PT Sans", sans-serif;
+	  font-size: 20px;
+	  padding: 2px 15px;
+	}
+
+	#container-menu #option1 {
+	  margin-bottom: 100px;
+	}
+
+	#container-menu #option1 #regOrLrg{
+	  height: 30vh;
+	  width: 50vw;
+	  margin: 0 auto;
+	  clear: both;
+	}
+
+	#container-menu #option1 #regOrLrg .panel{
+	  padding: 20px;
+	  width: 20vw;
+	}
+
+	#container-menu #option1 #regOrLrg .panel h3 {
+	  font-size: 30px;
+	  font-family: "Sigmar One", cursive;
+	}
+
+	#container-menu #option1 #regOrLrg .panel p {
+	  font-family: "PT Sans", sans-serif;
+	  font-size: 20px;
+	}
+
+	#container-menu #option1 #regOrLrg #regular {
+	  float: left;
+	}
+
+	#container-menu #option1 #regOrLrg #large {
+	  float: right;
+	}
+
+	#container-menu #option2 #three-row-panel{
+		position: relative;
+		height: 30vh;
+	}
+
+	#container-menu #option2 .three-row {
+	  width: 33.3%;
+	  display: inline-block;
+	  float: left;
+	}
+
+	#container-menu #option2 .three-row h3 {
+	  font-size: 25px;
+	  font-family: "Sigmar One", cursive;
+	}
+
+	#container-menu #option2 .three-row p {
+	  font-family: "PT Sans", sans-serif;
+	  font-size: 20px;
+	}
+
+	#container-menu #option2 p {
+	  font-style: italic;
+	  padding: 20px 0;
+	}
+
+	#container-menu table {
+	  margin: 0 auto;
+	  border: 3px solid;
+	}
+
+	#container-menu .orange {
+	  color: #F88017;
+	}
+
+	#container-menu img {
+	  max-width: 100%;
+	  height: auto;
+	  transform: rotate(90deg);
+	}
+
+	#container-menu figure {
+	  margin: auto;
+	}
+
+
+	#container-menu .menu-pics figure {
+	  position: relative;
+	  height: 300px;
+	  width: 40%;
+	  display: inline-block;
+	  cursor: pointer;
+	  margin: 50px 30px;
+	  overflow: hidden;
+	}
+
+	#container-menu .menu-pics figure img {
+	  height: 100%;
+	  width: auto;
+	  margin: 0 auto;
+	  display: block;
+	}
+
+	#container-menu .menu-pics figure:hover figcaption {
+	  left: 0%;
+	}
+
+	#container-menu .menu-pics figure:hover img {
+	  opacity: 0.5;
+	  transition: opacity 0.4s;
+	}
+
+	#container-menu .menu-pics figcaption {
+	  position: absolute;
+	  height: 80px;
+	  width: 100%;
+	  top: 50%;
+	  margin-top: -50px;
+	  left: -105%;
+	  background: white;
+	  color: black;
+	  padding: 10px 20px;
+	  font-size: 30px;
+	  font-family: "Oswald", sans-serif;
+	  transition: all 0.3s ease-in-out;
+	}
+
+	@media(max-width: 1000px) {
+
+
+		#container-menu .menu-pics figure {
+		  /*border: 1px solid;*/
+		  position: relative;
+		  width: 100%;
+		  display: inline-block;
+		  cursor: pointer;
+		  margin: 0 auto;
+		  overflow: hidden;
+		}
+
+		#container-menu #option1 #regOrLrg{
+		  width: 50vw;
+		  margin: 0 auto;
+		}
+
+		#container-menu #option1 #regOrLrg .panel{
+			padding: 0;
+			height: 50%;
+		  width: 100%;
+		}
+
+		#container-menu #option2{
+			width: 80%;
+		}
+		#container-menu #option2 #three-row-panel{
+			position: relative;
+			text-align: center;
+			height: 60vh;
+		}
+		#container-menu #option2 #three-row-panel .three-row {
+			width: 100%;
+			height: 33.3%;
+		}
+	}
+ </style>
 </head>
 <body>
 
@@ -48,11 +261,11 @@
 					</tr>
 				</table>
 				<div id = "regOrLrg">
-					<div class = "divide left" id = "regular">
+					<div class = "panel" id = "regular">
 						<h3>REGULAR</h3>
 						<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
 					</div>
-					<div class = "divide right" id = "large">
+					<div class = "panel" id = "large">
 						<h3>LARGE</h3>
 						<p>CHOOSE UP TO ANY 3<br> SUMO DELI SALADS</p>
 					</div>
@@ -70,17 +283,19 @@
 						<td>CHIPOTLE PULLED PORK</td>
 					</tr>
 				</table>
-				<div class = "three-row" id = "regular">
-					<h3>REGULAR</h3>
-					<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
-				</div>
-				<div class = "three-row" id = "large">
-					<h3>LARGE</h3>
-					<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
-				</div>
-				<div class = "three-row" id = "sumo-large">
-					<h3>SUMO LARGE</h3>
-					<p>CHOOSE UP TO ANY 3<br> SUMO DELI SALADS</p>
+				<div id = "three-row-panel">
+					<div class = "three-row" id = "regular">
+						<h3>REGULAR</h3>
+						<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
+					</div>
+					<div class = "three-row" id = "large">
+						<h3>LARGE</h3>
+						<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
+					</div>
+					<div class = "three-row" id = "sumo-large">
+						<h3>SUMO LARGE</h3>
+						<p>CHOOSE UP TO ANY 3<br> SUMO DELI SALADS</p>
+					</div>
 				</div>
 			</div>
 			<div  class = "option" id = "drinks">
@@ -121,7 +336,7 @@
 						<figcaption><strong>Sweet Hawaiian Chicken</strong></figcaption>
 					</figure>
 					<figure class = "cols four">
-						<img src="../images/Food/food6.jpg" id = "drinks" style = "width: 100%">
+						<img src="../images/Food/food6.jpg">
 						<figcaption><strong>Thai Chicken Noodle</strong></figcaption>
 					</figure>
 				</div>
@@ -132,7 +347,7 @@
 <footer style = "height: 300px; width: 100%">
 	<h1>Connect</h1>
 	<div class = 'social'><a href=""><img src="../images/Social_Media/fb1.jpg"></a></div>
-	<div class = 'social'><a href=""><img src="../images/Social_Media/instagram.png"></a></div>
+	<div class = 'social'><a href=""><img src="../images/Social_Media/instagram.jpg"></a></div>
 	<div class = 'social'><a href=""><img src="../images/Social_Media/twit.png" style = "background-color: white"></a></div>
 	<div id = "caption">
 		<figcaption>jeff@sumosaladtruck.com <hr width="20%" style= "margin: 0 auto"> Website by Daniel Choi</figcaption>

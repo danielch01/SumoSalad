@@ -84,6 +84,7 @@ body{
 		margin-left: -400px;
 		text-align: center;
 		top: 60%;
+		//background-color: white;
 		li{
 			margin: 0 30px;
 			display: inline-block;
@@ -116,51 +117,6 @@ article{
 	background-attachment: fixed;
 }
 
-.bcg{
-	height: 72vw;
-	width: 100vw;
-	max-height: 1000px;
-	min-height: 600px;
-	//opacity: .95;
-	background:{
-		color: black;
-		image: url('../images/Truck/truck1.jpg');
-		size: cover;
-		repeat: no-repeat;
-		//attachment: fixed;
-		position: center;
-	}
-	font-size: 10vw;
-	.bcg_label{
-		position: relative;
-		height: auto;
-		//width: 80vw;
-		max-width: 800px;
-		background-color: white;
-		float: right;
-		clear: both;
-		border-radius: 10px 0 0 10px;
-		font-family: $ptsans;
-		letter-spacing: 5px;
-	}
-
-	#label{
-		top: 20%;
-		font-size: 30%;
-		font-weight: 100;
-		text-align: center;
-		padding: 1% 5%;
-	}
-
-	#caption{
-		padding: 0.5% 5%;
-		top: 30%;
-		font-size: 20%;
-		max-width: 600px;
-		float: right;
-		text-align: center;
-	}
-}
 
 
 .container{
@@ -190,75 +146,6 @@ article{
 	}
 }
 
-.msg{
-	width: 80%;
-	text-align: center;
-	margin: 0 auto;
-	margin-top: 10%;
-	h1{
-		padding: 50px;
-		font-size: 50px;
-		font-family: $oswald;
-		letter-spacing: 5px;
-	}
-	p{
-		line-height: 1.7em;
-		margin-bottom: 50px;
-		font-family: $ptsans;
-	}
-}
-
-#story-left{
-	background-image: url('../images/Truck/future.jpg');
-}
-
-#menu-left{
-	float: left;
-}
-
-#menu-right{
-	float: right;
-	background-image: url('../images/Menu/food5.jpg');
-	background-size: cover;
-	background-position: center;
-}
-
-#follow{
-	position: relative;
-	//height: 100%;
-	.msg{
-		margin-top: 50px;
-		h1{
-			padding: 30px;
-		}
-	}
-	#social{
-		margin-top: 100px;
-		height: 70%;
-		width: 100%;
-		position: absolute;
-		//border-bottom: 10px solid $carrot;
-		bottom: 10px;
-		#follow-left{
-			//background-color: $fields;
-			width: 49%;
-			//border-right: 10px solid $fields;
-		}
-		.right{
-			position: relative;
-			overflow: auto;
-			width: 50%;
-			img{margin-bottom: 40px;}
-		}
-		#instafeed{
-			//background-color: pink;
-			margin-top: 5%;
-			img{
-				padding: 5px;
-			}
-		}
-	}
-}
 
 
 // ---- Background of Other pages --------
@@ -280,7 +167,7 @@ article{
 		padding: 0 5%;
 		float: left;
 		border-radius: 0 10px 10px 0px;
-		font-size: 5vh;
+		font-size: 7vh;
 		span{
 			position: relative;
 			font-family: $ptsans;
@@ -295,14 +182,8 @@ article{
 	.bcg-other h1{
 		font-size: 50px;
 		span{
-			margin-top: 20px;
+			margin-top: 5%;
 		}
-	}
-}
-#bcg-menu{
-	background:{
-		image: url('../images/Menu/pasta.jpg');
-		size: cover;
 	}
 }
 
@@ -313,253 +194,14 @@ article{
 
 // ----- Menu items ---------
 
-#container-menu {
-	height: 100%;
-	width: 90%;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	text-align: center;
-	#start{
-		font-family: $sig;
-		//border: 1px solid;
-		padding: 50px 0;
-		font-size: 40px;
-		span{
-			font-size: 30px;
-		}
-	}
-	.option{
-		width: 60%;
-		margin: 0 auto;
-		h2{
-			text-decoration: underline;
-			padding: 30px 0;
-			font-family: $sig;
-		}
-		h1{
-			font-size: 30px;
-			margin-bottom: 20px;
-			font-family: $sig;
-		}
-		table{
-			margin-bottom: 40px;
-			padding: 20px 25px;
-			td{
-				font-family: $ptsans;
-				font-size: 20px;
-				padding: 2px 15px;
-			}
-		}
-	}
-
-	#option1{
-		//border: 1px solid green;
-		margin-bottom: 100px;
-		#regOrLrg{
-			height: 100px;
-			width: 70%;
-			margin: 0 auto;
-			.divide{
-				h3{
-					font-size: 30px;
-					font-family: $sig;
-				}
-				p{
-					font-family: $ptsans;
-					font-size: 20px;
-				}
-			}
-			.left{
-				background-color: pink;
-				margin-right: 30vw;
-
-			}
-			.right{
-				background-color: cyan;
-			}
-		}
-	}
-
-	#option2{
-		//border: 1px solid red;
-		.three-row{
-			width: 33.3%;
-			display: inline-block;
-			float: left;
-			margin-bottom: 50px;
-			h3{
-				font-size: 25px;
-				font-family: $sig;
-			}
-			p{
-				font-family: $ptsans;
-				font-size: 20px;
-				margin-bottom: 100px;
-			}
-		}
-		p{
-			font-style: italic;
-			padding: 20px 0;
-		}
-	}
-
-	#drinks{
-		margin-bottom: 100px;
-	}
-
-	table{
-		margin: 0 auto;
-		border: 3px solid;
-	}
-	.orange{
-		color: #F88017;
-	}
-
-	img{
-		max-width: 100%;
-		height: auto;
-		transform: rotate(90deg);
-	}
-
-	#drinks{
-		transform: rotate(0deg);
-	}
-
-	figure{
-		margin: auto;
-	}
-
-	.menu-pics{
-		figure{
-			position: relative;
-			height: 300px;
-			width: 40%;
-			display: inline-block;
-			cursor: pointer;
-			margin: 50px 30px;
-			img{
-				height: 100%;
-				width: auto;
-				margin: 0 auto;
-				display: block;
-			}
-
-			&:hover{
-				figcaption{
-
-					left: 0%;
-				}
-				img{
-					opacity: 0.5;
-					transition: opacity 0.4s;
-				}
-			}
-			overflow: hidden;
-		}
-		figcaption{
-			position: absolute;
-			height: 80px;
-			width: 100%;
-			top: 50%;
-			margin-top: -50px;
-			left: -105%;
-			background: white;
-			color: black;
-			padding: 10px 20px;
-			font-size: 30px;
-			font-family: $oswald;
-			transition: all 0.3s ease-in-out
-		}
-	}
-}
 
 
 // ---- Calendar --------
 
-#bcg-cal{
-	background:{
-		image: url('../images/Truck/sujan.jpg');
-		size: cover;
-		position: center top;
-	}
-}
-
-#container-cal{
-	height: 100%;
-	text-align: center;
-	h1{
-		font-size: 40px;
-		font-family: $ptsans;
-		padding: 50px;
-	}
-	iframe{
-		width: 90%;
-		height: 500px;
-		margin-bottom: 50px;
-		position: relative;
-		top: 20%;
-		border: 1px solid;
-		padding: 15px;
-	}
-}
 
 
 // ---- Contact --------
 
-#content-contact{
-	height: 100%;
-	.container{
-		h1{
-			margin: 70px 0px;
-			font-size: 50px;
-			font-family: $ptsans;
-		}
-		hr{
-			width: 80%;
-			margin: 0 auto;
-			font-weight: bold;
-		}
-		margin-bottom: 0;
-	}
-}
-
-#bcg-contact{
-	background:{
-		color: white;
-		image: url('../images/Truck/forest.jpg');
-		size: cover;
-	}
-}
-
-#contact-menu{
-	height: 5%;
-	width: 100%;
-	h3{
-		margin-top: 5px;
-		font-family: $ptsans;
-		color: white;
-		padding: 10px 0;
-	}
-	#contactForm{
-		float: left;
-		width: 50%;
-		height: 100%;
-		background-color: $fields;
-		&:hover{
-			background-color: $pearGreen;
-		}
-
-	}
-	#booking{
-		float: right;
-		width: 50%;
-		height: 100%;
-		background-color: $blueSky;
-		&:hover{
-			background-color: $pine;
-		}
-	}
-}
 
 .input{
 	margin: 0 auto;
@@ -608,102 +250,6 @@ article{
 
 
 // ---- About --------
-
-#bcg-about{
-	background:{
-		image: url('../images/Truck/maico_amorim.jpg');
-		size: cover;
-		position: center top;
-		attachment: fixed;
-	}
-}
-
-#container-about{
-	height: 100%;
-	.about-msg{
-		height: 100%;
-		margin: 2% 3%;
-		position: relative;
-		overflow: auto;
-		clear: both;
-		img{
-			position: relative;
-			width: 40vw;
-			min-width: 400px;
-			float: left;
-			border-radius: 10%;
-		}
-		p{
-			font-family: $ptsans;
-			position: relative;
-			width: 40%;
-			min-width: 100px;
-			overflow: auto;
-			float: right;
-			font-size: 16px;
-			line-height: 2.5vw;
-		}
-		.first{
-			margin-top: 2vh;
-		}
-		span{
-			font-size: 25px;
-			font-weight: 1200;
-		}
-	}
-}
-
-// ---- Booking --------
-
-#container-booking{
-	height: 100%;
-	#booking-form{
-		width: 90%;
-		float: none;
-		margin: 0 auto;
-		margin-bottom: 5%;
-		h1{
-			font-family: $sig; margin-top: 100px;
-			text-decoration: underline;
-		}
-		p{
-			margin: 0 auto;
-			text-align: justify;
-			padding: 0px 50px;
-			margin-bottom: 100px;
-			font-size: 20px;
-			line-height: 2em;
-		}
-		span{
-			font-size: 22px;
-			font-weight: bold;
-		}
-		form{
-
-			h2{
-				border: 3px solid;
-				width: 100%;
-				padding: 15px 0;
-			}
-			div{
-				margin: 0px 20% 10%;
-				//border: 2px solid;
-			}
-			#contact{
-				margin-bottom: 0;
-			}
-			#submitButton{
-				width: 80px;
-				height: 80px;
-				border-radius: 50%;
-				font-size: 40px;
-			}
-		}
-	}
-	#bookingEntered{
-		background-color: grey;
-	}
-}
 
 
 // ---- Footer --------
@@ -760,7 +306,8 @@ footer{
 		background-color: white;
 		//position: relative;
 		//height: $img-height + 20;
-		height: 25vh;
+		height: 200px;
+		//overflow: auto;
 		width: 100%;
 		//z-index: 99;
 		#logo{
@@ -792,12 +339,14 @@ footer{
 			margin-left: 0;
 			text-align: center;
 			top: 0;
+			overflow: auto;
 			//background-color: cyan;
 			float: right;
-			background-color: white;
+			//background-color: white;
 			li{
 				margin: 20px auto;
 				display: block;
+				//background-color: white;
 				a{
 					font-family: $ptsans;
 					font-size: 18px;
@@ -815,7 +364,7 @@ footer{
 	.container{
 		//border-top: 10px solid $tangerine;
 		//border-bottom: 10px solid $tangerine;
-		height: 100vh;
+		height: 1000px;
 		overflow: auto;
 		//width: 90%;
 		//background-color: $offwhite;
@@ -829,126 +378,19 @@ footer{
 		.left{
 			float: none;
 			height: 50%;
+			width: 100%;
 			background:{
 				size: cover;
 				repeat: no-repeat;
 			}
 		}
 		.right{
+			width: 100%;
 			height: 70%;
 			overflow: auto;
 			float: none;
 		}
 	}
-
-	.msg{
-		position: relative;
-		width: 80%;
-		text-align: center;
-		margin: 0 auto;
-		margin-top: 10%;
-		h1{
-			padding: 50px;
-			font-size: 50px;
-			font-family: $oswald;
-			letter-spacing: 5px;
-		}
-		p{
-			line-height: 1.7em;
-			margin-bottom: 0;
-			font-family: $ptsans;
-		}
-	}
-
-	#story-left{
-		background-image: url('../images/Truck/future.jpg');
-	}
-
-	#menu-left{
-		float: left;
-	}
-
-	#menu-right{
-		float: right;
-		background-image: url('../images/Menu/food5.jpg');
-		background-size: cover;
-		background-position: center;
-	}
-
-	#follow{
-		position: relative;
-		//height: 100%;
-		.msg{
-			margin-top: 50px;
-			h1{
-				padding: 30px;
-			}
-		}
-		#social{
-			margin-top: 100px;
-			height: 70%;
-			width: 100%;
-			position: none;
-			//border-bottom: 10px solid $carrot;
-			bottom: 10px;
-			#follow-left{
-				//background-color: $fields;
-				width: 100%;
-				height: 600px;
-				//border-right: 10px solid $fields;
-			}
-			.right{
-				position: relative;
-				overflow: auto;
-				width: 100%;
-				img{margin-bottom: 40px;}
-			}
-			#instafeed{
-				//background-color: pink;
-				margin-top: 5%;
-				img{
-					padding: 5px;
-				}
-			}
-		}
-	}
-
-	// ----- About ------
-
-	#container-about{
-		height: 100%;
-		.about-msg{
-			height: 100%;
-			position: relative;
-			//background-color: pink;
-			//overflow: auto;
-			//clear: both;
-			img{
-				position: relative;
-				width: 100%;
-				min-width: 50vw;
-				float: none;
-				border-radius: 10%;
-			}
-			p{
-				width: 80%;
-				margin-right: 8vw;
-				margin-top: 3vh;
-				line-height: 30px;
-			}
-
-			.msgSpan{
-				margin: 0 auto;
-				background-color: gray;
-			}
-
-			.first{
-				margin-top: 2vh;
-			}
-		}
-	}
-
-
 }
 
 

@@ -11,6 +11,28 @@ if($_POST["message"]) {
 	<title>Contact Us</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	 <style type="text/css">
+ 	#bcg-contact {
+  background-color: white;
+  background-image: url("../images/Truck/forest.jpg");
+  background-size: cover; }
+
+#contact-menu {
+  height: 5%;
+  width: 100%; }
+  #contact-menu h3 {
+    margin-top: 5px;
+    font-family: "PT Sans", sans-serif;
+    color: white;
+    padding: 10px 0; }
+  #contact-menu #contactForm {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: #b3c100; }
+    #contact-menu #contactForm:hover {
+      background-color: #739f3d; }
+ </style>
 </head>
 <body>
 
@@ -45,7 +67,7 @@ if($_POST["message"]) {
 <footer style = "height: 300px; width: 100%">
 	<h1>Connect</h1>
 	<div class = 'social'><a href=""><img src="../images/Social_Media/fb1.jpg"></a></div>
-	<div class = 'social'><a href=""><img src="../images/Social_Media/instagram.png"></a></div>
+	<div class = 'social'><a href=""><img src="../images/Social_Media/instagram.jpg"></a></div>
 	<div class = 'social'><a href=""><img src="../images/Social_Media/twit.png" style = "background-color: white"></a></div>
 	<div id = "caption">
 		<figcaption>jeff@sumosaladtruck.com <hr width="20%" style= "margin: 0 auto"> Website by Daniel Choi</figcaption>

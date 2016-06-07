@@ -53,41 +53,6 @@ article {
   background-image: url("../images/Texture/wood_80.jpg");
   background-attachment: fixed; }
 
-.bcg {
-  height: 72vw;
-  width: 100vw;
-  max-height: 1000px;
-  min-height: 600px;
-  background-color: black;
-  background-image: url("../images/Truck/truck1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-size: 10vw; }
-  .bcg .bcg_label {
-    position: relative;
-    height: auto;
-    max-width: 800px;
-    background-color: white;
-    float: right;
-    clear: both;
-    border-radius: 10px 0 0 10px;
-    font-family: "PT Sans", sans-serif;
-    letter-spacing: 5px; }
-  .bcg #label {
-    top: 20%;
-    font-size: 30%;
-    font-weight: 100;
-    text-align: center;
-    padding: 1% 5%; }
-  .bcg #caption {
-    padding: 0.5% 5%;
-    top: 30%;
-    font-size: 20%;
-    max-width: 600px;
-    float: right;
-    text-align: center; }
-
 .container {
   border-top: 10px solid #f69454;
   border-bottom: 10px solid #f69454;
@@ -108,58 +73,6 @@ article {
     overflow: auto;
     float: right; }
 
-.msg {
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 10%; }
-  .msg h1 {
-    padding: 50px;
-    font-size: 50px;
-    font-family: "Oswald", sans-serif;
-    letter-spacing: 5px; }
-  .msg p {
-    line-height: 1.7em;
-    margin-bottom: 50px;
-    font-family: "PT Sans", sans-serif; }
-
-#story-left {
-  background-image: url("../images/Truck/future.jpg"); }
-
-#menu-left {
-  float: left; }
-
-#menu-right {
-  float: right;
-  background-image: url("../images/Menu/food5.jpg");
-  background-size: cover;
-  background-position: center; }
-
-#follow {
-  position: relative; }
-  #follow .msg {
-    margin-top: 50px; }
-    #follow .msg h1 {
-      padding: 30px; }
-  #follow #social {
-    margin-top: 100px;
-    height: 70%;
-    width: 100%;
-    position: absolute;
-    bottom: 10px; }
-    #follow #social #follow-left {
-      width: 49%; }
-    #follow #social .right {
-      position: relative;
-      overflow: auto;
-      width: 50%; }
-      #follow #social .right img {
-        margin-bottom: 40px; }
-    #follow #social #instafeed {
-      margin-top: 5%; }
-      #follow #social #instafeed img {
-        padding: 5px; }
-
 .bcg-other {
   height: 40vh;
   font-size: 20vw;
@@ -176,7 +89,7 @@ article {
     padding: 0 5%;
     float: left;
     border-radius: 0 10px 10px 0px;
-    font-size: 5vh; }
+    font-size: 7vh; }
     .bcg-other h1 span {
       position: relative;
       font-family: "PT Sans", sans-serif;
@@ -188,185 +101,10 @@ article {
   .bcg-other h1 {
     font-size: 50px; }
     .bcg-other h1 span {
-      margin-top: 20px; } }
-#bcg-menu {
-  background-image: url("../images/Menu/pasta.jpg");
-  background-size: cover; }
-
+      margin-top: 5%; } }
 .container-other {
   margin-top: 0;
   margin-bottom: 0; }
-
-#container-menu {
-  height: 100%;
-  width: 90%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: center; }
-  #container-menu #start {
-    font-family: "Sigmar One", cursive;
-    padding: 50px 0;
-    font-size: 40px; }
-    #container-menu #start span {
-      font-size: 30px; }
-  #container-menu .option {
-    width: 60%;
-    margin: 0 auto; }
-    #container-menu .option h2 {
-      text-decoration: underline;
-      padding: 30px 0;
-      font-family: "Sigmar One", cursive; }
-    #container-menu .option h1 {
-      font-size: 30px;
-      margin-bottom: 20px;
-      font-family: "Sigmar One", cursive; }
-    #container-menu .option table {
-      margin-bottom: 40px;
-      padding: 20px 25px; }
-      #container-menu .option table td {
-        font-family: "PT Sans", sans-serif;
-        font-size: 20px;
-        padding: 2px 15px; }
-  #container-menu #option1 {
-    margin-bottom: 100px; }
-    #container-menu #option1 #regOrLrg {
-      height: 100px;
-      width: 70%;
-      margin: 0 auto; }
-      #container-menu #option1 #regOrLrg .divide h3 {
-        font-size: 30px;
-        font-family: "Sigmar One", cursive; }
-      #container-menu #option1 #regOrLrg .divide p {
-        font-family: "PT Sans", sans-serif;
-        font-size: 20px; }
-      #container-menu #option1 #regOrLrg .left {
-        background-color: pink;
-        margin-right: 30vw; }
-      #container-menu #option1 #regOrLrg .right {
-        background-color: cyan; }
-  #container-menu #option2 .three-row {
-    width: 33.3%;
-    display: inline-block;
-    float: left;
-    margin-bottom: 50px; }
-    #container-menu #option2 .three-row h3 {
-      font-size: 25px;
-      font-family: "Sigmar One", cursive; }
-    #container-menu #option2 .three-row p {
-      font-family: "PT Sans", sans-serif;
-      font-size: 20px;
-      margin-bottom: 100px; }
-  #container-menu #option2 p {
-    font-style: italic;
-    padding: 20px 0; }
-  #container-menu #drinks {
-    margin-bottom: 100px; }
-  #container-menu table {
-    margin: 0 auto;
-    border: 3px solid; }
-  #container-menu .orange {
-    color: #F88017; }
-  #container-menu img {
-    max-width: 100%;
-    height: auto;
-    transform: rotate(90deg); }
-  #container-menu #drinks {
-    transform: rotate(0deg); }
-  #container-menu figure {
-    margin: auto; }
-  #container-menu .menu-pics figure {
-    position: relative;
-    height: 300px;
-    width: 40%;
-    display: inline-block;
-    cursor: pointer;
-    margin: 50px 30px;
-    overflow: hidden; }
-    #container-menu .menu-pics figure img {
-      height: 100%;
-      width: auto;
-      margin: 0 auto;
-      display: block; }
-    #container-menu .menu-pics figure:hover figcaption {
-      left: 0%; }
-    #container-menu .menu-pics figure:hover img {
-      opacity: 0.5;
-      transition: opacity 0.4s; }
-  #container-menu .menu-pics figcaption {
-    position: absolute;
-    height: 80px;
-    width: 100%;
-    top: 50%;
-    margin-top: -50px;
-    left: -105%;
-    background: white;
-    color: black;
-    padding: 10px 20px;
-    font-size: 30px;
-    font-family: "Oswald", sans-serif;
-    transition: all 0.3s ease-in-out; }
-
-#bcg-cal {
-  background-image: url("../images/Truck/sujan.jpg");
-  background-size: cover;
-  background-position: center top; }
-
-#container-cal {
-  height: 100%;
-  text-align: center; }
-  #container-cal h1 {
-    font-size: 40px;
-    font-family: "PT Sans", sans-serif;
-    padding: 50px; }
-  #container-cal iframe {
-    width: 90%;
-    height: 500px;
-    margin-bottom: 50px;
-    position: relative;
-    top: 20%;
-    border: 1px solid;
-    padding: 15px; }
-
-#content-contact {
-  height: 100%; }
-  #content-contact .container {
-    margin-bottom: 0; }
-    #content-contact .container h1 {
-      margin: 70px 0px;
-      font-size: 50px;
-      font-family: "PT Sans", sans-serif; }
-    #content-contact .container hr {
-      width: 80%;
-      margin: 0 auto;
-      font-weight: bold; }
-
-#bcg-contact {
-  background-color: white;
-  background-image: url("../images/Truck/forest.jpg");
-  background-size: cover; }
-
-#contact-menu {
-  height: 5%;
-  width: 100%; }
-  #contact-menu h3 {
-    margin-top: 5px;
-    font-family: "PT Sans", sans-serif;
-    color: white;
-    padding: 10px 0; }
-  #contact-menu #contactForm {
-    float: left;
-    width: 50%;
-    height: 100%;
-    background-color: #b3c100; }
-    #contact-menu #contactForm:hover {
-      background-color: #739f3d; }
-  #contact-menu #booking {
-    float: right;
-    width: 50%;
-    height: 100%;
-    background-color: #4cb5f5; }
-    #contact-menu #booking:hover {
-      background-color: #34675c; }
 
 .input {
   margin: 0 auto;
@@ -404,78 +142,6 @@ article {
     margin: 10px 0;
     padding: 10px 10px;
     font-size: 20px; }
-
-#bcg-about {
-  background-image: url("../images/Truck/maico_amorim.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed; }
-
-#container-about {
-  height: 100%; }
-  #container-about .about-msg {
-    height: 100%;
-    margin: 2% 3%;
-    position: relative;
-    overflow: auto;
-    clear: both; }
-    #container-about .about-msg img {
-      position: relative;
-      width: 40vw;
-      min-width: 400px;
-      float: left;
-      border-radius: 10%; }
-    #container-about .about-msg p {
-      font-family: "PT Sans", sans-serif;
-      position: relative;
-      width: 40%;
-      min-width: 100px;
-      overflow: auto;
-      float: right;
-      font-size: 16px;
-      line-height: 2.5vw; }
-    #container-about .about-msg .first {
-      margin-top: 2vh; }
-    #container-about .about-msg span {
-      font-size: 25px;
-      font-weight: 1200; }
-
-#container-booking {
-  height: 100%; }
-  #container-booking #booking-form {
-    width: 90%;
-    float: none;
-    margin: 0 auto;
-    margin-bottom: 5%; }
-    #container-booking #booking-form h1 {
-      font-family: "Sigmar One", cursive;
-      margin-top: 100px;
-      text-decoration: underline; }
-    #container-booking #booking-form p {
-      margin: 0 auto;
-      text-align: justify;
-      padding: 0px 50px;
-      margin-bottom: 100px;
-      font-size: 20px;
-      line-height: 2em; }
-    #container-booking #booking-form span {
-      font-size: 22px;
-      font-weight: bold; }
-    #container-booking #booking-form form h2 {
-      border: 3px solid;
-      width: 100%;
-      padding: 15px 0; }
-    #container-booking #booking-form form div {
-      margin: 0px 20% 10%; }
-    #container-booking #booking-form form #contact {
-      margin-bottom: 0; }
-    #container-booking #booking-form form #submitButton {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      font-size: 40px; }
-  #container-booking #bookingEntered {
-    background-color: grey; }
 
 footer {
   border-top: 10px solid #ee693f;
@@ -515,7 +181,7 @@ footer {
 
   .header {
     background-color: white;
-    height: 25vh;
+    height: 200px;
     width: 100%; }
     .header #logo {
       position: relative;
@@ -542,8 +208,8 @@ footer {
       margin-left: 0;
       text-align: center;
       top: 0;
-      float: right;
-      background-color: white; }
+      overflow: auto;
+      float: right; }
       .header ul li {
         margin: 20px auto;
         display: block; }
@@ -556,7 +222,7 @@ footer {
             color: #7da3a1; }
 
   .container {
-    height: 100vh;
+    height: 1000px;
     overflow: auto;
     text-align: center; }
     .container .divide {
@@ -565,85 +231,11 @@ footer {
     .container .left {
       float: none;
       height: 50%;
+      width: 100%;
       background-size: cover;
       background-repeat: no-repeat; }
     .container .right {
+      width: 100%;
       height: 70%;
       overflow: auto;
-      float: none; }
-
-  .msg {
-    position: relative;
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 10%; }
-    .msg h1 {
-      padding: 50px;
-      font-size: 50px;
-      font-family: "Oswald", sans-serif;
-      letter-spacing: 5px; }
-    .msg p {
-      line-height: 1.7em;
-      margin-bottom: 0;
-      font-family: "PT Sans", sans-serif; }
-
-  #story-left {
-    background-image: url("../images/Truck/future.jpg"); }
-
-  #menu-left {
-    float: left; }
-
-  #menu-right {
-    float: right;
-    background-image: url("../images/Menu/food5.jpg");
-    background-size: cover;
-    background-position: center; }
-
-  #follow {
-    position: relative; }
-    #follow .msg {
-      margin-top: 50px; }
-      #follow .msg h1 {
-        padding: 30px; }
-    #follow #social {
-      margin-top: 100px;
-      height: 70%;
-      width: 100%;
-      position: none;
-      bottom: 10px; }
-      #follow #social #follow-left {
-        width: 100%;
-        height: 600px; }
-      #follow #social .right {
-        position: relative;
-        overflow: auto;
-        width: 100%; }
-        #follow #social .right img {
-          margin-bottom: 40px; }
-      #follow #social #instafeed {
-        margin-top: 5%; }
-        #follow #social #instafeed img {
-          padding: 5px; }
-
-  #container-about {
-    height: 100%; }
-    #container-about .about-msg {
-      height: 100%;
-      position: relative; }
-      #container-about .about-msg img {
-        position: relative;
-        width: 100%;
-        min-width: 50vw;
-        float: none;
-        border-radius: 10%; }
-      #container-about .about-msg p {
-        width: 80%;
-        margin-right: 8vw;
-        margin-top: 3vh;
-        line-height: 30px; }
-      #container-about .about-msg .msgSpan {
-        margin: 0 auto;
-        background-color: gray; }
-      #container-about .about-msg .first {
-        margin-top: 2vh; } }
+      float: none; } }

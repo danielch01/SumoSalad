@@ -29,6 +29,74 @@ mysqli_query($link, $sql)
 	<title>Contact Us</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	 <style type="text/css">
+ 	#bcg-contact {
+  background-color: white;
+  background-image: url("../images/Truck/forest.jpg");
+  background-size: cover; }
+
+#contact-menu {
+  height: 5%;
+  width: 100%; }
+  #contact-menu h3 {
+    margin-top: 5px;
+    font-family: "PT Sans", sans-serif;
+    color: white;
+    padding: 10px 0; }
+  #contact-menu #contactForm {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: #b3c100; }
+    #contact-menu #contactForm:hover {
+      background-color: #739f3d; }
+
+        #contact-menu #booking {
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: #4cb5f5; }
+    #contact-menu #booking:hover {
+      background-color: #34675c; }
+
+      #container-booking {
+  height: 100%; }
+  #container-booking #booking-form {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 5%; }
+    #container-booking #booking-form h1 {
+      font-family: "Sigmar One", cursive;
+      margin-top: 100px;
+      text-decoration: underline; }
+    #container-booking #booking-form p {
+      margin: 0 auto;
+      text-align: justify;
+      padding: 0px 50px;
+      margin-bottom: 100px;
+      font-size: 20px;
+      line-height: 2em; }
+    #container-booking #booking-form span {
+      font-size: 22px;
+      font-weight: bold; }
+    #container-booking #booking-form form h2 {
+      border: 3px solid;
+      width: 100%;
+      padding: 15px 0; }
+    #container-booking #booking-form form div {
+      margin: 0px 20% 10%; }
+    #container-booking #booking-form form #contact {
+      margin-bottom: 0; }
+    #container-booking #booking-form form #submitButton {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      font-size: 40px; }
+  #container-booking #bookingEntered {
+    background-color: grey; }
+
+ </style>
 </head>
 <body>
 
@@ -68,7 +136,7 @@ mysqli_query($link, $sql)
 <footer style = "height: 300px; width: 100%">
 	<h1>Connect</h1>
 	<div class = 'social'><a href=""><img src="../images/Social_Media/fb1.jpg"></a></div>
-	<div class = 'social'><a href=""><img src="../images/Social_Media/instagram.png"></a></div>
+	<div class = 'social'><a href=""><img src="../images/Social_Media/instagram.jpg"></a></div>
 	<div class = 'social'><a href=""><img src="../images/Social_Media/twit.png" style = "background-color: white"></a></div>
 	<div id = "caption">
 		<figcaption>jeff@sumosaladtruck.com <hr width="20%" style= "margin: 0 auto"> Website by Daniel Choi</figcaption>
