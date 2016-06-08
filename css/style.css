@@ -74,7 +74,8 @@ article {
     float: right; }
 
 .bcg-other {
-  height: 40vh; }
+  height: 40vh;
+  overflow: auto; }
   .bcg-other h1 {
     position: relative;
     background-color: white;
@@ -94,7 +95,7 @@ article {
       font-family: "PT Sans", sans-serif;
       float: right;
       margin-right: 10%;
-      margin-top: 2%; }
+      margin-top: 2vh; }
 
 @media (max-width: 800px) {
   .bcg-other h1 {

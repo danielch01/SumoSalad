@@ -26,7 +26,7 @@ mysqli_query($link, $sql)
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact Us</title>
+	<title>Contact Us</title><meta name="viewport" content="initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	 <style type="text/css">

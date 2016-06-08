@@ -153,6 +153,7 @@ article{
 
 .bcg-other{
 	height: 40vh;
+	overflow: auto;
 	//min-height: 200px;
 	h1{
 		position: relative;
@@ -173,7 +174,7 @@ article{
 			font-family: $ptsans;
 			float: right;
 			margin-right: 10%;
-			margin-top: 2%;
+			margin-top: 2vh;
 		}
 	}
 }
