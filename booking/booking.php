@@ -30,73 +30,152 @@ mysqli_query($link, $sql)
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	 <style type="text/css">
- 	#bcg-contact {
-  background-color: white;
-  background-image: url("../images/Truck/forest.jpg");
-  background-size: cover; }
+    #bcg-booking {
+    background-color: white;
+    background-image: url("../images/Truck/forest.jpg");
+    background-size: cover;
+  }
 
-#contact-menu {
-  height: 5%;
-  width: 100%; }
+  #bcg-booking span{
+    margin-top: -3vh;
+  }
+
+  /*------ DO NOT TOUCH ---------*/
+
+  #contact-menu {
+    height: 5%;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
   #contact-menu h3 {
-    margin-top: 5px;
+    margin-top: 0px;
     font-family: "PT Sans", sans-serif;
     color: white;
-    padding: 10px 0; }
+    padding: 10px 0;
+  }
+
   #contact-menu #contactForm {
     float: left;
     width: 50%;
     height: 100%;
-    background-color: #b3c100; }
-    #contact-menu #contactForm:hover {
-      background-color: #739f3d; }
+    background-color: #b3c100;
+  }
 
-        #contact-menu #booking {
+  #contact-menu #booking {
     float: right;
     width: 50%;
     height: 100%;
-    background-color: #4cb5f5; }
-    #contact-menu #booking:hover {
-      background-color: #34675c; }
+    background-color: #4cb5f5;
+  }
 
-      #container-booking {
-  height: 100%; }
-  #container-booking #booking-form {
-    width: 90%;
-    float: none;
-    margin: 0 auto;
-    margin-bottom: 5%; }
-    #container-booking #booking-form h1 {
-      font-family: "Sigmar One", cursive;
-      margin-top: 100px;
-      text-decoration: underline; }
-    #container-booking #booking-form p {
+  #contact-menu #contactForm:hover {
+    background-color: #739f3d;
+  }
+
+  #contact-menu #booking:hover {
+    background-color: #7da3a1;
+  }
+  /*------ NOW TOUCH ---------*/
+
+  #container-booking{
+    height: 100%;
+  }
+
+  #container-booking{
+    font-family: "PT Sans", sans-serif;
+  }
+  #container-booking h1 {
+    font-family: "PT Sans", sans-serif;
+      font-size: 3em;
+      margin: 50px 0;
+    }
+
+    #booking-form{
+      width: 70%;
       margin: 0 auto;
-      text-align: justify;
-      padding: 0px 50px;
-      margin-bottom: 100px;
-      font-size: 20px;
-      line-height: 2em; }
-    #container-booking #booking-form span {
-      font-size: 22px;
-      font-weight: bold; }
-    #container-booking #booking-form form h2 {
-      border: 3px solid;
-      width: 100%;
-      padding: 15px 0; }
-    #container-booking #booking-form form div {
-      margin: 0px 20% 10%; }
-    #container-booking #booking-form form #contact {
-      margin-bottom: 0; }
-    #container-booking #booking-form form #submitButton {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      font-size: 40px; }
-  #container-booking #bookingEntered {
-    background-color: grey; }
+    }
 
- </style>
+    #booking-form h1{
+      font-size: 2em;
+      font-family: "Sigmar One", cursive;
+      text-decoration: underline;
+    }
+
+    #booking-form p, span{
+      font-family: "Arial", sans-serif;
+      text-align: justify;
+      width: 100%;
+      margin-bottom: 50px;
+      font-size: 20px;
+      line-height: 2.5em;
+    }
+
+    #booking-form span{
+      font-weight: 900;
+    }
+
+    #container-booking #booking-form form #submitButton{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 5px solid #f69454;
+      background-color: #739f3d;
+      font-size: 2.5em;
+      margin-bottom: 50px;
+      cursor: pointer;
+    }
+
+    #container-booking #booking-form form #submitButton:hover{
+      border: 5px solid #ee693f;
+    }
+
+    @media (max-height: 500px) {
+   /* #bcg-booking {
+      height: 200px;
+    }
+    #bcg-booking h1 {
+      top: 50%;
+      margin-top: -30px;
+      height: 60px;
+      font-size: 60px;
+    }
+    #bcg-booking h1 span {
+      padding-top: 10px;
+      height: 100%;
+      font-size: 50%;
+    }*/
+
+    #container-booking h1{
+      font-size: 3em;
+    }
+  }
+
+  @media (max-width: 800px) {
+/*    #bcg-booking {
+      height: 300px;
+    }
+    #bcg-booking h1 {
+      top: 50%;
+      margin-top: -40px;
+      height: 80px;
+      font-size: 80px;
+    }
+    #bcg-booking h1 span {
+      padding-top: 10px;
+      height: 100%;
+      font-size: 50%;
+    }*/
+
+    form h2{
+      width: 90%;
+    }
+
+    form input{
+      width: 80%;
+    }
+  } 
+   </style>
 </head>
 <body>
 
@@ -113,7 +192,6 @@ mysqli_query($link, $sql)
 </div>
 
 <article>
-	<div class = "content" id = "content-contact">
 		<div class = "bcg bcg-other" id = "bcg-contact">
 			<h1><span>Contact</span></h1>
 		</div>
@@ -125,13 +203,12 @@ mysqli_query($link, $sql)
 			<div id = "bookingToHere"></div>
 			<h1>Book Us For An Event</h1>
 			<div class = "input">
-				<img src="../images/Logo/sumo_togo.jpg">
+				<img src="../images/Logo/sumoTogo.jpg">
 				<div class = 'info' id = "booking-form" style  = "margin-top: 100px">
 					<p  style = "text-align: center"><span>Thank you for choosing Sumo Salad to host your event<br>We will get back to you about your reservation as soon as possible.</span></p>
 				</div>
 			</div>
 		</div>
-	</div>
 </article>
 <footer style = "height: 300px; width: 100%">
 	<h1>Connect</h1>

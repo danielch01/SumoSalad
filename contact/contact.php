@@ -13,25 +13,126 @@ if($_POST["message"]) {
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	 <style type="text/css">
  	#bcg-contact {
-  background-color: white;
-  background-image: url("../images/Truck/forest.jpg");
-  background-size: cover; }
+	  background-color: white;
+	  background-image: url("../images/Truck/forest.jpg");
+	  background-size: cover;
+	}
 
-#contact-menu {
-  height: 5%;
-  width: 100%; }
-  #contact-menu h3 {
-    margin-top: 5px;
-    font-family: "PT Sans", sans-serif;
-    color: white;
-    padding: 10px 0; }
-  #contact-menu #contactForm {
-    float: left;
-    width: 50%;
-    height: 100%;
-    background-color: #b3c100; }
-    #contact-menu #contactForm:hover {
-      background-color: #739f3d; }
+	#contact-menu {
+	  height: 5%;
+	  width: 100%;
+	  margin-bottom: 50px;
+	}
+
+	#contact-menu h3 {
+	  margin-top: 0px;
+	  font-family: "PT Sans", sans-serif;
+	  color: white;
+	  padding: 10px 0;
+	}
+
+	#contact-menu #contactForm {
+	  float: left;
+	  width: 50%;
+	  height: 100%;
+	  background-color: #b3c100;
+	}
+
+	#contact-menu #booking {
+	  float: right;
+	  width: 50%;
+	  height: 100%;
+	  background-color: #4cb5f5;
+	}
+
+	#contact-menu #contactForm:hover {
+	  background-color: #739f3d;
+	}
+
+	#contact-menu #booking:hover {
+	  background-color: #7da3a1;
+	}
+
+	#container-contact{
+		font-family: "PT Sans", sans-serif;
+	}
+
+	#container-contact h1{
+		font-size: 5vw;
+		margin: 50px 0;
+	}
+
+	.input {
+	  margin: 0 auto;
+	  height: 70%;
+	  width: 90%;
+	}
+
+	.input .truckimg {
+	  float: left;
+	  width: 50%;
+	}
+
+	.input .truckimg img{
+		width: 100%;
+	}
+
+	.input .truckimg p {
+	  font-size: 25px;
+	  padding: 10px 0;
+	}
+
+	.info {
+	  float: right;
+	  width: 50%;
+	  height: 100%;
+	}
+
+	.info input {
+	  height: 50px;
+	  width: 90%;
+	  margin: 10px 0;
+	  font-size: 20px;
+	  padding: 0 5px;
+	}
+
+	.info input[type=submit] {
+	  border: 0 none;
+	  width: 100px;
+	  font-size: 15px;
+	  border-radius: 10px;
+	  background-color: #739f3d;
+	  color: white;
+	  cursor: pointer;
+	}
+
+	.info textarea {
+	  height: 180px;
+	  width: 90%;
+	  margin: 10px 0;
+	  padding: 10px 10px;
+	  font-size: 20px;
+	}
+
+	@media(max-width: 800px){
+		#contact-menu{
+			margin-bottom: 100px;
+		}
+
+		#container-contact{
+			height: 100%;
+		}
+		.input{
+			display: table;
+		}
+		.input .block{
+			display: table-row;
+			width: 100%;
+		}
+		#container-contact h1{
+			font-size: 34px;
+		}
+	}
  </style>
 </head>
 <body>
@@ -49,7 +150,6 @@ if($_POST["message"]) {
 </div>
 
 <article>
-	<div class = "content" id = "content-contact">
 		<div class = "bcg bcg-other" id = "bcg-contact">
 			<h1><span>Contact</span></h1>
 		</div>
@@ -62,7 +162,6 @@ if($_POST["message"]) {
 			<h1>Your Message Has Been Received<br>Thank You!</h1>
 			
 		</div>
-	</div>
 </article>
 <footer style = "height: 300px; width: 100%">
 	<h1>Connect</h1>
