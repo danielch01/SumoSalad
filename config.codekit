@@ -147,13 +147,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Food\/menubcg.jpg": {
+	"\/images\/Food\/menuBCG.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 572968,
-		"inputAbbreviatedPath": "\/images\/Food\/menubcg.jpg",
-		"outputAbbreviatedPath": "\/images\/Food\/menubcg.jpg",
+		"inputAbbreviatedPath": "\/images\/Food\/menuBCG.jpg",
+		"outputAbbreviatedPath": "\/images\/Food\/menuBCG.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
