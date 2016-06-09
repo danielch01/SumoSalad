@@ -71,8 +71,8 @@ body{
 			border-radius: 50%;
 		}
 		.otherLogo{
-			height: 100px;
-			width: 100px;
+			height: 80px;
+			width: 80px;
 			margin-top: 10px;
 			margin-left: 5vw;
 		}
@@ -104,14 +104,11 @@ body{
 
 // ----- Home -----------
 
+
 article{
 	top: 100%;
-}
-
-.content{
 	margin: 0 auto;
 	width: 100%;
-	//min-width: 800px;
 	height: 100%;
 	background-image: url('../images/Texture/wood_80.jpg');
 	background-attachment: fixed;
@@ -127,23 +124,6 @@ article{
 	background-color: $offwhite;
 	margin: 200px auto;
 	text-align: center;
-	.divide{
-		position: relative;
-		height: 100%;
-		width: 50%;
-		//clear: both;
-	}
-	.left{
-		float: left;
-		background:{
-			size: cover;
-			repeat: no-repeat;
-		}
-	}
-	.right{
-		overflow: auto;
-		float: right;
-	}
 }
 
 
@@ -154,43 +134,66 @@ article{
 .bcg-other{
 	height: 40vh;
 	overflow: auto;
-	//min-height: 200px;
 	h1{
+		$height: 8vmin;
 		position: relative;
 		background-color: white;
 		width: 60%;
 		max-width: 700px;
-		height: 10vh;
-		min-height: 50px;
-		max-height: 200px;
-		top: 80px;
+		height: $height;
+		top: 50%;
+		margin-top: -$height/2;
 		color: black;
-		padding: 0 5%;
 		float: left;
 		border-radius: 0 10px 10px 0px;
-		font-size: 5vh;
+		font-size: $height;
 		span{
+			text-align: right;
 			position: relative;
 			font-family: $ptsans;
 			float: right;
 			margin-right: 10%;
-			margin-top: 2vh;
+			font-size: 80%;
 		}
 	}
 }
 
 @media(max-width:800px){
-	.bcg-other h1{
-		height: 10vh;
-		span{
-			margin-top: 5%;
+	.bcg-other{
+		height: 300px;
+		h1{
+			top: 50%;
+			margin-top: -40px;
+			height: 80px;
+			font-size: 80px;
+			span{
+				padding-top: 10px;
+				height: 100%;
+				font-size: 50%;
+			}
+		}
+	}
+}
+
+@media(max-height:500px){
+	.bcg-other{
+		height: 200px;
+		h1{
+			top: 50%;
+			margin-top: -30px;
+			height: 60px;
+			font-size: 60px;
+			span{
+				padding-top: 10px;
+				height: 100%;
+				font-size: 50%;
+			}
 		}
 	}
 }
 
 .container-other{
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0 auto;
 }
 
 // ----- Menu items ---------
@@ -202,52 +205,6 @@ article{
 
 
 // ---- Contact --------
-
-
-.input{
-	margin: 0 auto;
-	height: 70%;
-	width: 90%;
-	.truckimg{
-		float: left;
-		width: 50%;
-		p{
-			font-size: 25px;
-			font-family: $ptsans;
-			padding: 10px 0;
-		}
-	}
-}
-
-
-.info{
-		float: right;
-		width: 50%;
-		height: 100%;
-		input{
-			height: 50px;
-			width: 90%;
-			margin: 10px 0;
-			font-size: 20px;
-			padding: 0 5px;
-			&[type = submit]{
-				border: 0 none;
-				width: 100px;
-				font-size: 15px;
-				border-radius: 10px;
-				background-color: $pearGreen;
-				color: white;
-				cursor: pointer;
-			}
-		}
-		textarea{
-			height: 180px;
-			width: 90%;
-			margin: 10px 0;
-			padding: 10px 10px;
-			font-size: 20px;
-		}
-	}
 
 
 // ---- About --------
@@ -296,10 +253,6 @@ footer{
 
 
 @media(max-width: 800px){
-	*{
-		padding: 0;
-		margin: 0;
-	}
 
 	// ---- Nav Panel ----
 
@@ -327,9 +280,9 @@ footer{
 				//margin: 0 auto;
 			}
 			.otherLogo{
-				height: 17vh;
-				width: 17vh;
-				margin-top: 10px;
+				height: 140px;
+				width: 140px;
+				margin-top: 30px;
 			}
 		}
 		ul{

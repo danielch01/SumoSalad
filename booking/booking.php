@@ -113,7 +113,6 @@ mysqli_query($link, $sql)
 </div>
 
 <article>
-	<div class = "content" id = "content-contact">
 		<div class = "bcg bcg-other" id = "bcg-contact">
 			<h1><span>Contact</span></h1>
 		</div>
@@ -131,7 +130,6 @@ mysqli_query($link, $sql)
 				</div>
 			</div>
 		</div>
-	</div>
 </article>
 <footer style = "height: 300px; width: 100%">
 	<h1>Connect</h1>
