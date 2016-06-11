@@ -8,7 +8,7 @@ if($_POST["message"]) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact Us</title><meta name="viewport" content="initial-scale=1.0">
+	<title>Contact Us</title><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><meta name="viewport" content="initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	 <style type="text/css">
@@ -171,6 +171,6 @@ if($_POST["message"]) {
 	<div id = "caption">
 		<figcaption>jeff@sumosaladtruck.com <hr width="20%" style= "margin: 0 auto"> Website by Daniel Choi</figcaption>
 	</div>
-</footer><script src="../js/main.js" type="text/javascript"></script>
+</footer>
 </body>
 </html>

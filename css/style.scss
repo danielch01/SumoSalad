@@ -59,9 +59,7 @@ body{
 .header{
 	background-color: white;
 	position: relative;
-	height: 100%;
 	width: 100%;
-	//z-index: 99;
 	#logo{
 		padding: 10px;
 		margin-left: 10px;
@@ -99,6 +97,11 @@ body{
 			}
 		}
 	}
+}
+
+.navFixed{
+	position: fixed;
+	z-index: 99;
 }
 
 
