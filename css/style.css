@@ -13,30 +13,30 @@ body {
   position: relative;
   width: 100%; }
   .header #logo {
-    padding: 10px;
-    margin-left: 10px; }
+    padding: .8em;
+    margin-left: 5%; }
     .header #logo #mainLogo {
-      height: 130px;
-      width: 221px;
+      height: 8em;
+      width: 14em;
       border-radius: 50%; }
     .header #logo .otherLogo {
-      height: 80px;
-      width: 80px;
-      margin-top: 10px;
-      margin-left: 5vw; }
+      height: 5em;
+      width: 5em;
+      margin-top: 1em;
+      margin-left: 5%; }
   .header ul {
     position: absolute;
-    width: 800px;
+    width: 50em;
     left: 50%;
-    margin-left: -400px;
+    margin-left: -25em;
     text-align: center;
     top: 60%; }
     .header ul li {
-      margin: 0 30px;
+      margin: 0 2em;
       display: inline-block; }
       .header ul li a {
         font-family: "PT Sans", sans-serif;
-        font-size: 18px;
+        font-size: 1.2em;
         text-decoration: none;
         color: #324851; }
         .header ul li a:hover {
@@ -55,12 +55,10 @@ article {
   background-attachment: fixed; }
 
 .container {
-  border-top: 10px solid #f69454;
-  border-bottom: 10px solid #f69454;
-  height: 800px;
+  border-top: 0.8em solid #f69454;
+  border-bottom: 0.8em solid #f69454;
   width: 90%;
   background-color: #fcfdfe;
-  margin: 200px auto;
   text-align: center; }
 
 .bcg-other {
@@ -70,14 +68,15 @@ article {
     position: relative;
     background-color: white;
     width: 60%;
-    max-width: 700px;
+    max-width: 15em;
     height: 8vmin;
     top: 50%;
     margin-top: -4vmin;
     color: black;
     float: left;
-    border-radius: 0 10px 10px 0px;
-    font-size: 8vmin; }
+    border-radius: 0 1em 1em 0px;
+    font-size: 8vmin;
+    padding: .2em 0; }
     .bcg-other h1 span {
       text-align: right;
       position: relative;
@@ -86,68 +85,67 @@ article {
       margin-right: 10%;
       font-size: 80%; }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .bcg-other {
-    height: 300px; }
+    height: 20em; }
     .bcg-other h1 {
       top: 50%;
-      margin-top: -40px;
-      height: 80px;
-      font-size: 80px; }
+      margin-top: -.6em;
+      font-size: 6em; }
       .bcg-other h1 span {
-        padding-top: 10px;
+        padding-top: 0;
         height: 100%;
         font-size: 50%; } }
-@media (max-height: 500px) {
+@media (max-height: 600px) {
   .bcg-other {
-    height: 200px; }
+    height: 18em; }
     .bcg-other h1 {
       top: 50%;
-      margin-top: -30px;
-      height: 60px;
-      font-size: 60px; }
+      margin-top: -.5em;
+      height: .8em;
+      font-size: 6em; }
       .bcg-other h1 span {
-        padding-top: 10px;
+        padding-top: 0;
         height: 100%;
         font-size: 50%; } }
 .container-other {
   margin: 0 auto; }
 
 footer {
-  border-top: 10px solid #ee693f;
-  border-bottom: 10px solid #ee693f;
+  border-top: 0.8em solid #ee693f;
+  border-bottom: 0.8em solid #ee693f;
   background-color: #739f3d;
   text-align: center; }
   footer h1 {
     color: white;
     font-family: "Oswald", sans-serif;
-    letter-spacing: 7px;
-    padding-top: 50px;
-    padding-bottom: 20px; }
+    letter-spacing: .3em;
+    padding-top: 2em;
+    padding-bottom: 1em; }
   footer .social {
     overflow: hidden;
-    height: 40px;
-    width: 40px;
+    height: 2.5em;
+    width: 2.5em;
     border-radius: 50%;
     display: inline-block;
     background-color: white;
     text-align: center;
     top: 50%;
-    margin: 20px; }
+    margin: 1.8em; }
     footer .social img {
       height: 80%;
       width: 80%;
       position: relative;
       top: 50%;
-      margin-top: -20px; }
+      margin-top: -2em; }
   footer figcaption {
-    margin-top: 50px;
-    font-size: 12px; }
+    margin-top: 2em;
+    font-size: .8em; }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .header {
     background-color: white;
-    height: 200px;
+    overflow: hidden;
     width: 100%; }
     .header #logo {
       position: relative;
@@ -158,14 +156,14 @@ footer {
       height: 100%;
       text-align: center; }
       .header #logo #mainLogo {
-        height: 130px;
-        width: 221px;
+        height: 8em;
+        width: 15em;
         border-radius: 50%;
-        margin-top: 10px; }
+        margin-top: 1.5em; }
       .header #logo .otherLogo {
-        height: 140px;
-        width: 140px;
-        margin-top: 30px; }
+        height: 9em;
+        width: 9em;
+        margin-top: 1.5em; }
     .header ul {
       position: relative;
       height: 100%;
@@ -177,31 +175,12 @@ footer {
       overflow: auto;
       float: right; }
       .header ul li {
-        margin: 20px auto;
+        margin: 1.4em auto;
         display: block; }
         .header ul li a {
           font-family: "PT Sans", sans-serif;
-          font-size: 18px;
+          font-size: 1.4em;
           text-decoration: none;
           color: #324851; }
           .header ul li a:hover {
-            color: #7da3a1; }
-
-  .container {
-    height: 1000px;
-    overflow: auto;
-    text-align: center; }
-    .container .divide {
-      position: relative;
-      width: 100%; }
-    .container .left {
-      float: none;
-      height: 50%;
-      width: 100%;
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .container .right {
-      width: 100%;
-      height: 70%;
-      overflow: auto;
-      float: none; } }
+            color: #7da3a1; } }

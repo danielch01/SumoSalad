@@ -151,7 +151,7 @@ mysqli_query($link, $sql)
     }
   }
 
-  @media (max-width: 800px) {
+  @media(max-width: 1000px) {
 /*    #bcg-booking {
       height: 300px;
     }

@@ -6,11 +6,6 @@
 // Date: May 18, 2016
 
 
-// Variables for dimensions
-$navHeight: 150px;
-$img-height: $navHeight - 20; // height and width of logo in nav bar
-$img-width: $img-height*1.7;
-$minWidth: 1000px;
 
 // Colors
 $bluePine: #324851;
@@ -61,34 +56,33 @@ body{
 	position: relative;
 	width: 100%;
 	#logo{
-		padding: 10px;
-		margin-left: 10px;
+		padding: .8em;
+		margin-left: 5%;
 		#mainLogo{
-			height: $img-height;
-			width: $img-width;
+			height: 8em;
+			width: 14em;
 			border-radius: 50%;
 		}
 		.otherLogo{
-			height: 80px;
-			width: 80px;
-			margin-top: 10px;
-			margin-left: 5vw;
+			height: 5em;
+			width: 5em;
+			margin-top: 1em;
+			margin-left: 5%;
 		}
 	}
 	ul{
 		position: absolute;
-		width: 800px;
+		width: 50em;
 		left: 50%;
-		margin-left: -400px;
+		margin-left: -25em;
 		text-align: center;
 		top: 60%;
-		//background-color: white;
 		li{
-			margin: 0 30px;
+			margin: 0 2em;
 			display: inline-block;
 			a{
 				font-family: $ptsans;
-				font-size: 18px;
+				font-size: 1.2em;
 				text-decoration: none;
 				color: $bluePine;
 				&:hover{
@@ -120,12 +114,10 @@ article{
 
 
 .container{
-	border-top: 10px solid $tangerine;
-	border-bottom: 10px solid $tangerine;
-	height: 800px;
+	border-top: .8em solid $tangerine;
+	border-bottom: .8em solid $tangerine;
 	width: 90%;
 	background-color: $offwhite;
-	margin: 200px auto;
 	text-align: center;
 }
 
@@ -142,14 +134,15 @@ article{
 		position: relative;
 		background-color: white;
 		width: 60%;
-		max-width: 700px;
+		max-width: 15em;
 		height: $height;
 		top: 50%;
 		margin-top: -$height/2;
 		color: black;
 		float: left;
-		border-radius: 0 10px 10px 0px;
+		border-radius: 0 1em 1em 0px;
 		font-size: $height;
+		padding: .2em 0;
 		span{
 			text-align: right;
 			position: relative;
@@ -161,16 +154,16 @@ article{
 	}
 }
 
-@media(max-width:800px){
+@media(max-width: 1000px){
 	.bcg-other{
-		height: 300px;
+		height: 20em;
 		h1{
 			top: 50%;
-			margin-top: -40px;
-			height: 80px;
-			font-size: 80px;
+			margin-top: -.6em;
+			//height: 4em;
+			font-size: 6em;
 			span{
-				padding-top: 10px;
+				padding-top: 0;
 				height: 100%;
 				font-size: 50%;
 			}
@@ -178,16 +171,16 @@ article{
 	}
 }
 
-@media(max-height:500px){
+@media(max-height:600px){
 	.bcg-other{
-		height: 200px;
+		height: 18em;
 		h1{
 			top: 50%;
-			margin-top: -30px;
-			height: 60px;
-			font-size: 60px;
+			margin-top: -.5em;
+			height: .8em;
+			font-size: 6em;
 			span{
-				padding-top: 10px;
+				padding-top: 0;
 				height: 100%;
 				font-size: 50%;
 			}
@@ -218,52 +211,53 @@ article{
 
 
 footer{
-	border-top: 10px solid $carrot;
-	border-bottom: 10px solid $carrot;
+	border-top: .8em solid $carrot;
+	border-bottom: .8em solid $carrot;
 	background-color: $pearGreen;
 	text-align: center;
 	h1{
 		color: white;
 		font-family: $oswald;
-		letter-spacing: 7px;
-		padding-top: 50px;
-		padding-bottom: 20px;
+		letter-spacing: .3em;
+		padding-top: 2em;
+		padding-bottom: 1em;
 	}
 	.social{
 		overflow: hidden;
-		height: 40px;
-		width: 40px;
+		height: 2.5em;
+		width: 2.5em;
 		//border: 1px solid black;
 		border-radius: 50%;
 		display: inline-block;
 		background-color: white;
 		text-align: center;
 		top: 50%;
-		margin: 20px;
+		margin: 1.8em;
 		img{
 			height: 80%;
 			width: 80%;
 			position: relative;
 			top: 50%;
-			margin-top: -20px;
+			margin-top: -2em;
 		}
 	}
 	figcaption{
-		margin-top: 50px;
-		font-size: 12px;
+		margin-top: 2em;
+		font-size: .8em;
 	}
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 1000px){
 
 	// ---- Nav Panel ----
+
 
 	.header{
 		background-color: white;
 		//position: relative;
 		//height: $img-height + 20;
-		height: 200px;
+		overflow: hidden;
 		//overflow: auto;
 		width: 100%;
 		//z-index: 99;
@@ -276,16 +270,17 @@ footer{
 			height: 100%;
 			text-align: center;
 			#mainLogo{
-				height: $img-height;
-				width: $img-width;
+				height: 8em;
+				width: 15em;
 				border-radius: 50%;
-				margin-top: 10px;
+				margin-top: 1.5em;
 				//margin: 0 auto;
 			}
 			.otherLogo{
-				height: 140px;
-				width: 140px;
-				margin-top: 30px;
+				$size: 9em;
+				height: $size;
+				width: $size;
+				margin-top: 1.5em;
 			}
 		}
 		ul{
@@ -301,12 +296,12 @@ footer{
 			float: right;
 			//background-color: white;
 			li{
-				margin: 20px auto;
+				margin: 1.4em auto;
 				display: block;
 				//background-color: white;
 				a{
 					font-family: $ptsans;
-					font-size: 18px;
+					font-size: 1.4em;
 					text-decoration: none;
 					color: $bluePine;
 					&:hover{
@@ -314,38 +309,6 @@ footer{
 					}
 				}
 			}
-		}
-	}
-
-	// ----- Home ------
-	.container{
-		//border-top: 10px solid $tangerine;
-		//border-bottom: 10px solid $tangerine;
-		height: 1000px;
-		overflow: auto;
-		//width: 90%;
-		//background-color: $offwhite;
-		//margin: 200px auto;
-		text-align: center;
-		.divide{
-			position: relative;
-			width: 100%;
-			//clear: both;
-		}
-		.left{
-			float: none;
-			height: 50%;
-			width: 100%;
-			background:{
-				size: cover;
-				repeat: no-repeat;
-			}
-		}
-		.right{
-			width: 100%;
-			height: 70%;
-			overflow: auto;
-			float: none;
 		}
 	}
 }

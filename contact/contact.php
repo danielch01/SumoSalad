@@ -114,7 +114,7 @@ if($_POST["message"]) {
 	  font-size: 20px;
 	}
 
-	@media(max-width: 800px){
+	@media(max-width: 1000px){
 		#contact-menu{
 			margin-bottom: 100px;
 		}
