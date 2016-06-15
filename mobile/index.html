@@ -30,56 +30,66 @@
 
 	  /* ------ NAV PANEL -------- */
 
-	.header {
-	  background-color: white;
-	  overflow: hidden;
-	  width: 100%;
-	}
+    .header {
+    	position: relative;
+	    background-color: white;
+	    overflow: hidden;
+	    width: 100%;
+	    height: 15em;
+	  }
+	  
+	  .header #logo {
+	    position: relative;
+	    padding: 0;
+	    margin-left: 0;
+	    float: left;
+	    width: 50%;
+	    height: 100%;
+	    text-align: center;
+	    bottom: 0;
+	  }
+	  
+	  .header #logo #mainLogo {
+	    height: 8em;
+	    width: 15em;
+	    border-radius: 50%;
+	    margin-top: 1.5em;
+	  }
+	  
 
-	.header #logo {
-	  position: relative;
-	  padding: 0;
-	  margin-left: 0;
-	  float: left;
-	  width: 50%;
-	  height: 100%;
-	  text-align: center;
-	}
+	  .header #menu{
+	  	position: relative;
+	  	width: 50%;
+	  	float: right;
+	  }
+	  .header ul {
+	    position: relative;
+	    height: 100%;
+	    width: 100%;
+	    left: 0;
+	    margin-left: 0;
+	    text-align: center;
+	    top: 0;
+	    overflow: auto;
+	    float: right;
+	  }
+	  
+	  .header ul li {
+	    margin: 1.4em auto;
+	    display: block;
+	  }
+	  
+	  .header ul li a {
+	    font-family: "PT Sans", sans-serif;
+	    font-size: 1.4em;
+	    text-decoration: none;
+	    color: #324851;
+	  }
+	  
+	  .header ul li a:hover {
+	    color: #7da3a1;
+	  }
 
-	.header #logo #mainLogo {
-	  height: 8em;
-	  width: 15em;
-	  border-radius: 50%;
-	  margin-top: 1.5em;
-	}
-
-	.header ul {
-	  position: relative;
-	  height: 100%;
-	  width: 50%;
-	  left: 0;
-	  margin-left: 0;
-	  text-align: center;
-	  top: 0;
-	  overflow: auto;
-	  float: right;
-	}
-
-	.header ul li {
-	  margin: 1.4em auto;
-	  display: block;
-	}
-
-	.header ul li a {
-	  font-family: "PT Sans", sans-serif;
-	  font-size: 1.4em;
-	  text-decoration: none;
-	  color: #324851;
-	}
-
-	.header ul li a:hover {
-	  color: #7da3a1;
-	}
 
 	/* ------ TOP BACKGROUND -------- */
 
@@ -314,6 +324,7 @@
 		padding: 1em 2em;
 		border: .3em solid;
 		margin: 2em auto;
+		width: 90%;
 	}
 
 	.option table td{
@@ -361,7 +372,7 @@
 
 	.menu-pics img{
 		position: relative;
-		width: 50%;
+		width: 100%;
 		cursor: pointer;
 		height: auto;
 		transition: all 0.7s ease-in-out;
@@ -425,15 +436,16 @@
 
 <div class = "header">
 	<div class = 'navHalf' id = "logo">
- 			<a href = "index.html#logoLink"><img id = "mainLogo" src="../images/Logo/vertical_logo.jpg"><a>
-		</div>
-	<a href = "#" class = "menu-button"></a>
-	<ul class = 'navHalf' id = "menu">
-		<li><a href="calendar/index.html">Schedule</a></li>
-		<li><a href="menu/index.html">Menu</a></li>
-		<li><a href="about/index.html">About</a></li>
-		<li><a href="contact/index.html">Contact</a></li>
-	</ul>
+ 		<a href = "index.html#logoLink"><img id = "mainLogo" src="../images/Logo/vertical_logo.jpg" style = "bottom: 0; width: 100%; height: auto; max-height: 15em; max-width: 30em"><a>
+	</div>
+	<div class = 'navHalf' id = "menu">
+		<ul>
+			<li><a href="../calendar/index.html">Schedule</a></li>
+			<li><a href="../menu/index.html">Menu</a></li>
+			<li><a href="../about/index.html">About</a></li>
+			<li><a href="../contact/index.html">Contact</a></li>
+		</ul>
+	</div>
 </div>
 
 <article>
@@ -589,10 +601,11 @@
 	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="../images/Social_Media/fb1.jpg"></a></div>
 	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="../images/Social_Media/instagram.jpg"></a></div>
 	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="../images/Social_Media/twit.png" style = "background-color: white"></a></div>
-	<p><img src="../images/Social_Media/snapchat.jpg" style = "width: 50px; height: 50px; border-radius: 10px"><br><strong style = "color: white">@sumosaladtruck</span></p>
+	<p><img src="../images/Social_Media/snapchat.jpg" style = "width: 50px; height: 50px; border-radius: 10px"><br><span style = "color: white">@sumosaladtruck</span></p>
 	<div id = "caption">
-		<div class = "slideMenu"><p>jeff@sumosaladtruck.com <hr width="20%" style= "margin: 0 auto"> Website by Daniel Choi</p></div>
-	</div>
+	<div class = "slideMenu"><p>jeff@sumosaladtruck.com <hr width="20%" style= "margin: 0 auto"> Website by Daniel Choi</p></div>
+
+	</div><a href="../index.html">Go to Full Site</a></div>>
 </footer>
 
 </body>
