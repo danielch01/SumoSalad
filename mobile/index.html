@@ -387,7 +387,11 @@
 		transition: all 0.7s ease-in-out;
 	}
 
-	.menu-pics img:hover, .menu-pics img:active{
+	.menu-pics img:hover{
+		transform: translateX(100%);
+	}
+
+	.info-slide{
 		transform: translateX(100%);
 	}
 
@@ -582,6 +586,14 @@
 
 	</div><a href="../index.html">Go to Full Site</a></div>
 </footer>
+
+<script type="text/javascript">
+	var el = document.getElementsByTagName('figure')[0];
+	el.onclick = function(){
+		el.onhover.call(el);
+	}
+
+</script>
 
 </body>
 </html>
