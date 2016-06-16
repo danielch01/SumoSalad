@@ -387,13 +387,10 @@
 		transition: all 0.7s ease-in-out;
 	}
 
-	.menu-pics img:hover, .menu-pics img:active{
+/*	.menu-pics img:hover, .menu-pics img:active{
 		transform: translateX(100%);
 	}
-
-	.info-slide{
-		transform: translateX(100%);
-	}
+*/
 
 	.menu-pics figure .slideMenu{
 		margin: 0 auto;
@@ -533,33 +530,33 @@
 				</div>
 				<div class = "menu-pics" style = "margin-bottom: 3em">
 					<div class = "row img-row">
-						<figure class = "cols four" >
+						<figure class = "cols four" onclick = "slideInfo('food1')">
 							<div class = "slideMenu"><p><span>Asian<br/>Greens</span></p></div>
-							<img src="../images/Food/food1.jpg">
+							<img src="../images/Food/food1.jpg" id = "food1">
 						</figure>
-						<figure class = "cols four" >
+						<figure class = "cols four" onclick = "slideInfo('food2')">
 							<div class = "slideMenu"><p><span style = "color: #ee693f">Balsamic<br/> Beetroot</span></p></div>
-							<img src="../images/Food/food2.jpg">
+							<img src="../images/Food/food2.jpg" id = "food2">
 						</figure>
 					</div>
 					<div class = "row img-row">
-						<figure class = "cols four" >
+						<figure class = "cols four" onclick = "slideInfo('food3')">
 							<div class = "slideMenu"><p><span>Basil Chicken<br/> Penne</span></p></div>
-							<img src="../images/Food/food3.jpg">
+							<img src="../images/Food/food3.jpg" id = "food3">
 						</figure>
-						<figure class = "cols four" >
+						<figure class = "cols four" onclick = "slideInfo('food4')">
 							<div class = "slideMenu"><p><span style = "color: #ee693f">Chipotle<br/> Pulled Pork</span></p></div>
-							<img src="../images/Food/food4.jpg">
+							<img src="../images/Food/food4.jpg" id = "food4">
 						</figure>
 					</div>
 					<div class = "row img-row">
-						<figure class = "cols four" >
+						<figure class = "cols four" onclick = "slideInfo('food5')">
 							<div class = "slideMenu"><p><span>Sweet<br/> Hawaiian<br/> Chicken</span></p></div>
-							<img src="../images/Food/food5.jpg">
+							<img src="../images/Food/food5.jpg" id = "food5">
 						</figure>
-						<figure class = "cols four" >
+						<figure class = "cols four" onclick = "slideInfo('food6')">
 							<div class = "slideMenu"><p><span style = "color: #ee693f">Thai<br/> Chicken Noodle</span></p></div>
-							<img src="../images/Food/food6.jpg">
+							<img src="../images/Food/food6.jpg" id = "food6">
 						</figure>
 					</div>
 				</div>
@@ -590,9 +587,16 @@
 </footer>
 
 <script type="text/javascript">
-	var el = document.getElementsByTagName('figure')[0];
-	el.onclick = function(){
-		el.onhover.call(el);
+
+	function slideInfo(itemName) {
+	    var elem  = document.getElementById(itemName);
+	    if(elem.hasAttribute('background-color')){
+	    	elem.removeAttribute('background-color');
+	    	elem.style.transform = "translateX(0%)";
+	    } else{
+	    	elem.setAttribute('background-color', 'white');
+	    	elem.style.transform = "translateX(100%)";
+	    }
 	}
 
 </script>
