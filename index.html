@@ -59,7 +59,7 @@
 	  padding: 1% 5%;
 	}
 	
-	.bcg #caption {
+	.bcg #captionLabel {
 	  padding: 0.5% 5%;
 	  top: 30%;
 	  font-size: 20%;
@@ -186,7 +186,7 @@
 		  padding: 1% 5%;
 		}
 		
-		.bcg #caption {
+		.bcg #captionLabel {
 		  padding: 0.5% 5%;
 		  top: 30%;
 		  font-size: 50%;
@@ -300,11 +300,9 @@
 <body>
 
 <div class = "header">
-	<div class = 'navHalf' id = "logo">
- 			<a href = "index.html#logoLink"><img id = "mainLogo" src="images/Logo/vertical_logo.jpg"><a>
-		</div>
-	<a href = "#" class = "menu-button"></a>
-	<ul class = 'navHalf' id = "menu">
+	<div class = 'navHalf' id = "logo"><a href = "index.html#logoLink"><img id = "mainLogo" alt = "Sumo Salad" src="images/Logo/vertical_logo.jpg"></a></div>
+	<a href = "" class = "menu-button"></a>
+	<ul class = 'navHalf' id = "list">
 		<li><a href="calendar/index.html">Schedule</a></li>
 		<li><a href="menu/index.html">Menu</a></li>
 		<li><a href="about/index.html">About</a></li>
@@ -315,7 +313,7 @@
 <article>
 		<div class = "bcg">
 			<div class = "bcg_label" id = "label">@sumosaladtruck</div>
-			<div class = "bcg_label" id = "caption">Food With Purpose</div>
+			<div class = "bcg_label" id = "captionLabel">Food With Purpose</div>
 		</div>
 
 		<div class = "container" id = "follow">
@@ -363,7 +361,7 @@
 				<div class = "msg" id = "our-menu">
 					<hr>
 					<h1>Our Food</h1>
-					<img src="images/Logo/freeRange.jpg" style = "margin-bottom: 40px">
+					<img src="images/Logo/freeRange.jpg" alt = "Free Range" style = "margin-bottom: 40px">
 					<p>Sed vel ultrices odio, sit amet facilisis magna. Nunc lacinia cursus tristique. Phasellus semper sed ligula et luctus. Donec euismod eget odio a placerat. Fusce ultrices, massa pretium feugiat suscipit, nunc dui semper ligula, eget dignissim sem eros vel urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut vel tellus ut lorem tempus condimentum nec nec ipsum. Ut mattis bibendum malesuada. </p>
 					<br/>
 					<hr>
@@ -374,12 +372,13 @@
 </article>
 <footer style = "height: 20%; width: 100%">
 	<h1>Connect</h1>
-	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="images/Social_Media/fb1.jpg"></a></div>
-	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="images/Social_Media/instagram.jpg"></a></div>
-	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="images/Social_Media/twit.png" style = "background-color: white"></a></div>
-	<p><img src="images/Social_Media/snapchat.jpg" style = "width: 50px; height: 50px; border-radius: 10px"><br><strong style = "color: white">@sumosaladtruck</strong></p>
+	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="images/Social_Media/fb1.jpg" alt = "FB"></a></div>
+	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="images/Social_Media/instagram.jpg" alt = "IG"></a></div>
+	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="images/Social_Media/twit.png" style = "background-color: white" alt = "TW"></a></div>
+	<p><img src="images/Social_Media/snapchat.jpg"  alt = "SC" style = "width: 50px; height: 50px; border-radius: 10px"><br><strong style = "color: white">@sumosaladtruck</strong></p>
+	<br/>
 	<div id = "caption">
-		<figcaption>jeff@sumosaladtruck.com <hr width="20%" style= "margin: 0 auto"> Website by Daniel Choi</figcaption>
+		<p>jeff@sumosaladtruck.com <hr style= "width: 20%; margin: 0.2em auto"> Website by Daniel Choi</p>
 	</div>
 </footer>
 
@@ -398,7 +397,7 @@
 	  };
 	})();
 
-	if($(window).width() > 800){
+	if($(window).width() > 1000){
 		
 		$(window).scroll(function(){
 			var wScroll = $(this).scrollTop();
@@ -413,7 +412,7 @@
 	} else {
 		$(window).resize(function(){
 			waitForFinalEvent(function(){
-				if($(window).width() > 800){
+				if($(window).width() > 1000){
 					
 					$(window).scroll(function(){
 						var wScroll = $(this).scrollTop();
