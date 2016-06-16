@@ -217,7 +217,7 @@ mysqli_query($link, $sql)
   <div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
   <p><img src="../images/Social_Media/snapchat.jpg" style = "width: 50px; height: 50px; border-radius: 10px" alt = "SC"><br><strong style = "color: white">@sumosaladtruck</strong></p>
   <div id = "caption">
-    <p>jeff@sumosaladtruck.com <hr style= "width: 20%; margin: 0 auto"> Website by Daniel Choi</p>
+    <p>jeff@sumosaladtruck.com</p> <hr style= "width: 20%; margin: 0 auto"> <p>Website by Daniel Choi</p>
   </div>
 </footer>
 </body>
