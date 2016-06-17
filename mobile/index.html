@@ -434,7 +434,6 @@
 			<div class = "bcg_label" id = "label">@sumosaladtruck</div>
 			<div class = "bcg_label" id = "caption">Food With Purpose</div>
 		</div>
-
 		<div class = "container" id = "follow">
 			<div class = "msg">
 				<hr>
@@ -463,37 +462,40 @@
 			</div>
 		</div>
 		<div class = "container" id = "menu">
+
 			<div class = "msg">
 				<hr>
 				<h1>Our Food</h1>
 				<hr>
 			</div>
+
 			<h1 id="start">START HERE<br><span class = "orange">CHOOOSE AN OPTION</span></h1>
 			<div class="option" id="option1">
-			<h2>OPTION #1</h2>
-			<h1 class = "orange">Deli Salads</h1>
-			<table>
-				<tr>
-					<td>PESTO CHICKEN</td>
-					<td>ASIAN GREENS</td>
-				</tr>
-				<tr>
-					<td>TACO QUINOA SALAD</td>
-					<td>BALSAMIC BEETROOT</td>
-				</tr>
-				<tr>
-					<td>BASIL CHICKEN PENNE</td>
-					<td>THAI CHICKEN NOODLE</td>
-				</tr>
-			</table>
-			<div id = "regOrLrg">
-				<div class = "panel" id = "regular">
-					<h3>REGULAR</h3>
-					<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
-				</div>
-				<div class = "panel" id = "large">
-					<h3>LARGE</h3>
-					<p>CHOOSE UP TO ANY 3<br> SUMO DELI SALADS</p>
+				<h2>OPTION #1</h2>
+				<h1 class = "orange">Deli Salads</h1>
+				<table>
+					<tr>
+						<td>PESTO CHICKEN</td>
+						<td>ASIAN GREENS</td>
+					</tr>
+					<tr>
+						<td>TACO QUINOA SALAD</td>
+						<td>BALSAMIC BEETROOT</td>
+					</tr>
+					<tr>
+						<td>BASIL CHICKEN PENNE</td>
+						<td>THAI CHICKEN NOODLE</td>
+					</tr>
+				</table>
+				<div id = "regOrLrg">
+					<div class = "panel" id = "regular">
+						<h3>REGULAR</h3>
+						<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
+					</div>
+					<div class = "panel" id = "large">
+						<h3>LARGE</h3>
+						<p>CHOOSE UP TO ANY 3<br> SUMO DELI SALADS</p>
+					</div>
 				</div>
 			</div>
 			<div class = "option" id = "option2">
@@ -547,7 +549,7 @@
 				</div>
 				<div class = "row img-row">
 					<figure class = "cols four" id = "food3">
-						<div class = "slideMenu"><p><span>Basil Chicken<br/> Penne</span></p></div>
+						<div class = "slideMenu"><p><span>Basil<br/>Chicken<br/>Penne</span></p></div>
 						<img src="../images/Food/food3.jpg" id = "img3">
 					</figure>
 					<figure class = "cols four" id = "food4">
@@ -600,12 +602,12 @@
 			picSlide.css({
 				'transform' : 'translateX(0%)'
 			});
-			figSlide.removeClass('img-slide');
+			picSlide.removeClass('img-slide');
 		} else{
 			picSlide.css({
 				'transform' : 'translateX(100%)'
 			})
-			figSlide.addClass('img-slide');
+			picSlide.addClass('img-slide');
 		}
 	});
 
