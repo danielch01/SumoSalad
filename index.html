@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang = 'en'>
 <head>
+	<meta charset="utf-8">
+	<meta name="description" content=""> 
+	<!-- ^^^ Fill this description up after consulting Jeff -->
+	<meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow">
+	<meta name = "keywords" content="Sumo, Salad, Food, Truck, sumosalad, asian green, pesto chicken, taco quinoa salad, balsamic beetroot, basil chicken penne, thai chicken noodle, sweet hawaiian chicken, chipotle pulled pork, jones pure cane soda">
+
 	<script type="text/javascript">
 	  <!--
 	  if (screen.width <= 800) {
@@ -8,9 +16,11 @@
 	  }
 	  //-->
 	</script>
-	<title>Sumo Salad Project</title>
+
+
+	<title>Sumo Salad Food Truck</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<meta name="viewport" content="initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src = "js/instafeed.min.js"></script>
 	<script type="text/javascript">
@@ -22,57 +32,51 @@
 		});
 		feed.run();
 	</script>
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
 	<style type="text/css">
 
 	/* ------ DONT MESS WITH THESE -------- */
 
-	.bcg {
-	  height: 72vw;
-	  width: 100vw;
-	  max-height: 4em;
-	  background-image: url("../images/Truck/truck1.jpg");
-	  background-size: cover;
-	  background-repeat: no-repeat;
-	  background-position: center;
-	  font-size: 10vw;
+	.bcg #Message-Container{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
 	}
-	
-	.bcg .bcg_label {
+
+	.bcg .bcg_label{
 	  position: relative;
 	  height: auto;
 	  max-width: 12em;
 	  background-color: white;
 	  float: right;
 	  clear: both;
-	  border-radius: 10px 0 0 10px;
+	  border-radius: 15px 0 0 15px;
 	  font-family: "PT Sans", sans-serif;
 	  letter-spacing: 5px;
+	  padding: .5% 2%;
+	}
+
+	.bcg #label{
+		top: 50%;
+		font-size: 40%;
+		width: 80%;
+		margin-top: -2em;
+	}
+
+	.bcg #captionLabel{
+		top: 50%;
+		font-size: 25%;
+		width: 60%;
+		margin-top: -3em;
 
 	}
-	
-	.bcg #label {
-	  top: 20%;
-	  font-size: 30%;
-	  font-weight: 100;
-	  text-align: center;
-	  padding: 1% 5%;
-	}
-	
-	.bcg #captionLabel {
-	  padding: 0.5% 5%;
-	  top: 30%;
-	  font-size: 20%;
-	  max-width: 600px;
-	  float: right;
-	  text-align: center;
-	}
+
 
 	/* ------ NOW YOU CAN MESS WITH THESE -------- */
 
 	#story-left {
 /*		height: 800px;*/
-	  background-image: url("../images/Truck/future.jpg");
+	  background-image: url("../images/Truck/ourStory.jpg");
 	}
 
 	#menu-right {
@@ -96,7 +100,7 @@
 	.msg p {
 	  line-height: 1.7em;
 	  font-family: "PT Sans", sans-serif;
-	  font-size: 2vmin;
+	  font-size: 1.3em;
 	}
 
 	#social{
@@ -120,6 +124,22 @@
 	}
 
 	@media(max-width: 10000px){
+		.bcg{
+			background-color: black;
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			font-size: 10vw;
+			max-height: 600px;
+		}
+
+		.bcg #Video video{
+			width: 110%;
+			height: auto;
+			z-index: -1;
+			margin-top: -8%;
+		}
+
 		.container{
 			overflow: auto;
 			display: table;
@@ -151,48 +171,22 @@
 		}
 	}
 
+	@media(max-width: 1200px){
+		.bcg{
+			background-color: black;
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			font-size: 10vw;	}
+
+		.bcg #Video video{
+			width: 100%;
+			z-index: -1;
+			margin-top: 0;
+		}
+	}
+
 	@media(max-width: 1000px){
-
-
-		.bcg {
-		  height: 72vw;
-		  width: 100vw;
-		  max-height: 12em;
-		  background-image: url("../images/Truck/truck1.jpg");
-		  background-size: cover;
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  font-size: 10vw;
-		}
-		
-		.bcg .bcg_label {
-		  position: relative;
-		  height: auto;
-		  max-width: 12em;
-		  background-color: white;
-		  float: right;
-		  clear: both;
-		  border-radius: 10px 0 0 10px;
-		  font-family: "PT Sans", sans-serif;
-		  letter-spacing: 5px;
-
-		}
-		
-		.bcg #label {
-		  top: 20%;
-		  font-size: 70%;
-		  font-weight: 100;
-		  text-align: center;
-		  padding: 1% 5%;
-		}
-		
-		.bcg #captionLabel {
-		  padding: 0.5% 5%;
-		  top: 30%;
-		  font-size: 50%;
-		  float: right;
-		  text-align: center;
-		}
 
 		.container{
 			position: relative;
@@ -311,9 +305,19 @@
 </div>
 
 <article>
+
+		<!-- EDIT THIS PART BEFORE TOMORROW NIGHT!!!! -->
 		<div class = "bcg">
-			<div class = "bcg_label" id = "label">@sumosaladtruck</div>
-			<div class = "bcg_label" id = "captionLabel">Food With Purpose</div>
+			<div id = "Video">
+				<video preload="preload" muted = "muted" autoplay="autoplay" loop = "loop">
+					<source src="images/Truck/SumoSalad.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div id = "Message-Container">
+				<div class = "bcg_label" id = "label">@sumosaladtruck</div>
+				<br>
+				<div class = "bcg_label" id = "captionLabel">Food With Purpose</div>
+			</div>
 		</div>
 
 		<div class = "container" id = "follow">
@@ -350,7 +354,7 @@
 				<div class = "msg" id = "our-story">
 					<hr>
 					<h1>Our Story</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus quam vel bibendum sagittis. Quisque quis nulla et odio cursus fringilla id in metus. Aliquam urna est, condimentum sed orci at, tincidunt imperdiet nunc. Nam eget sodales odio. Donec ac massa eu ipsum cursus finibus ac porta sem. Donec vitae lectus tortor. Nam pharetra bibendum lectus at euismod. Curabitur consectetur ante ac lectus dictum, non tincidunt elit porta. Sed vel posuere purus, vel tincidunt nisl. Fusce viverra sed tellus nec facilisis. Quisque a rhoncus felis. Morbi accumsan mollis gravida.</p>
+					<p>SumoSaladTruck was born in the kitchen of SumoSaladUSA with the help of Maty Yuriditsky, Scot Rogers, and Sam Moore. We are dedicated to serving up only the very best and the latest in food trends and nutritional needs. From Asian greens that tastes and feels healthy and fresh, to pulled pork that kicks your taste buds into overdrive, our food is guaranteed to have you coming back for more.</p>
 					<br/>
 					<hr>
 				</div>
@@ -361,8 +365,8 @@
 				<div class = "msg" id = "our-menu">
 					<hr>
 					<h1>Our Food</h1>
-					<img src="images/Logo/freeRange.jpg" alt = "Free Range" style = "margin-bottom: 40px">
-					<p>Sed vel ultrices odio, sit amet facilisis magna. Nunc lacinia cursus tristique. Phasellus semper sed ligula et luctus. Donec euismod eget odio a placerat. Fusce ultrices, massa pretium feugiat suscipit, nunc dui semper ligula, eget dignissim sem eros vel urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut vel tellus ut lorem tempus condimentum nec nec ipsum. Ut mattis bibendum malesuada. </p>
+					<img src="images/Logo/freeRange.jpg" alt = "Free Range" style = "margin-bottom: 2em">
+					<p>We take pride in knowing that we take every effort to source produce all our ingredients locally and ethically, and we use fully compostable packaging that leaves nothing behind but contributes to the well-being of our delicate planet. While healthy, wholesome eating is important, it shouldn’t feel like a chore and that is what we have set out to do with our food, so we carefully craft our menus for maximum choice and taste. Our food is sure to leave you feeling healthy and refreshed, both in your body and your mind.</p>
 					<br/>
 					<hr>
 				</div>
@@ -374,11 +378,10 @@
 	<h1>Connect</h1>
 	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="images/Social_Media/fb1.jpg" alt = "FB"></a></div>
 	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="images/Social_Media/instagram.jpg" alt = "IG"></a></div>
-	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="images/Social_Media/twit.png" style = "background-color: white" alt = "TW"></a></div>
-	<p><img src="images/Social_Media/snapchat.jpg"  alt = "SC" style = "width: 50px; height: 50px; border-radius: 10px"><br><strong style = "color: white">@sumosaladtruck</strong></p>
-	<br/>
+	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
+	<div class = 'social' id = "snap"><img src="images/Social_Media/snapchat.jpg" alt = "SC"></div>
 	<div id = "caption">
-		<p>jeff@sumosaladtruck.com <hr style= "width: 20%; margin: 0.2em auto"> Website by Daniel Choi</p>
+		<p>jeff@sumosaladtruck.com</p> <hr style= "width: 20%; margin: 0 auto"> <p>Website by Daniel Choi</p>
 	</div>
 </footer>
 

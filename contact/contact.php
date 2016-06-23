@@ -1,21 +1,33 @@
 <?php
 if($_POST["message"]) {
 	$fromEmail = "From: " . $_POST['email'];
-    mail("dhrchoi@gmail.com", $_POST["subject"], $_POST["message"], $fromEmail);
+    mail("jeff@sumosaladtruck.com", $_POST["subject"], $_POST["message"], $fromEmail);
 }
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact Us</title><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><meta name="viewport" content="initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<meta charset="utf-8">
+	<meta name="description" content=""> 
+	<!-- ^^^ Fill this description up after consulting Jeff -->
+	<meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow">
+	<meta name = "keywords" content="Sumo, Salad, Food, Truck, sumosalad, asian green, pesto chicken, taco quinoa salad, balsamic beetroot, basil chicken penne, thai chicken noodle, sweet hawaiian chicken, chipotle pulled pork, jones pure cane soda">
+	<title>Contact Us</title><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
 	 <style type="text/css">
  	#bcg-contact {
 	  background-color: white;
 	  background-image: url("../images/Truck/forest.jpg");
 	  background-size: cover;
+	}
+
+	#container-contact{
+		height: 100%;
+		overflow: hidden;
 	}
 
 	#contact-menu {
@@ -53,86 +65,27 @@ if($_POST["message"]) {
 	  background-color: #7da3a1;
 	}
 
-	#container-contact{
-		font-family: "PT Sans", sans-serif;
-	}
-
 	#container-contact h1{
-		font-size: 5vw;
-		margin: 50px 0;
-	}
-
-	.input {
-	  margin: 0 auto;
-	  height: 70%;
-	  width: 90%;
-	}
-
-	.input .truckimg {
-	  float: left;
-	  width: 50%;
-	}
-
-	.input .truckimg img{
-		width: 100%;
-	}
-
-	.input .truckimg p {
-	  font-size: 25px;
-	  padding: 10px 0;
-	}
-
-	.info {
-	  float: right;
-	  width: 50%;
-	  height: 100%;
-	}
-
-	.info input {
-	  height: 50px;
-	  width: 90%;
-	  margin: 10px 0;
-	  font-size: 20px;
-	  padding: 0 5px;
-	}
-
-	.info input[type=submit] {
-	  border: 0 none;
-	  width: 100px;
-	  font-size: 15px;
-	  border-radius: 10px;
-	  background-color: #739f3d;
-	  color: white;
-	  cursor: pointer;
-	}
-
-	.info textarea {
-	  height: 180px;
-	  width: 90%;
-	  margin: 10px 0;
-	  padding: 10px 10px;
-	  font-size: 20px;
+		font-size: 2em;
+		letter-spacing: .1em;
+		line-height: 3em;
+		margin-top: 10%;
+		font-family: "Sigmar One", cursive;
+		font-weight: bold;
 	}
 
 	@media(max-width: 1000px){
-		#contact-menu{
-			margin-bottom: 100px;
+		#container-contact h1{
+			margin: 2em 2em;
 		}
 
-		#container-contact{
-			height: 100%;
-		}
-		.input{
-			display: table;
-		}
-		.input .block{
-			display: table-row;
-			width: 100%;
-		}
-		#container-contact h1{
-			font-size: 34px;
+		#container-contact img{
+			width: 80%;
+			height: auto;
 		}
 	}
+
+
  </style>
 </head>
 <body>
@@ -160,7 +113,7 @@ if($_POST["message"]) {
 			</div>
 			<div id = "contactToHere"></div>
 			<h1>Your Message Has Been Received<br>Thank You!</h1>
-			
+			<img src="../images/Logo/vectorTruck.jpg">
 		</div>
 </article>
 <footer style = "height: 20%; width: 100%">
@@ -168,7 +121,7 @@ if($_POST["message"]) {
 	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
 	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
 	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
-	<p><img src="../images/Social_Media/snapchat.jpg" style = "width: 50px; height: 50px; border-radius: 10px" alt = "SC"><br><strong style = "color: white">@sumosaladtruck</strong></p>
+	<div class = 'social'><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
 	<div id = "caption">
 		<p>jeff@sumosaladtruck.com</p> <hr style= "width: 20%; margin: 0 auto"> <p>Website by Daniel Choi</p>
 	</div>

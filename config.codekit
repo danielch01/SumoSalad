@@ -131,6 +131,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Food\/food7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72953,
+		"inputAbbreviatedPath": "\/images\/Food\/food7.jpg",
+		"outputAbbreviatedPath": "\/images\/Food\/food7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Food\/food8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 62478,
+		"inputAbbreviatedPath": "\/images\/Food\/food8.jpg",
+		"outputAbbreviatedPath": "\/images\/Food\/food8.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/Food\/menubcg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -300,7 +322,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 545500,
+		"initialSize": 8226,
 		"inputAbbreviatedPath": "\/images\/Truck\/future.jpg",
 		"outputAbbreviatedPath": "\/images\/Truck\/future.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -318,11 +340,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Truck\/ourStory.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5498,
+		"inputAbbreviatedPath": "\/images\/Truck\/ourStory.jpg",
+		"outputAbbreviatedPath": "\/images\/Truck\/ourStory.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/Truck\/past.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 301330,
+		"initialSize": 55867,
 		"inputAbbreviatedPath": "\/images\/Truck\/past.jpg",
 		"outputAbbreviatedPath": "\/images\/Truck\/past.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -333,7 +366,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 374997,
+		"initialSize": 6224,
 		"inputAbbreviatedPath": "\/images\/Truck\/present.jpg",
 		"outputAbbreviatedPath": "\/images\/Truck\/present.jpg",
 		"outputPathIsOutsideProject": 0,

@@ -1,75 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About</title><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><meta name="viewport" content="initial-scale=1.0">
-<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
- -->	<link rel="stylesheet" type="text/css" href="../css/style.css">
- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
- <style type="text/css">
- 	#bcg-about {
-  background-image: url("../images/Truck/maico_amorim.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed; }
 
-#container-about {
-  height: 100%; }
-  #container-about .about-msg {
-    height: 100%;
-    margin: 2% 3%;
-    position: relative;
-    overflow: auto;
-    clear: both; }
+  <meta charset="utf-8">
+	<meta name="description" content=""> 
+	<!-- ^^^ Fill this description up after consulting Jeff -->
+	<meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow">
+	<meta name = "keywords" content="Sumo, Salad, Food, Truck, sumosalad, asian green, pesto chicken, taco quinoa salad, balsamic beetroot, basil chicken penne, thai chicken noodle, sweet hawaiian chicken, chipotle pulled pork, jones pure cane soda">
+
+
+	<title>SumoSalad - About</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
+  <style type="text/css">
+   	#bcg-about {
+      background-image: url("../images/Truck/maico_amorim.jpg");
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+
+    #container-about {
+      height: 100%;
+    }
+
+    #container-about .about-msg {
+      height: 100%;
+      margin: 2% 3%;
+      position: relative;
+      overflow: auto;
+      clear: both;
+    }
+
+    #container-about .about-msg .msgSpan{
+      height: 100%;
+      width: 40%;
+      float: right;
+      right: 0;
+      overflow: hidden;
+    }
+
     #container-about .about-msg img {
       position: relative;
       width: 40vw;
       min-width: 400px;
       float: left;
-      border-radius: 10%; }
+      border-radius: 10%;
+    }
+
     #container-about .about-msg p {
-      font-family: "PT Sans", sans-serif;
       position: relative;
-      width: 40%;
-      min-width: 100px;
+      width: 100%;
       overflow: auto;
       float: right;
-      line-height: 2.5vw; }
+      line-height: 2em;
+      font-weight: 300;
+    }
 
-      #container-about .about-msg p, #container-about .about-msg span{
-      	font-size: 1.5em;
-      	text-align: left;
-      }
-    #container-about .about-msg .first {
-      margin-top: 2vh; }
+    #container-about .about-msg p,
     #container-about .about-msg span {
-      font-size: 25px;
-      font-weight: 1200; }
+      font-family: "PT Sans", sans-serif;
+      font-size: 1em;
+      text-align: left;
+      overflow: hidden;
+    }
 
-      @media(max-width: 1000px){
-      	#container-about .about-msg{
-      		overflow: none;
-      	}
-      	#container-about .about-msg img{
-      		float: none;
-      	}
-      	#container-about .about-msg p{
-      		float: none;
-      		margin: 0 auto;
-      		width: 80%;
-      		margin-top: 2vh;
-      		height: auto;
-      		padding: 20px 0;
-      		overflow: none;
-      		line-height: 2em;
-      	}
+    #container-about .about-msg .first {
+      margin-top: 2vh;
+    }
 
-      	#container-about .about-msg img {
-	      position: relative;
-	      width: 100%;
-	      min-width: 0;
-	      float: left;
-	      border-radius: 10%; }
+    #container-about .about-msg span {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    @media(max-width: 800px) {
+      #container-about .about-msg {
+        overflow: none;
       }
+
+      #container-about .about-msg .msgSpan{
+      height: 100%;
+      width: 100%;
+      float: none;
+      overflow: hidden;
+    }
+      #container-about .about-msg img {
+        float: none;
+      }
+      #container-about .about-msg p {
+        float: none;
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 2vh;
+        height: auto;
+        padding: 20px 0;
+        overflow: none;
+        line-height: 2em;
+      }
+      #container-about .about-msg img {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        float: left;
+        border-radius: 10%;
+      }
+    }
  </style>
 </head>
 <body>
@@ -94,8 +133,10 @@
 		<div class = "container container-other" id = "container-about">
 			<div class = "about-msg" id = "first">
 				<div class = "box-msg first">
-					<img src="../images/Truck/past.jpg" alt = "">
-					<div class = "msgSpan"><p><span>We began</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in magna ac mauris ultricies volutpat vel eget mauris. Aenean dapibus tellus id libero interdum dapibus. Integer varius eget tortor sed fringilla. Nam porta tincidunt molestie. Nullam ut consequat lacus. Nullam molestie id odio eu pharetra. Vestibulum tristique purus a lorem imperdiet, eget fringilla ex faucibus. Nulla venenatis metus at porttitor porttitor. Maecenas ac dui enim. Vivamus vel tristique nunc.</p></div>
+					<img src="../images/Truck/past.jpg" alt = "Beginnings">
+					<div class = "msgSpan">
+            <p><span>SumoSalad all started when our Co-Founders Luke Baylis and James Miller headed off on an American adventure in their early twenties.</span> Over 100 stores later and with international locations in New Zealand, Singapore, UAE, South America, and the USA, SumoSalad is tossing up the fast food industry leaving tomatoes, lettuce leaves and cucumbers all over the place! We are a delicious fast food that fuels your body with real purpose, not crap.</p>
+          </div>
 				</div>
 			</div>
 			<br>
@@ -103,9 +144,9 @@
 			<br>
 			<div class = "about-msg">
 				<div class = "box-msg">
-					<img src="../images/Truck/present.jpg" alt = "">
+					<img src="../images/Truck/present.jpg" alt = "Present">
 					<div class = "msgSpan">
-						<p><span>Today,</span> nunc varius accumsan nibh, vitae condimentum ipsum convallis vel. In facilisis faucibus nunc porttitor laoreet. Phasellus diam lorem, suscipit et tristique non, vulputate non orci. Praesent pulvinar nisl lacus, vitae faucibus ex consequat at. Phasellus accumsan dictum nibh, vel ultrices neque maximus sed. Mauris ultricies eget arcu sed hendrerit. Nunc sed molestie ex. Nam ut metus magna.</p>
+						<p><span>In the Spring of 2016, SumoSalad Truck was born as the ideal path for the future of SumoSaladUSA.</span> Being that we were in Los Angeles - home of the Dodgers, the Lakers, breathtaking coasts, and some of the most incredible food in the nation -  it only made sense that we should spread the love and deliciousness of SumoSalad through a food truck. From our Asian Greens - a mix of broccoli and snap peas tossed with sesame oil and almonds - to our pesto chicken - mixed leafy greens with free range chicken, feta, walnuts, and avocado, we take pride in knowing that our food is not only healthy and delicious, but also that we use only the finest ingredients and our meats come from trusted sources that treat their animals with respect.  We look forward to spreading the SumoSalad love throughout Los Angeles in 2016 and beyond!</p>
 					</div>
 				</div>
 			</div>
@@ -114,8 +155,8 @@
 			<br>
 			<div class = "about-msg">
 				<div class = "box-msg">
-					<img src="../images/Truck/future.jpg" alt = "">
-					<div class = "msgSpan"><p><span>Tomorrow</span> sed id quam quis sem euismod vehicula. In varius ullamcorper urna a feugiat. Aenean sollicitudin, turpis non vestibulum malesuada, nibh justo convallis ligula, vel pharetra leo nisl ac nisi. Sed porta, lorem a fringilla rhoncus, enim quam pellentesque urna, quis fermentum eros massa a augue. Aliquam nec mi eget urna finibus hendrerit.</p></div>
+					<img src="../images/Truck/future.jpg" alt = "Future">
+					<div class = "msgSpan"><p><span>Jeffrey Laudenslager, founder of SumoSaladTruck, began in the food industry as a server for eight years before he began his journey with SumoSalad.</span> Growing up in Pennsylvania, Jeffrey worked hard to make his dream of owning his own business in the food industry into a reality. At twenty three years old, he left his home for Vegas to realize his goal and worked as a waiter in the Strip to gain experience. There, he met Maty Yuriditsky, founder of SumoSalad USA, who brought him along into the SumoSalad store, and thus began a new chapter of his life, and brought him one step closer to reaching his dream. Now, almost two years later, he is running a very successful food truck with the help of his employees, Louis, Isaac, and Alejandra, and he is happy everyday to see the culmination of his life’s work reaching new heights.</div>
 				</div>
 			</div>
 		</div>
@@ -126,7 +167,7 @@
 	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
 	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
 	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
-	<p><img src="../images/Social_Media/snapchat.jpg" style = "width: 50px; height: 50px; border-radius: 10px" alt = "SC"><br><strong style = "color: white">@sumosaladtruck</strong></p>
+	<div class = 'social'><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
 	<div id = "caption"><p>jeff@sumosaladtruck.com</p> <hr style= "width: 20%; margin: 0 auto"> <p>Website by Daniel Choi</p></div>
 </footer>
 

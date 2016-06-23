@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta charset="utf-8">
+
+
+	<meta name="description" content=""> 
+	<!-- ^^^ Fill this description up after consulting Jeff -->
+	<meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow">
+	<meta name = "keywords" content="Sumo, Salad, Food, Truck, sumosalad, asian green, pesto chicken, taco quinoa salad, balsamic beetroot, basil chicken penne, thai chicken noodle, sweet hawaiian chicken, chipotle pulled pork, jones pure cane soda">
+
+
 	<title>Menu</title>
-	<meta name="viewport" content="initial-scale=1.0">
-	<meta charset="utf-8" name = "viewport" content = "width=device-width, initial-scale = 1"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
@@ -135,6 +143,10 @@
 	  max-width: 100%;
 	  height: auto;
 	  transform: rotate(90deg);
+	  -webkit-transform: rotate(90deg);
+	  -moz-transform: rotate(90deg);
+	  -ms-transform: rotate(90deg);
+	  -o-transform: rotate(90deg);
 	}
 
 	#container-menu figure {
@@ -179,8 +191,10 @@
 	  color: black;
 	  padding: 10px 20px;
 	  font-size: 30px;
-	  font-family: "Oswald", sans-serif;
 	  transition: all 0.3s ease-in-out;
+	}
+	#container-menu .menu-pics figcaption strong{
+		font-family: "Sigmar One", cursive;
 	}
 
 	@media(max-width: 1000px) {
@@ -322,10 +336,13 @@
 				<h1>Sumo Drinks</h1>
 				<table class = "lessItems">
 					<tr>
-						<td>JONES PURE CANE SODA - $4</td>
+						<td>JONES PURE CANE SODA - $3</td>
 					</tr>
 					<tr>
-						<td>BOTTLED WATER - $2</td>
+						<td>BOTTLED WATER - $1</td>
+					</tr>
+					<tr>
+						<td>YERBA ICED TEA - $4</td>
 					</tr>
 				</table>
 			</div>
@@ -346,8 +363,8 @@
 						<figcaption><strong>Basil Chicken Penne</strong></figcaption>
 					</figure>
 					<figure class = "cols four">
-						<img src="../images/Food/food4.jpg">
-						<figcaption><strong>Chipotle Pulled Pork</strong></figcaption>
+						<img src="../images/Food/food6.jpg">
+						<figcaption><strong>Thai Chicken Noodle</strong></figcaption>
 					</figure>
 				</div>
 				<div class = "row img-row">
@@ -356,9 +373,21 @@
 						<figcaption><strong>Sweet Hawaiian Chicken</strong></figcaption>
 					</figure>
 					<figure class = "cols four">
-						<img src="../images/Food/food6.jpg">
-						<figcaption><strong>Thai Chicken Noodle</strong></figcaption>
+						<img src="../images/Food/food4.jpg">
+						<figcaption><strong>Chipotle Pulled Pork</strong></figcaption>
 					</figure>
+					
+				</div>
+				<div class = "row img-row">
+					<figure class = "cols four">
+						<img src="../images/Food/food7.jpg" style = "transform: rotate(0deg)">
+						<figcaption><strong>Pesto Chicken</strong></figcaption>
+					</figure>
+					<figure class = "cols four">
+						<img src="../images/Food/food8.jpg" style = "transform: rotate(0deg)">
+						<figcaption><strong>Jones Pure<br>Cane Soda</strong></figcaption>
+					</figure>
+					
 				</div>
 			</div>
 		</div>
@@ -369,7 +398,7 @@
 	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
 	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
 	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
-	<p><img src="../images/Social_Media/snapchat.jpg" style = "width: 50px; height: 50px; border-radius: 10px" alt = "SC"><br><strong style = "color: white">@sumosaladtruck</strong></p>
+	<div class = 'social'><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
 	<div id = "caption">
 		<p>jeff@sumosaladtruck.com</p> <hr style= "width: 20%; margin: 0 auto"> <p>Website by Daniel Choi</p>
 	</div>

@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang = 'en'>
 <head>
+<meta charset="utf-8">
+	<meta name="description" content=""> 
+	<!-- ^^^ Fill this description up after consulting Jeff -->
+	<meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow">
+	<meta name = "keywords" content="Sumo, Salad, Food, Truck, sumosalad, asian green, pesto chicken, taco quinoa salad, balsamic beetroot, basil chicken penne, thai chicken noodle, sweet hawaiian chicken, chipotle pulled pork, jones pure cane soda">
+
 	<title>Sumo Salad Project</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<meta name="viewport" content="initial-scale=1.0">
 	<script type="text/javascript" src = "../js/instafeed.min.js"></script>
 	<script type="text/javascript">
 		var feed = new Instafeed({
@@ -242,7 +249,7 @@
 
 	#instafeed img {
 		width: 80%;
-		
+
 	}
 
 	footer {
@@ -390,11 +397,6 @@
 		transition: all 0.7s ease-in-out;
 	}
 
-/*	.menu-pics img:hover, .menu-pics img:active{
-		transform: translateX(100%);
-	}
-*/
-
 	.menu-pics figure .slideMenu{
 		margin: 0 auto;
 		width: 100%;
@@ -443,18 +445,18 @@
 			</div>
 			<div id = "social">
 				<div class = "divide left" id = "follow-left">
-						<a class="twitter-timeline" href="https://twitter.com/sumosaladtruck" width = "90%" height = "40em"></a>
-						<script>
-							!function(d,s,id){
-								var js,fjs = d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
-								if(!d.getElementById(id)){
-									js=d.createElement(s);
-									js.id=id;
-									js.src=p+"://platform.twitter.com/widgets.js";
-									fjs.parentNode.insertBefore(js,fjs);
-								}
-							}(document,"script","twitter-wjs");
-						</script>
+					<a class="twitter-timeline" href="https://twitter.com/sumosaladtruck" width = "90%" height = "40em"></a>
+					<script>
+						!function(d,s,id){
+							var js,fjs = d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+							if(!d.getElementById(id)){
+								js=d.createElement(s);
+								js.id=id;
+								js.src=p+"://platform.twitter.com/widgets.js";
+								fjs.parentNode.insertBefore(js,fjs);
+							}
+						}(document,"script","twitter-wjs");
+					</script>
 				</div>
 				<div class = "divide left" id = "follow-right">
 					<a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="../../images/Social_Media/instag.jpg" height = "100" width = "100" style = "margin-bottom: 1em"></a>
@@ -601,12 +603,20 @@
 		var picSlide = $(this).find('img');
 		if($('.img-slide')[0]){
 			picSlide.css({
-				'transform' : 'translateX(0%)'
+				'transform' : 'translateX(0%)',
+				'-webkit-transform' : 'translateX(0%)',
+				'-moz-transform' : 'translateX(0%)',
+				'-ms-transform' : 'translateX(0%)',
+				'-o-transform' : 'translateX(0%)'
 			});
 			picSlide.removeClass('img-slide');
 		} else{
 			picSlide.css({
-				'transform' : 'translateX(100%)'
+				'transform' : 'translateX(100%)',
+				'-webkit-transform' : 'translateX(100%)',
+				'-moz-transform' : 'translateX(100%)',
+				'-ms-transform' : 'translateX(100%)',
+				'-o-transform' : 'translateX(100%)'
 			})
 			picSlide.addClass('img-slide');
 		}

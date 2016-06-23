@@ -160,6 +160,7 @@ footer h1 {
   letter-spacing: .3em;
   padding-top: 2em;
   padding-bottom: 1em;
+  margin-top: 0;
 }
 
 footer .social {
@@ -171,7 +172,8 @@ footer .social {
   background-color: white;
   text-align: center;
   top: 50%;
-  margin: 1.8em;
+  margin: 0 1.8em;
+  cursor: pointer;
 }
 
 footer .social img {
@@ -182,10 +184,26 @@ footer .social img {
   margin-top: -2em;
 }
 
-footer figcaption {
-  margin-top: 2em;
-  font-size: .8em;
+footer p {
+  padding: .5em 0;
+  font-size: 1em;
 }
+
+footer #caption{
+  margin-top: 2em;
+}
+
+/*footer .tooltipText{
+  visibility: hidden;
+}*/
+
+footer .tooltip:hover .tooltipText{
+  visibility: hidden;
+}
+
+/*footer .tooltip:hover .tooltipText{
+  visibility: visible;
+}*/
 
 @media (max-width: 1000px) {
   .header {
