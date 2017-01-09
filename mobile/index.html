@@ -7,21 +7,22 @@
 	<meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="robots" content="index, follow">
 	<meta name="googlebot" content="index, follow">
-	<meta name = "keywords" content="Sumo, Salad, Food, Truck, sumosalad, asian green, pesto chicken, taco quinoa salad, balsamic beetroot, basil chicken penne, thai chicken noodle, sweet hawaiian chicken, chipotle pulled pork, jones pure cane soda">
+	<meta name = "keywords" content="Boulevard, boulevard, salad, Salad, Food, Truck, boulevard, salad, food, truck, boulevardsalad, sunset, pacific, long, beach, wilshire, manhattan, wraps, pulled, pork, chili, jeff, Jeffrey, Laudenslager, natural,  wholesome, eating, local, ingredients, los, angeles, healthy, los angeles, jeff, laudy, tofu, salad, kale, cherry, tomato, kale, cucumber, chic, pea, cilantro, homemade, lime, dressing">
 
-	<title>Sumo Salad Project</title>
+	<title>Boulevard Salad</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script type="text/javascript" src = "../js/instafeed.min.js"></script>
 	<script type="text/javascript">
 		var feed = new Instafeed({
 			get: "user",
-			userId: "2009958092",
+			userId: "3563185651",
 			limit: '8',
-			accessToken: "2009958092.17d3ba4.406b3cb967de4f4682acd0c46cccb03a"
+			accessToken: "3563185651.e05b3a9.3d0329967d5f4aa98fd3e7891b03212f"
 		});
 		feed.run();
 	</script>
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
 	<style type="text/css">
 
 	/* ------ DONT MESS WITH THESE -------- */
@@ -32,7 +33,7 @@
 	  font-family: "Arial", sans-serif; }
 
 	body {
-	  width: 100vw;
+	  width: 100%;
 	  height: 100%;
 	  background-color: #c0c0c0; }
 
@@ -45,30 +46,13 @@
 	    width: 100%;
 	    height: 15em;
 	  }
-	  
-	  .header #logo {
-	    position: relative;
-	    padding: 0;
-	    margin-left: 0;
-	    float: left;
-	    width: 50%;
-	    height: 100%;
-	    text-align: center;
-	    bottom: 0;
-	  }
-	  
-	  .header #logo #mainLogo {
-	    height: 8em;
-	    width: 15em;
-	    border-radius: 50%;
-	    margin-top: 1.5em;
-	  }
+	 
 	  
 
 	  .header #list{
 	  	position: relative;
 	  	width: 50%;
-	  	float: right;
+	  	margin: 0 auto;
 	  }
 	  .header ul {
 	    position: relative;
@@ -103,7 +87,7 @@
 
 	.bcg {
 	  height: 72vw;
-	  width: 100vw;
+	  width: 100%;
 	  max-height: 12em;
 	  background-image: url("../images/Truck/truck1.jpg");
 	  background-size: cover;
@@ -153,8 +137,8 @@
 	/* ------ OKAY NOW YOU CAN -------- */
 
 	.container {
-	  border-top: 0.8em solid #f69454;
-	  border-bottom: 0.8em solid #f69454;
+	  border-top: 0.8em solid #4AA02C;
+	  border-bottom: 0.8em solid #4AA02C;
 	  width: 90%;
 	  background-color: #fcfdfe;
 	  text-align: center;
@@ -187,12 +171,16 @@
 	}
 
 	#story #story-left{
-		background-image: url('../images/Truck/future.jpg');
+		background-image: url('../images/Truck/our_story.jpg');
 		height: 20em;
 	}
 
 	#story #story-right{
 		overflow: hidden;
+	}
+
+	#story #our-story p{
+		line-height: 2em;
 	}
 
 	.containerBcg{
@@ -205,7 +193,7 @@
 	  width: 80%;
 	  text-align: center;
 	  margin: 10% auto;
-	  font-size: 5vh;
+	  font-size: 3em;
 	}
 	
 	.msg h1 {
@@ -276,7 +264,8 @@
 	  background-color: white;
 	  text-align: center;
 	  top: 50%;
-	  margin: 1.8em;
+	  margin: 0 .5em;
+	  margin-bottom: 1em;
 	}
 
 	footer .social img {
@@ -338,16 +327,30 @@
 	}
 
 	.option table{
-		padding: 1em 2em;
-		border: .3em solid;
+		padding: 1em 1em;
+		border: .2em solid;
 		margin: 2em auto;
 		width: 90%;
 	}
 
-	.option table td{
-		font-size: 1.3em;
+	.option table tr{
+		font-size: 1.2em;
+		padding: 0.5em 0em;
+	}
+
+	.option table td p{
+		font-size: 1.5em;
+		margin-bottom: 2em;
+	}
+
+/*	.option table td{
+		font-size: 1.2em;
 		padding: 0.2em 0em;
 		margin: 0;
+	}*/
+
+	.option h2{
+		text-decoration: underline;
 	}
 
 
@@ -419,23 +422,20 @@
 <body>
 
 <div class = "header">
-	<div class = 'navHalf' id = "logo">
- 		<a href = "index.html#logoLink"><img id = "mainLogo" alt = "Vertical Logo" src="../images/Logo/vertical_logo.jpg" style = "bottom: 0; width: 100%; height: auto; max-height: 15em; max-width: 30em"><a>
-	</div>
 	<div class = 'navHalf' id = "list">
 		<ul>
-			<li><a href="../calendar/index.html">Schedule</a></li>
-			<li><a href="../menu/index.html">Menu</a></li>
-			<li><a href="../about/index.html">About</a></li>
-			<li><a href="../contact/index.html">Contact</a></li>
+			
+			<li><a href="../menu/ ">Menu</a></li>
+			<li><a href="../about/ ">About</a></li>
+			<li><a href="../contact/ ">Contact</a></li>
 		</ul>
 	</div>
 </div>
 
 <article>
 		<div class = "bcg">
-			<div class = "bcg_label" id = "label">@sumosaladtruck</div>
-			<div class = "bcg_label" id = "caption">Food With Purpose</div>
+			<div class = "bcg_label" id = "label">@BoulevardSalad</div>
+			<div class = "bcg_label" id = "caption">#ueatwhatusee</div>
 		</div>
 		<div class = "container" id = "follow">
 			<div class = "msg">
@@ -445,7 +445,7 @@
 			</div>
 			<div id = "social">
 				<div class = "divide left" id = "follow-left">
-					<a class="twitter-timeline" href="https://twitter.com/sumosaladtruck" width = "90%" height = "40em"></a>
+					<a class="twitter-timeline" href="https://twitter.com/boulevardsalad" width = "90%" height = "40em"></a>
 					<script>
 						!function(d,s,id){
 							var js,fjs = d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
@@ -472,102 +472,145 @@
 				<hr>
 			</div>
 
-			<h1 id="start">START HERE<br><span class = "orange">CHOOOSE AN OPTION</span></h1>
 			<div class="option" id="option1">
-				<h2>OPTION #1</h2>
-				<h1 class = "orange">Deli Salads</h1>
-				<table>
-					<tr>
-						<td>PESTO CHICKEN</td>
-						<td>ASIAN GREENS</td>
-					</tr>
-					<tr>
-						<td>TACO QUINOA SALAD</td>
-						<td>BALSAMIC BEETROOT</td>
-					</tr>
-					<tr>
-						<td>BASIL CHICKEN PENNE</td>
-						<td>THAI CHICKEN NOODLE</td>
-					</tr>
-				</table>
+				<h2>OPTION 1</h2>
+				<h1 class = "orange">SPECIALTY SALADS</h1>
 				<div id = "regOrLrg">
 					<div class = "panel" id = "regular">
-						<h3>REGULAR</h3>
-						<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
+						<h3>SINGLE PORTION</h3>
+						<p>SELECT ONE BLVD SALAD<br>
+						FROM OPTIONS BELOW<br>$8</p>
 					</div>
 					<div class = "panel" id = "large">
-						<h3>LARGE</h3>
-						<p>CHOOSE UP TO ANY 3<br> SUMO DELI SALADS</p>
+						<h3>DOUBLE PORTION</h3>
+						<p>SELECT ONE OR TWO BLVD SALADS<br>
+						FROM OPTIONS BELOW<br>$10</p>
 					</div>
 				</div>
-			</div>
-			<div class = "option" id = "option2">
-				<h2>OPTION #2</h2>
-				<h1 class = "orange">SLOW COOKED MEAT</h1>
-				<p id = "caption">SERVED ON A BED OF WARM BROWN RICE<br>AND RED QUINOA</p>
-				<table class = "lessItems">
+				<table style="padding-bottom: 5em;">
 					<tr>
-						<td>SWEET HAWAIIAN CHICKEN</td>
+						<td><h2>SUNSET</h2>
+						
+						<span><i>with protein</i></span>
+						<br><br>
+						<p>Mixed leaf, baked chicken, mandarins, cherry tomatoes, dried cranberries, goat cheese, slivered almonds, topped with a homemade teriyaki dressing</p></td>
 					</tr>
 					<tr>
-						<td>CHIPOTLE PULLED PORK</td>
+						<td><h2>WILSHIRE</h2>
+						
+						<span><i>vegetarian</i></span>
+						<br><br>
+						<p>Bowtie pasta, broccoli, spinach, red bell pepper, dried cranberries, tossed with a creamy caesar dressing</p></td>
+					</tr>
+					<tr>
+						<td><h2>HOLLYWOOD</h2>
+						
+						<span><i>vegan</i></span><p><br>Diced cucumbers, cherry tomatoes, red onion, tossed with homemade apple cider vinegar dressing</p></td>
+					</tr>
+					<tr>
+						<td><h2>PACIFIC</h2>
+						
+						<span><i>vegan</i></span><p><br>Mixed leaf, black beans, chickpeas, cherry tomatoes, sundried tomatoes, red onion, chopped herbs, tossedin a homemade lemon garlic vinaigrette</p></td>
 					</tr>
 				</table>
+			</div>
+			<div class = "option" id = "option2">
+				<h2>OPTION 2</h2>
+				<h1 class = "orange">SPECIALTY MEATS<br>(SLOW COOKED)</h1>
 				<div id = "three-row-panel">
-					<div class = "three-row" id = "regular">
-						<h3>REGULAR</h3>
-						<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
+					<div class = "three-row">
+						<h3>SINGLE PORTION</h3>
+						<p>SELECT ONE SPECIALTY MEAT<br>FROM THE OPTIONS BELOW<br>$8</p>
 					</div>
-					<div class = "three-row" id = "large">
-						<h3>LARGE</h3>
-						<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
-					</div>
-					<div class = "three-row" id = "sumo-large">
-						<h3>SUMO LARGE</h3>
-						<p>CHOOSE UP TO ANY 3<br> SUMO DELI SALADS</p>
+					<div class = "three-row">
+						<h3>MEAT AND SALAD<br>COMBO</h3>
+						<p>SELECT ONE PREMIUM MEAT FROM BELOW<br>AND ONE PREMIUM SALAD FROM ABOVE<br>$12</p>
 					</div>
 				</div>
-			</div>
-			<div  class = "option" id = "drinks">
-				<h1>Sumo Drinks</h1>
-				<table class = "lessItems">
+				<table style="padding-bottom: 5em;">
 					<tr>
-						<td>JONES PURE CANE SODA - $4</td>
+						<td>
+							<p><i>*Meat that you choose is served on brown rice</i><p>
+						</td>
 					</tr>
 					<tr>
-						<td>BOTTLED WATER - $2</td>
+						<td><h2>VENICE</h2><p>Pulled pork cooked slow with a homemade BBQ pineapple sauce, served on top of brown rice</p></td>
+					</tr>
+					<tr>
+						<td><h2>SANTA MONICA</h2><p>Pulled chicken cooked slow with a homemade honey garlic sauce, served on top of brown rice </p></td>
+					</tr>
+				</table>
+			</div>
+			<div class = "option" id = "option3">
+				<h2>OPTION 3</h2>
+				<h1 class = "orange">SPECIALTY WRAP</h1>
+				<div id = "three-row-panel">
+					<div class = "three-row">
+						<h3>WHEAT TORTILLA<br>WRAPS</h3>
+						<p>$9</p>
+					</div>
+				</div>
+				<table style="padding-bottom: 5em;">
+					<tr>
+						<td><p><i>*Both wraps can be a vegan option</i></p></td>
+					</tr>
+					<tr>
+						<td><h2>VENTURA</h2><p>Mixed greens, baked chicken, cherry tomatoes, chickpeas, dressed with a creamy caesar dressing</p></td>
+					</tr>
+					<tr>
+						<td><h2>BEVERLY</h2><p>(Warm Temp) Brown rice, honey garlic chicken, spinach, sliced cucumbers, jalapenos, cherry tomatoes, tossed in a habanero mango sauce</p></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class = "option" id = "option3">
+				<h2>OTHER</h2>
+				<div id = "three-row-panel">
+					<div class = "three-row">
+						<h3>SOUP AND SALAD<br>COMBO</h3>
+						<p>$10</p>
+					</div>
+					<div class = "three-row orange">
+						<h3>BOULEVARD<br>SOUPS</h3>
+						<p>$5</p>
+					</div>
+					<div class = "three-row">
+						<h3>BOULEVARD<br>DRINKS</h3>
+						<p>$3</p>
+					</div>
+				</div>
+				<table style="padding-bottom: 5em;">
+					<tr>
+						<td><h2>SOUPS</h2>
+						<p>Tomato Basil Bisque (cup)</p>
+						<p>Seasonal Soup (cup)</p>
+					</tr>
+					<tr>
+						<td><h2>DRINKS</h2>
+						<p>Bai (antioxidant)</p>
+						<p>Honest Tea</p></td>
 					</tr>
 				</table>
 			</div>
 			<div class = "menu-pics" style = "margin-bottom: 3em">
 				<div class = "row img-row">
 					<figure class = "cols four" id = "food1">
-						<div class = "slideMenu"><p><span>Asian<br/>Greens</span></p></div>
-						<img src="../images/Food/food1.jpg" id = "img1">
+						<div class = "slideMenu"><p><span>PACIFIC</span></p></div>
+						<img src="../images/Food/brussels.jpg" id = "img1">
 					</figure>
 					<figure class = "cols four" id = "food2">
-						<div class = "slideMenu"><p><span style = "color: #ee693f">Balsamic<br/> Beetroot</span></p></div>
-						<img src="../images/Food/food2.jpg" id = "img2">
+						<div class = "slideMenu"><p><span style = "color: #3B653D">WILSHIRE</p></div>
+						<img src="../images/Food/wilshire.jpg" id = "img2">
 					</figure>
 				</div>
 				<div class = "row img-row">
 					<figure class = "cols four" id = "food3">
-						<div class = "slideMenu"><p><span>Basil<br/>Chicken<br/>Penne</span></p></div>
-						<img src="../images/Food/food3.jpg" id = "img3">
+						<div class = "slideMenu"><p><span>HOLLYWOOD</span></p></div>
+						<img src="../images/Food/cucumber.jpg" id = "img3">
 					</figure>
 					<figure class = "cols four" id = "food4">
-						<div class = "slideMenu"><p><span style = "color: #ee693f">Chipotle<br/> Pulled Pork</span></p></div>
-						<img src="../images/Food/food4.jpg" id = "img4">
-					</figure>
-				</div>
-				<div class = "row img-row">
-					<figure class = "cols four" id = "food5">
-						<div class = "slideMenu"><p><span>Sweet<br/> Hawaiian<br/> Chicken</span></p></div>
-						<img src="../images/Food/food5.jpg" id = "img5">
-					</figure>
-					<figure class = "cols four" id = "food6">
-						<div class = "slideMenu"><p><span style = "color: #ee693f">Thai<br/> Chicken Noodle</span></p></div>
-						<img src="../images/Food/food6.jpg" id = "img6">
+						<div class = "slideMenu"><p><span style = "color: #3B653D">SUNSET</span></p></div>
+						<img src="../images/Food/sunset.jpg" id = "img4">
 					</figure>
 				</div>
 			</div>
@@ -577,8 +620,9 @@
 			<div class = "divide right" id = "story-right">
 				<div class = "msg" id = "our-story">
 					<hr>
-					<h1>Our Story</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus quam vel bibendum sagittis. Quisque quis nulla et odio cursus fringilla id in metus. Aliquam urna est, condimentum sed orci at, tincidunt imperdiet nunc. Nam eget sodales odio. Donec ac massa eu ipsum cursus finibus ac porta sem. Donec vitae lectus tortor. Nam pharetra bibendum lectus at euismod. Curabitur consectetur ante ac lectus dictum, non tincidunt elit porta. Sed vel posuere purus, vel tincidunt nisl. Fusce viverra sed tellus nec facilisis. Quisque a rhoncus felis. Morbi accumsan mollis gravida.</p>
+					<h1>Our Philosophy</h1>
+					<div style="padding: 1em 0"><strong><span style="font-size: 1em; font-family: 'Lobster Two', Helvetica, sans-serif; letter-spacing: .2em">Fast,<br>Fresh,<br>and Friendly</span></strong></div>
+					<p>We take pride in knowing that we only use the freshest and healthiest ingredients, and we use fully compostable packaging that contributes to the well-being of our delicate little planet we call home. We carefully craft our menus for maximum choice and taste, while keeping the cost as low and affordable as possible. Our food is sure to leave you feeling satisfied and rejuvenated, both in your body and your mind.</p>
 					<br/>
 					<hr>
 				</div>
@@ -587,14 +631,32 @@
 </article>
 <footer style = "height: 20%; width: 100%">
 	<h1>Connect</h1>
-	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
-	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
-	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
-	<p><img src="../images/Social_Media/snapchat.jpg" style = "width: 50px; height: 50px; border-radius: 10px" alt = "SC"><br><span style = "color: white">@sumosaladtruck</span></p>
-	<div id = "caption">
-	<div class = "slideMenu"><p>jeff@sumosaladtruck.com</p> <hr style= "width: 20%; margin: 0 auto"> <p>Website by Daniel Choi</p></div>
+	<div class = 'social'><a href="https://www.facebook.com/boulevardsalad/" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
+	<div class = 'social'><a href="https://www.instagram.com/boulevardsalad/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
+	<div class = 'social'><a href="https://twitter.com/boulevardsalad" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
+	<div class = 'social' id = "snap"><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
+	<style type="text/css">
+		#caption{
+			font-family: "PT Sans", sans-serif;
+			margin: 0 auto;
+			border-radius: .1em;
+			padding-top: .5em;
+		}
 
-	</div><a href="../index.html">Go to Full Site</a></div>
+		#caption a, p{
+			font-family: "PT Sans", sans-serif;
+			text-decoration: none;
+			color: black;
+			cursor: pointer;
+		}
+
+		#caption a:hover{
+			font-weight: bold;
+		}
+	</style>
+	<div id = "caption">
+		<hr style= "width: 20%; margin: .5em auto"> <p>Website By <a href = "https://github.com/danielch01" target = "_blank">danielch01</a></p>
+	</div>
 </footer>
 
 <script type="text/javascript">

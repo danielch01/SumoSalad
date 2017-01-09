@@ -1,9 +1,9 @@
 <?php
 
 $db_host = 'localhost';
-$db_user = 'root';
-$db_pass = 'root';
-$db_name = 'Catering';
+$db_user = 'Boulevardsalad';
+$db_pass = 'Boulevard86';
+$db_name = 'boulevardsalad';
 
 $link = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
@@ -26,10 +26,11 @@ mysqli_query($link, $sql)
   <meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
-  <meta name = "keywords" content="Sumo, Salad, Food, Truck, sumosalad, asian green, pesto chicken, taco quinoa salad, balsamic beetroot, basil chicken penne, thai chicken noodle, sweet hawaiian chicken, chipotle pulled pork, jones pure cane soda">
+  <meta name = "keywords" content="Boulevard, boulevard, salad, Salad, Food, Truck, boulevard, salad, food, truck, boulevardsalad, sunset, pacific, long, beach, wilshire, manhattan, wraps, pulled, pork, chili, jeff, Jeffrey, Laudenslager, natural,  wholesome, eating, local, ingredients, los, angeles, healthy, los angeles, jeff, laudy, tofu, salad, kale, cherry, tomato, kale, cucumber, chic, pea, cilantro, homemade, lime, dressing">
   <title>Contact Us</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
 
 
   <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -85,23 +86,20 @@ mysqli_query($link, $sql)
     margin: 2em 0;
   }
 
-  #container
-
 
    </style>
 </head>
 <body>
 
-<div class = "header nav">
-  <nav>
-    <div id = "logo"><a href = "../index.html"><img src="../images/Logo/images.jpg"><a></div>
-    <ul>
-      <li><a href="../calendar/index.html">Schedule</a></li>
-      <li><a href="../menu/index.html">Menu</a></li>
-      <li><a href="../about/index.html">About</a></li>
-      <li><a href="../contact/index.html">Contact</a></li>
-    </ul>
-  </nav>
+<div class = "header">
+  <div class = 'navHalf' id = "logo" style="padding: 0;"><span>Fast, Fresh, and Friendly</span></div>
+  <ul class = 'navHalf' id = "menu">
+    <li><a href="../home.html">Home</a></li>
+    
+    <li><a href="../menu/ ">Menu</a></li>
+    <li><a href="../about/ ">About</a></li>
+    <li><a href="../contact/ ">Contact</a></li>
+  </ul>
 </div>
 
 <article>
@@ -110,13 +108,12 @@ mysqli_query($link, $sql)
     </div>
     <div class = "container container-other"  id = "container-booking" style = "height: 100%">
       <div id = "contact-menu">
-        <a href = "../contact/index.html#contactToHere"><div id = "contactForm"><h3>Contact</h3></div></a>
-        <a href = "index.html#bookingToHere"><div id = "booking"><h3>Booking</h3></div></a>
+        <a href = "../contact/"><div id = "contactForm"><h3>Contact</h3></div></a>
+        <a href = "../booking/"><div id = "booking"><h3>Booking</h3></div></a>
       </div>
       <div id = "bookingToHere"></div>
       <h1>Book Us For An Event</h1>
       <div class = "input">
-        <img src="../images/Logo/sumoTogo.jpg">
         <div class = 'info' id = "booking-form" style  = "margin-top: 100px">
           <p  style = "text-align: center; font-size: 2em; font-family: 'Oswald', sans-serif; font-weight: bold; letter-spacing: .1em">Thank you for choosing Sumo Salad to host your event<br>We will get back to you about your reservation as soon as possible.</p>
         </div>
@@ -129,8 +126,27 @@ mysqli_query($link, $sql)
   <div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
   <div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
   <div class = 'social'><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
+  <style type="text/css">
+    #caption{
+      font-family: "PT Sans", sans-serif;
+      margin: 0 auto;
+      border-radius: .1em;
+      padding-top: .5em;
+    }
+
+    #caption a, p{
+      font-family: "PT Sans", sans-serif;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+
+    #caption a:hover{
+      font-weight: bold;
+    }
+  </style>
   <div id = "caption">
-    <p>jeff@sumosaladtruck.com</p> <hr style= "width: 20%; margin: 0 auto"> <p>Website by Daniel Choi</p>
+    <hr style= "width: 20%; margin: .5em auto"> <p>Website By <a href = "https://github.com/danielch01" target = "_blank">danielch01</a></p>
   </div>
 </footer>
 </body>

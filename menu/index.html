@@ -8,21 +8,35 @@
 	<meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="robots" content="index, follow">
 	<meta name="googlebot" content="index, follow">
-	<meta name = "keywords" content="Sumo, Salad, Food, Truck, sumosalad, asian green, pesto chicken, taco quinoa salad, balsamic beetroot, basil chicken penne, thai chicken noodle, sweet hawaiian chicken, chipotle pulled pork, jones pure cane soda">
+	<meta name = "keywords" content="Boulevard, boulevard, salad, Salad, Food, Truck, boulevard, salad, food, truck, boulevardsalad, sunset, pacific, long, beach, wilshire, manhattan, wraps, pulled, pork, chili, jeff, Jeffrey, Laudenslager, natural,  wholesome, eating, local, ingredients, los, angeles, healthy, los angeles, jeff, laudy, tofu, salad, kale, cherry, tomato, kale, cucumber, chic, pea, cilantro, homemade, lime, dressing">
 
 
 	<title>Menu</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
+ <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
  <style type="text/css">
  	#bcg-menu {
-	  background-image: url("../images/Food/menubcg.jpg");
+	  background-image: url("../images/Truck/sunset.jpg"); /*--- REPLACE WITH BEACH BACKGROUND ----*/
 	  background-size: cover;
-	  background-position: center;
+	  background-position: bottom center;
+	  background-attachment: fixed;
+	}
+
+	#chalk{
+	  height: 100%;
+	  width: 90%;
+	  margin: 0 auto;
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  text-align: center;
+	  background-image: url('../images/Texture/chalk2.jpg');
+	  background-size: contain;
 	}
 
 	#container-menu {
+		position: relative;
 	  height: 100%;
 	  width: 90%;
 	  margin-top: 0;
@@ -50,7 +64,7 @@
 	#container-menu .option h2 {
 	  text-decoration: underline;
 	  padding: 1em 0;
-	  font-family: "Sigmar One", cursive;
+	  font-family: "Oswald", sans-serif;
 	}
 
 	#container-menu .option h1 {
@@ -60,6 +74,8 @@
 	}
 
 	#container-menu .option table {
+		color: black;
+		background-color: white;
 	  margin-bottom: 2em;
 	  padding: 1em 2em;
 	}
@@ -76,14 +92,14 @@
 
 	#container-menu #option1 #regOrLrg{
 	  height: 30vh;
-	  width: 30em;
+	  width: 90%;
 	  margin: 0 auto;
 	  clear: both;
 	}
 
 	#container-menu #option1 #regOrLrg .panel{
-	  padding: 1em;
-	  width: 10em;
+	  width: 100%;
+	  padding: 1em 0;
 	}
 
 	#container-menu #option1 #regOrLrg .panel h3 {
@@ -110,9 +126,7 @@
 	}
 
 	#container-menu #option2 .three-row {
-	  width: 33.3%;
-	  display: inline-block;
-	  float: left;
+	  width: 100%;
 	}
 
 	#container-menu #option2 .three-row h3 {
@@ -126,7 +140,29 @@
 	}
 
 	#container-menu #option2 p {
-	  font-style: italic;
+	  padding: 20px 0;
+	}
+
+	#container-menu #option3 #three-row-panel{
+		position: relative;
+		height: 30vh;
+	}
+
+	#container-menu #option3 .three-row {
+	  width: 100%;
+	}
+
+	#container-menu #option3 .three-row h3 {
+	  font-size: 1.6em;
+	  font-family: "Sigmar One", cursive;
+	}
+
+	#container-menu #option3 .three-row p {
+	  font-family: "PT Sans", sans-serif;
+	  font-size: 1.4em;
+	}
+
+	#container-menu #option3 p {
 	  padding: 20px 0;
 	}
 
@@ -142,11 +178,11 @@
 	#container-menu img {
 	  max-width: 100%;
 	  height: auto;
-	  transform: rotate(90deg);
+/*	  transform: rotate(0deg);
 	  -webkit-transform: rotate(90deg);
 	  -moz-transform: rotate(90deg);
 	  -ms-transform: rotate(90deg);
-	  -o-transform: rotate(90deg);
+	  -o-transform: rotate(90deg);*/
 	}
 
 	#container-menu figure {
@@ -156,19 +192,20 @@
 
 	#container-menu .menu-pics figure {
 	  position: relative;
-	  height: 20em;
-	  width: 40%;
+	  height: 30em;
+	  width: 30em;
 	  display: inline-block;
 	  cursor: pointer;
-	  margin: 3em 2em;
+	  margin: 1em 0em;
 	  overflow: hidden;
 	}
 
 	#container-menu .menu-pics figure img {
 	  height: 100%;
-	  width: auto;
+	  width: 100%;
 	  margin: 0 auto;
 	  display: block;
+	  border-radius: 2em;
 	}
 
 	#container-menu .menu-pics figure:hover figcaption {
@@ -209,47 +246,85 @@
 			padding-right: 0;
 		}
 
+
+		#container-menu #option2{
+			width: 100%;
+		}
+
+/*		#container-menu #option2 table{
+			width: 100%;
+			margin: 10vw auto;
+			padding-left: 0;
+			padding-right: 0;
+		}*/
+
+		#container-menu #option2 #three-row-panel{
+			position: relative;
+			height: 30vh;
+		}
+
+
 		#container-menu #drinks table{
 			width: 80%;
 		}
 
 
 		#container-menu .menu-pics figure {
-		  /*border: 1px solid;*/
+/*		  border: 1px solid;*/
 		  position: relative;
-		  width: 100%;
+		  height: 30em;
+		  width: 30em;
 		  display: inline-block;
 		  cursor: pointer;
-		  margin: 0 auto;
+		  margin: 2em auto;
 		  overflow: hidden;
 		}
 
 		#container-menu #option1 #regOrLrg{
 		  width: 90%;
 		  margin: 0 auto;
+
 		}
 
 		#container-menu #option1 #regOrLrg .panel{
 			padding: 0;
 			height: 200px;
-		  width: 100%;
+		  	width: 100%;
 		}
 
-		#container-menu #option2{
-			width: 80%;
+/*		#container-menu #option3{
+			width: 100%;
 		}
-		#container-menu #option2 #three-row-panel{
+		#container-menu #option3 #three-row-panel{
 			position: relative;
 			text-align: center;
 			height: 100vh;
 		}
-		#container-menu #option2 #three-row-panel .three-row {
+		#container-menu #option3 #three-row-panel .three-row {
 			width: 100%;
 			height: 33.3%;
-		}
+		}*/
 
 		#container-menu .menu-pics figcaption {
 			left: -150%;
+		}
+
+		#container-menu .option table {
+			width: 90%;
+			color: black;
+			background-color: white;
+		  	margin-bottom: 2em;
+		  	padding: 1em 2em;
+		}
+
+		#container-menu #option2 #three-row-panel{
+			position: relative;
+			height: 100%;
+		}
+
+		#container-menu #option3 #three-row-panel{
+			position: relative;
+			height: 100%;
 		}
 	}
  </style>
@@ -257,15 +332,13 @@
 <body>
 
 <div class = "header">
-	<div class = 'navHalf' id = "logo">
- 			<a href = "../index.html"><img class = "otherLogo" alt = "Sumo Salad" src="../images/Logo/images.jpg"></a>
-		</div>
-	<a href = "#" class = "menu-button"></a>
+	<div class = 'navHalf' id = "logo"><span>Fast, Fresh, and Friendly</span></div>
 	<ul class = 'navHalf' id = "menu">
-		<li><a href="../calendar/index.html">Schedule</a></li>
-		<li><a href="../menu/index.html">Menu</a></li>
-		<li><a href="../about/index.html">About</a></li>
-		<li><a href="../contact/index.html">Contact</a></li>
+		<li><a href="../home.html">Home</a></li>
+		
+		<li><a href="../menu/ ">Menu</a></li>
+		<li><a href="../about/ ">About</a></li>
+		<li><a href="../contact/ ">Contact</a></li>
 	</ul>
 </div>
 
@@ -275,187 +348,190 @@
 		<div class = "bcg  bcg-other" id = "bcg-menu">
 			<h1><span>Our Food</span></h1>
 		</div>
+		<div id = "chalk">
 		<div class = "container container-other" id = "container-menu">
-			<h1 id="start">START HERE<br><span class = "orange">CHOOOSE AN OPTION</span></h1>
+			<h1 id="start">Boulevard Salad<br></h1>
+
 			<div class="option" id="option1">
-				<h2>OPTION #1</h2>
-				<h1 class = "orange">Deli Salads</h1>
-				<table>
-					<tr>
-						<td>PESTO CHICKEN</td>
-						<td>ASIAN GREENS</td>
-					</tr>
-					<tr>
-						<td>TACO QUINOA SALAD</td>
-						<td>BALSAMIC BEETROOT</td>
-					</tr>
-					<tr>
-						<td>BASIL CHICKEN PENNE</td>
-						<td>THAI CHICKEN NOODLE</td>
-					</tr>
-				</table>
+				<h2>OPTION 1</h2>
+				<h1 class = "orange">SPECIALTY SALADS</h1>
+
+
 				<div id = "regOrLrg">
 					<div class = "panel" id = "regular">
-						<h3>REGULAR</h3>
-						<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
+						<h3>SINGLE PORTION</h3>
+						<p>SELECT ONE BLVD SALAD<br>
+						FROM OPTIONS BELOW<br>$8</p>
 					</div>
 					<div class = "panel" id = "large">
-						<h3>LARGE</h3>
-						<p>CHOOSE UP TO ANY 3<br> SUMO DELI SALADS</p>
+						<h3>DOUBLE PORTION</h3>
+						<p>SELECT ONE OR TWO BLVD SALADS<br>
+						FROM OPTIONS BELOW<br>$10</p>
 					</div>
 				</div>
+
+
+				<table style="padding-bottom: 5em;">
+					<tr>
+						<td><h2>SUNSET</h2>
+						
+						<span><i>with protein</i></span>
+						<br><br>
+						<p>Mixed leaf, baked chicken, mandarins, cherry tomatoes, dried cranberries, goat cheese, slivered almonds, topped with a homemade teriyaki dressing</p></td>
+					</tr>
+					<tr>
+						<td><h2>WILSHIRE</h2>
+						
+						<span><i>vegetarian</i></span>
+						<br><br>
+						<p>Bowtie pasta, broccoli, spinach, red bell pepper, dried cranberries, tossed with a creamy caesar dressing</p></td>
+					</tr>
+					<tr>
+						<td><h2>HOLLYWOOD</h2>
+						
+						<span><i>vegan</i></span><p><br>Diced cucumbers, cherry tomatoes, red onion, tossed with homemade apple cider vinegar dressing</p></td>
+					</tr>
+					<tr>
+						<td><h2>PACIFIC</h2>
+						
+						<span><i>vegan</i></span><p><br>Mixed leaf, black beans, chickpeas, cherry tomatoes, sundried tomatoes, red onion, chopped herbs, tossedin a homemade lemon garlic vinaigrette</p></td>
+					</tr>
+				</table>
 			</div>
 			<div class = "option" id = "option2">
-				<h2>OPTION #2</h2>
-				<h1 class = "orange">SLOW COOKED MEAT</h1>
-				<p style = "font-style: italic; font-size: 1.5em; font-weight: 100;">SERVED ON A BED OF WARM BROWN RICE<br>AND RED QUINOA</p>
-				<table class = "lessItems">
-					<tr>
-						<td>SWEET HAWAIIAN CHICKEN</td>
-					</tr>
-					<tr>
-						<td>CHIPOTLE PULLED PORK</td>
-					</tr>
-				</table>
-				<div id = "three-row-panel">
-					<div class = "three-row" id = "reg">
-						<h3>REGULAR</h3>
-						<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
+				<h2>OPTION 2</h2>
+				<h1 class = "orange">SPECIALTY MEATS<br>(SLOW COOKED)</h1>
+				<div id = "three-row-panel" style="height: 100%; padding: 1.5em 0">
+					<div class = "three-row">
+						<h3>SINGLE PORTION</h3>
+						<p>SELECT ONE SPECIALTY MEAT<br>FROM THE OPTIONS BELOW<br>$8</p>
 					</div>
-					<div class = "three-row" id = "lg">
-						<h3>LARGE</h3>
-						<p>CHOOSE UP TO ANY 2<br> SUMO DELI SALADS</p>
-					</div>
-					<div class = "three-row" id = "sumo-large">
-						<h3>SUMO LARGE</h3>
-						<p>CHOOSE UP TO ANY 3<br> SUMO DELI SALADS</p>
+					<div class = "three-row">
+						<h3>MEAT AND SALAD COMBO</h3>
+						<p>SELECT ONE PREMIUM MEAT FROM BELOW<br>AND ONE PREMIUM SALAD FROM ABOVE<br>$12</p>
 					</div>
 				</div>
-			</div>
-			<div  class = "option" id = "drinks">
-				<h1>Sumo Drinks</h1>
-				<table class = "lessItems">
+				<table>
 					<tr>
-						<td>JONES PURE CANE SODA - $3</td>
+						<td>
+							<p><i>*Meat that you choose is served on brown rice</i><p>
+						</td>
 					</tr>
 					<tr>
-						<td>BOTTLED WATER - $1</td>
+						<td><h2>VENICE</h2><p>Pulled pork cooked slow with a homemade BBQ pineapple sauce, served on top of brown rice</p></td>
 					</tr>
 					<tr>
-						<td>YERBA ICED TEA - $4</td>
+						<td><h2>SANTA MONICA</h2><p>Pulled chicken cooked slow with a homemade honey garlic sauce, served on top of brown rice </p></td>
 					</tr>
 				</table>
 			</div>
+			<div class = "option" id = "option3">
+				<h2>OPTION 3</h2>
+				<h1 class = "orange">SPECIALTY WRAP</h1>
+				<div id = "three-row-panel">
+					<div class = "three-row">
+						<h3>WHEAT TORTILLA<br>WRAPS</h3>
+						<p>$9</p>
+					</div>
+				</div>
+				<table style="padding-bottom: 5em;">
+					<tr>
+						<td><p><i>*Both wraps can be a vegan option</i></p></td>
+					</tr>
+					<tr>
+						<td><h2>VENTURA</h2><p>Mixed greens, baked chicken, cherry tomatoes, chickpeas, dressed with a creamy caesar dressing</p></td>
+					</tr>
+					<tr>
+						<td><h2>BEVERLY</h2><p>(Warm Temp) Brown rice, honey garlic chicken, spinach, sliced cucumbers, jalapenos, cherry tomatoes, tossed in a habanero mango sauce</p></td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- <div class = "option" id = "option3">
+				<h2>OTHER</h2>
+				<div id = "three-row-panel">
+					<div class = "three-row">
+						<h3>SOUP AND SALAD<br>COMBO</h3>
+						<p>$10</p>
+					</div>
+					<div class = "three-row">
+						<h3>BOULEVARD<br>SOUPS</h3>
+						<p>$5</p>
+					</div>
+					<div class = "three-row">
+						<h3>BOULEVARD<br>DRINKS</h3>
+						<p>$3</p>
+					</div>
+				</div>
+				<table style="padding-bottom: 5em;">
+					<tr>
+						<td><h2>SOUPS</h2>
+						<p>Tomato Basil Bisque (cup)</p>
+						<p>Seasonal Soup (cup)</p>
+					</tr>
+					<tr>
+						<td><h2>DRINKS</h2>
+						<p>Bai (antioxidant)</p>
+						<p>Honest Tea</p></td>
+					</tr>
+				</table>
+			</div>
+ -->
 			<div class = "menu-pics" style = "height: 100%; width: 90%; margin: 0 auto; margin-bottom: 50px">
 				<div class = "row img-row">
 					<figure class = "cols four">
-						<img src="../images/Food/food1.jpg">
-						<figcaption><strong>Asian Greens</strong></figcaption>
+						<img src="../images/Food/brussels.jpg">
+						<figcaption><strong>PACIFIC</strong></figcaption>
 					</figure>
 					<figure class = "cols four">
-						<img src="../images/Food/food2.jpg">
-						<figcaption><strong>Balsamic Beetroot</strong></figcaption>
+						<img src="../images/Food/wilshire.jpg">
+						<figcaption><strong>WILSHIRE</strong></figcaption>
 					</figure>
 				</div>
 				<div class = "row img-row">
 					<figure class = "cols four">
-						<img src="../images/Food/food3.jpg">
-						<figcaption><strong>Basil Chicken Penne</strong></figcaption>
+						<img src="../images/Food/sunset.jpg">
+						<figcaption><strong>SUNSET</strong></figcaption>
 					</figure>
 					<figure class = "cols four">
-						<img src="../images/Food/food6.jpg">
-						<figcaption><strong>Thai Chicken Noodle</strong></figcaption>
+						<img src="../images/Food/cucumber.jpg">
+						<figcaption><strong>HOLLYWOOD</strong></figcaption>
 					</figure>
-				</div>
-				<div class = "row img-row">
-					<figure class = "cols four">
-						<img src="../images/Food/food5.jpg">
-						<figcaption><strong>Sweet Hawaiian Chicken</strong></figcaption>
-					</figure>
-					<figure class = "cols four">
-						<img src="../images/Food/food4.jpg">
-						<figcaption><strong>Chipotle Pulled Pork</strong></figcaption>
-					</figure>
-					
-				</div>
-				<div class = "row img-row">
-					<figure class = "cols four">
-						<img src="../images/Food/food7.jpg" style = "transform: rotate(0deg)">
-						<figcaption><strong>Pesto Chicken</strong></figcaption>
-					</figure>
-					<figure class = "cols four">
-						<img src="../images/Food/food8.jpg" style = "transform: rotate(0deg)">
-						<figcaption><strong>Jones Pure<br>Cane Soda</strong></figcaption>
-					</figure>
-					
 				</div>
 			</div>
 		</div>
 	</div>
+	</div>
 </article>
 <footer style = "height: 20%; width: 100%">
 	<h1>Connect</h1>
-	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
-	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
-	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
-	<div class = 'social'><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
+	<div class = 'social'><a href="https://www.facebook.com/boulevardsalad/" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
+	<div class = 'social'><a href="https://www.instagram.com/boulevardsalad/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
+	<div class = 'social'><a href="https://twitter.com/boulevardsalad" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
+	<div class = 'social' id = "snap"><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
+	<style type="text/css">
+		#caption{
+			font-family: "PT Sans", sans-serif;
+			margin: 0 auto;
+			border-radius: .1em;
+			padding-top: .5em;
+		}
+
+		#caption a, p{
+			font-family: "PT Sans", sans-serif;
+			text-decoration: none;
+			color: black;
+			cursor: pointer;
+		}
+
+		#caption a:hover{
+			font-weight: bold;
+		}
+	</style>
 	<div id = "caption">
-		<p>jeff@sumosaladtruck.com</p> <hr style= "width: 20%; margin: 0 auto"> <p>Website by Daniel Choi</p>
+		<hr style= "width: 20%; margin: .5em auto"> <p>Website By <a href = "https://github.com/danielch01" target = "_blank">danielch01</a></p>
 	</div>
 </footer>
 
-<script type="text/javascript">
-
-	var waitForFinalEvent = (function () {
-	  var timers = {};
-	  return function (callback, ms, uniqueId) {
-	    if (!uniqueId) {
-	      uniqueId = "Don't call this twice without a uniqueId";
-	    }
-	    if (timers[uniqueId]) {
-	      clearTimeout (timers[uniqueId]);
-	    }
-	    timers[uniqueId] = setTimeout(callback, ms);
-	  };
-	})();
-
-	if($(window).width() > 800){
-		
-		$(window).scroll(function(){
-			var wScroll = $(this).scrollTop();
-			if(wScroll > 1117){
-				$('.header').addClass('navFixed');
-			} 
-			if(wScroll <= 1117) {
-				$('.header').removeClass('navFixed');
-			}
-		});
-	} else {
-		$(window).resize(function(){
-			waitForFinalEvent(function(){
-				if($(window).width() > 800){
-					
-					$(window).scroll(function(){
-						var wScroll = $(this).scrollTop();
-						if(wScroll > 1117){
-							$('.header').addClass('navFixed');
-						} 
-						if(wScroll <= 1117) {
-							$('.header').removeClass('navFixed');
-						}
-					});
-				} else{
-					
-					$(window).scroll(function(){
-						var wScroll = $(this).scrollTop();
-						if(wScroll > 1117){
-							$('.header').removeClass('navFixed');
-						}
-					});
-				}
-			}, 500, "some unique string");
-		});
-	}
-</script>
 </body>
 </html>

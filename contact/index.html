@@ -6,15 +6,18 @@
 	<meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="robots" content="index, follow">
 	<meta name="googlebot" content="index, follow">
-	<meta name = "keywords" content="Sumo, Salad, Food, Truck, sumosalad, asian green, pesto chicken, taco quinoa salad, balsamic beetroot, basil chicken penne, thai chicken noodle, sweet hawaiian chicken, chipotle pulled pork, jones pure cane soda">
+	<meta name = "keywords" content="Boulevard, boulevard, salad, Salad, Food, Truck, boulevard, salad, food, truck, boulevardsalad, sunset, pacific, long, beach, wilshire, manhattan, wraps, pulled, pork, chili, jeff, Jeffrey, Laudenslager, natural,  wholesome, eating, local, ingredients, los, angeles, healthy, los angeles, jeff, laudy, tofu, salad, kale, cherry, tomato, kale, cucumber, chic, pea, cilantro, homemade, lime, dressing">
 	<title>Contact Us</title><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
- 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
+ 	<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
   	<style type="text/css">
   	#bcg-contact {
 	  background-color: white;
 	  background-image: url("../images/Truck/forest.jpg");
 	  background-size: cover;
+	  /*background-attachment: fixed;*/
+	  background-position: left center;
 	}
 
 
@@ -57,8 +60,8 @@
 		height: 100%;
 		overflow: hidden;
 	}
+
 	#container-contact h1{
-/*		font-family: "PT Sans", sans-serif;*/
 		font-size: 5vw;
 		margin: 1.5em 0;
 	}
@@ -98,7 +101,7 @@
 	  height: 50px;
 	  width: 90%;
 	  margin: 10px 0;
-	  font-size: 20px;
+	  font-size: 1em;
 	  padding: 0 5px;
 	}
 
@@ -128,9 +131,11 @@
 		#container-contact{
 			height: 100%;
 		}
+
 		.input{
 			display: table;
 		}
+
 		.input .block{
 			display: table-row;
 			width: 100%;
@@ -140,20 +145,90 @@
 		}
 	}
 
+	@media(max-width: 400px){
+
+		#container-contact h1{
+			font-size: 2em;
+			margin: 1.5em auto;
+		}
+
+		.input {
+		  margin: 0 auto;
+		  height: 70%;
+		  width: 100%;
+		}
+
+		.input .block{
+			display: block;
+			position: relative;
+		}
+
+		.input .truckimg {
+		  float: none;
+		  margin: 0 auto;
+		  width: 100%;
+		}
+
+		.input h3{
+			font-size: 1.5em;
+		}
+
+		.input .truckimg img{
+			width: 100%;
+		}
+
+		.input .truckimg p {
+		  font-size: 1.2em;
+		  padding: 10px 0;
+		}
+
+		.info {
+		  float: none;
+		  width: 100%;
+		  height: 100%;
+		  margin: 2em auto;
+		}
+
+		.info input, .info textarea{
+			height: 3em;
+			width: 80%;
+			font-size: 1em;
+			margin: .8em 0;
+		}
+
+		.info input[type=submit] {
+		  border: 0 none;
+		  width: 100px;
+		  font-size: 15px;
+		  border-radius: 10px;
+		  background-color: #739f3d;
+		  color: white;
+		  cursor: pointer;
+		}
+
+		.info input{
+		  height: 3em;
+		  padding: 0 5px;
+		}
+
+		.info textarea {
+		  height: 180px;
+		  padding: .8em .8em;
+		}
+	}
+
  </style>
 </head>
 <body>
 
 <div class = "header">
-	<div class = 'navHalf' id = "logo">
- 			<a href = "../index.html"><img class = "otherLogo" alt = "Sumo Salad" src="../images/Logo/images.jpg"></a>
-		</div>
-	<a href = "#" class = "menu-button"></a>
+	<div class = 'navHalf' id = "logo"><span>Fast, Fresh, and Friendly</span></div>
 	<ul class = 'navHalf' id = "menu">
-		<li><a href="../calendar/index.html">Schedule</a></li>
-		<li><a href="../menu/index.html">Menu</a></li>
-		<li><a href="../about/index.html">About</a></li>
-		<li><a href="../contact/index.html">Contact</a></li>
+		<li><a href="../home.html">Home</a></li>
+		
+		<li><a href="../menu/ ">Menu</a></li>
+		<li><a href="../about/ ">About</a></li>
+		<li><a href="../contact/ ">Contact</a></li>
 	</ul>
 </div>
 
@@ -164,16 +239,16 @@
 		<div class = "container container-other" id = "container-contact">
 			<div id = "contact-menu">
 				<a href = ".header"><div id = "contactForm"><h3>Contact</h3></div></a>
-				<a href = "../booking/index.html#logo"><div id = "booking"><h3>Booking</h3></div></a>
+				<a href = "../booking/"><div id = "booking"><h3>Booking</h3></div></a>
 			</div>
 			<div id = "contactToHere"></div>
 			<h1>Get In Touch</h1>
 			<div class = "input">
 				<div class = "truckimg block">
 					<h3>If you have any inquiries or comments,<br> please let us know!</h3>
-					<img src="../images/Logo/vectorTruck.jpg">
+					<hr style = "margin: 2em auto; width: 50%;">
 					<span style = "font-size: 1.8em">Phone:</span><p style = "letter-spacing: .2em; font-weight: bold">(570)916-2264</p>
-					<br><span style = "font-size: 1.8em">Email:</span><p style = "font-weight: bold">jeff@sumosaladtruck.com</p>
+					<br><span style = "font-size: 1.8em">Email:</span><p style = "font-weight: bold">boulevardsalad@gmail.com</p>
 				</div>
 				<div class = "info block">
 					<form action = "contact.php" method = "post" name = "emailMsg">
@@ -193,13 +268,31 @@
 </article>
 <footer style = "height: 20%; width: 100%">
 	<h1>Connect</h1>
-	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
-	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
-	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
-	<div class = 'social'><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
+	<div class = 'social'><a href="https://www.facebook.com/boulevardsalad/" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
+	<div class = 'social'><a href="https://www.instagram.com/boulevardsalad/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
+	<div class = 'social'><a href="https://twitter.com/boulevardsalad" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
+	<div class = 'social' id = "snap"><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
+	<style type="text/css">
+		#caption{
+			font-family: "PT Sans", sans-serif;
+			margin: 0 auto;
+			border-radius: .1em;
+			padding-top: .5em;
+		}
+
+		#caption a, p{
+			font-family: "PT Sans", sans-serif;
+			text-decoration: none;
+			color: black;
+			cursor: pointer;
+		}
+
+		#caption a:hover{
+			font-weight: bold;
+		}
+	</style>
 	<div id = "caption">
-		<p>jeff@sumosaladtruck.com</p> <hr style= "width: 20%; margin: 0 auto"> <p>Website by Daniel Choi</p>
+		<hr style= "width: 20%; margin: .5em auto"> <p>Website By <a href = "https://github.com/danielch01" target = "_blank">danielch01</a></p>
 	</div>
-</footer>
 </body>
 </html>

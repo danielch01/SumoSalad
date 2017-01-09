@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content=""> 
+	<!-- ^^^ Fill this description up after consulting Jeff -->
+	<meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow">
+	<meta name = "keywords" content="Boulevard, boulevard, salad, Salad, Food, Truck, boulevard, salad, food, truck, boulevardsalad, sunset, pacific, long, beach, wilshire, manhattan, wraps, pulled, pork, chili, jeff, Jeffrey, Laudenslager, natural,  wholesome, eating, local, ingredients, los, angeles, healthy, los angeles, jeff, laudy, tofu, salad, kale, cherry, tomato, kale, cucumber, chic, pea, cilantro, homemade, lime, dressing">
+
+	<script type="text/javascript">
+	  <!--
+	  if (screen.width <= 800) {
+	    window.location = "mobile/ ";
+	  }
+	  //-->
+	</script>
+
+
+	<title>Boulevard Salad</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src = "js/instafeed.min.js"></script>
+	<script type="text/javascript">
+		var feed = new Instafeed({
+			get: "user",
+			userId: "3563185651",
+			limit: '8',
+			accessToken: "3563185651.e05b3a9.3d0329967d5f4aa98fd3e7891b03212f"
+		});
+		feed.run();
+	</script>
+	<style type="text/css">
+
+	/* ------ DONT MESS WITH THESE -------- */
+
+	.bcg{
+		height: 10em;
+		background-image: url('images/Truck/truck1.jpg');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	.bcg #Message-Container{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.bcg .bcg_label{
+	  position: relative;
+	  height: auto;
+	  min-height: 1em;
+	  max-width: 12em;
+	  min-width: 10em;
+	  background-color: white;
+	  float: right;
+	  clear: both;
+	  border-radius: 15px 0 0 15px;
+	  font-family: "PT Sans", sans-serif;
+	  letter-spacing: 5px;
+	  padding: .5% 2%;
+	}
+
+	.bcg #label{
+		top: 50%;
+		font-size: 40%;
+
+		width: 80%;
+		margin-top: -2em;
+	}
+
+	.bcg #captionLabel{
+		top: 50%;
+		font-size: 25%;
+		width: 60%;
+		margin-top: -3em;
+
+	}
+
+
+	/* ------ NOW YOU CAN MESS WITH THESE -------- */
+
+	#story-left {
+	  background-image: url("../images/Truck/our_story.jpg");
+	}
+
+	#menu-right {
+	  background-image: url("../images/Food/cucumber.jpg");
+	}
+	
+	.msg {
+	  width: 80%;
+	  text-align: center;
+	  margin: 10% auto;
+	}
+	
+	.msg h1 {
+	  padding: 1.5em;
+	  font-size: 3em;
+	  font-family: "Oswald", sans-serif;
+	  letter-spacing: 5px;
+	}
+	
+	.msg p {
+	  line-height: 1.7em;
+	  font-family: "PT Sans", sans-serif;
+	  font-size: 1.3em;
+	}
+
+	#social{
+		margin-bottom: 5vmin;
+	}
+
+	#social #follow-right{
+		max-height: 40em;
+	}
+
+	#follow{
+		height: 100%;
+	}
+	
+	#follow .msg{
+		margin: 5vmin auto;
+	}
+
+	#instafeed img {
+	  padding: 1em;
+	}
+
+	@media(max-width: 10000px){
+		.bcg{
+			background-color: black;
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			font-size: 10vw;
+			max-height: 600px;
+		}
+
+
+		.container{
+			overflow: auto;
+			display: table;
+			height: 100%;
+			margin: 0 auto;
+		}
+
+		.container .divide, .container #social .divide{
+			overflow: auto;
+			display: table-cell;
+			width: 50%;
+		}
+
+		.container .left{
+			float: left;
+		}
+
+		.container .right{
+			float: right;
+		}
+
+
+
+		.containerBcg{
+			height: 100%;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+	}
+	</style>
+</head>
+<body>
+
+<div class = "header">
+	<div class = 'navHalf' id = "logo"><span>Fast, Fresh, and Friendly</span></div>
+	<ul class = 'navHalf' id = "list">
+		<li><a href="menu/ ">Menu</a></li>
+		<li><a href="about/ ">About</a></li>
+		<li><a href="contact/ ">Contact</a></li>
+	</ul>
+</div>
+
+<article>
+
+		<!-- EDIT THIS PART!!!! -->
+		<div class = "bcg"> 
+
+			<div id = "Message-Container">
+				<div class = "bcg_label" id = "label">@BoulevardSalad</div>
+				<br>
+				<div class = "bcg_label" id = "captionLabel">#ueatwhatusee</div>
+			</div>
+		</div>
+
+		<div class = "container" id = "follow">
+			<div class = "msg">
+				<hr>
+				<h1>Follow Us!</h1>
+				<hr>
+			</div>
+			<div id = "social">
+				<div class = "divide left" id = "follow-left">
+						<a class="twitter-timeline" href="https://twitter.com/boulevardsalad" width = "90%" height = "40em"></a>
+						<script>
+							!function(d,s,id){
+								var js,fjs = d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+								if(!d.getElementById(id)){
+									js=d.createElement(s);
+									js.id=id;
+									js.src=p+"://platform.twitter.com/widgets.js";
+									fjs.parentNode.insertBefore(js,fjs);
+								}
+							}(document,"script","twitter-wjs");
+						</script>
+				</div>
+				<div class = "divide left" id = "follow-right">
+					<a href="https://www.instagram.com/boulevardsalad/" target = "_blank"><img src="images/Social_Media/instag.jpg" style = "margin-bottom: 1em"></a>
+					<div id = "instafeed"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class = "container" id = "story">
+			<div class = "divide left containerBcg" id = "story-left"></div>
+			<div class = "divide right" id = "story-right">
+				<div class = "msg" id = "our-story">
+					<hr>
+					<h1>Our Story</h1>
+					<p>Boulevard Salad Truck began in 2016 with a passion to spread healthy and delicious food choices without breaking the bank. We are dedicated to serving up only the very best and the latest in food trends and nutritional needs. From pasta salads that tastes and feels healthy and fresh, to pulled pork that kicks your taste buds into overdrive, our food is guaranteed to have you coming back for more.</p>
+					<br/>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div class = "container" id = "menu">
+			<div class = "divide left" id = "menu-left">
+				<div class = "msg" id = "our-menu">
+					<hr>
+					<h1>Our Philosophy</h1>
+					<p>We take pride in knowing that we only use the freshest and healthiest ingredients, and we use fully compostable packaging that contributes to the well-being of our delicate little planet we call home. Additionally, choosing healthy choices shouldn’t feel like a chore, nor should it empty your wallet, and that is what we have set out to do with our food, so we carefully craft our menus for maximum choice and taste, while keeping the cost as low and affordable as possible. Our food is sure to leave you feeling satisfied and rejuvenated, both in your body and your mind.</p>
+					<br/>
+					<hr>
+				</div>
+			</div>
+			<div class = "divide right containerBcg" id = "menu-right"></div>
+		</div>
+</article>
+<footer style = "height: 20%; width: 100%">
+	<h1>Connect</h1>
+	<div class = 'social'><a href="https://www.facebook.com/boulevardsalad/" target = "_blank"><img src="images/Social_Media/fb1.jpg" alt = "FB"></a></div>
+	<div class = 'social'><a href="https://www.instagram.com/boulevardsalad/" target = "_blank"><img src="images/Social_Media/instagram.jpg" alt = "IG"></a></div>
+	<div class = 'social'><a href="https://twitter.com/boulevardsalad" target = "_blank"><img src="images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
+	<div class = 'social' id = "snap"><img src="images/Social_Media/snapchat.jpg" alt = "SC"></div>
+	<style type="text/css">
+		#caption{
+			font-family: "PT Sans", sans-serif;
+			margin: 0 auto;
+			border-radius: .1em;
+			padding-top: .5em;
+		}
+
+		#caption a, p{
+			font-family: "PT Sans", sans-serif;
+			text-decoration: none;
+			color: black;
+			cursor: pointer;
+		}
+
+		#caption a:hover{
+			font-weight: bold;
+		}
+	</style>
+	<div id = "caption">
+		<hr style= "width: 20%; margin: .5em auto"> <p>Website By <a href = "https://github.com/danielch01" target = "_blank">danielch01</a></p>
+	</div>
+</footer>
+</body>
+</html>

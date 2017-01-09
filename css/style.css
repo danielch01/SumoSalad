@@ -7,32 +7,37 @@
 body {
   width: 100vw;
   height: 100%;
+  min-width: 800px;
   background-color: #c0c0c0;
 }
 
+
+/*------ FOR NAVIGATION PANEL ON TOP OF WEBPAGE -----*/
+
+.navHalf{
+  position: relative;
+  top: 1em;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em 0;
+  min-width: 800px;
+}
+
+.navHalf span{
+  text-decoration: none;
+  color: #000000;
+  font-family: "Lobster Two", Helvetica, sans-serif;
+  font-size: 2.5em;
+  letter-spacing: .15em;
+}
 .header {
   background-color: white;
   position: relative;
   width: 100%;
+  height: 10em;
 }
 
-.header #logo {
-  padding: .8em;
-  margin-left: 5%;
-}
-
-.header #logo #mainLogo {
-  height: 8em;
-  width: 14em;
-  border-radius: 50%;
-}
-
-.header #logo .otherLogo {
-  height: 5em;
-  width: 5em;
-  margin-top: 1em;
-  margin-left: 5%;
-}
 
 .header ul {
   position: absolute;
@@ -64,6 +69,9 @@ body {
   z-index: 99;
 }
 
+
+/*------ FOR CONTENT ON WEBPAGE ------*/
+
 article {
   top: 100%;
   margin: 0 auto;
@@ -74,23 +82,25 @@ article {
 }
 
 .container {
-  border-top: 0.8em solid #f69454;
-  border-bottom: 0.8em solid #f69454;
+  border-top: 0.8em solid #3B653D;
+  border-bottom: 0.8em solid #3B653D;
   width: 90%;
   background-color: #fcfdfe;
   text-align: center;
 }
 
+/* -------- FOR BACKGROUND INTRODUCTORY PANEL -------*/
+
 .bcg-other {
   height: 40vh;
   overflow: auto;
+  background-color: #1C2833;
 }
 
 .bcg-other h1 {
   position: relative;
   background-color: white;
   width: 60%;
-  max-width: 15em;
   height: 8vmin;
   top: 50%;
   margin-top: -4vmin;
@@ -110,42 +120,13 @@ article {
   font-size: 80%;
 }
 
-@media (max-width: 1000px) {
-  .bcg-other {
-    height: 20em;
-  }
-  .bcg-other h1 {
-    top: 50%;
-    margin-top: -.6em;
-    font-size: 6em;
-  }
-  .bcg-other h1 span {
-    padding-top: 0;
-    height: 100%;
-    font-size: 50%;
-  }
-}
-
-@media (max-height: 600px) {
-  .bcg-other {
-    height: 18em;
-  }
-  .bcg-other h1 {
-    top: 50%;
-    margin-top: -.5em;
-    height: .8em;
-    font-size: 6em;
-  }
-  .bcg-other h1 span {
-    padding-top: 0;
-    height: 100%;
-    font-size: 50%;
-  }
-}
 
 .container-other {
   margin: 0 auto;
 }
+
+
+/* ------ FOR FOOTER ON BOTTOM OF PAGE*/
 
 footer {
   border-top: 0.8em solid #ee693f;
@@ -193,23 +174,36 @@ footer #caption{
   margin-top: 2em;
 }
 
-/*footer .tooltipText{
-  visibility: hidden;
-}*/
 
 footer .tooltip:hover .tooltipText{
   visibility: hidden;
 }
 
-/*footer .tooltip:hover .tooltipText{
-  visibility: visible;
-}*/
 
-@media (max-width: 1000px) {
+/* ------- FOR WHEN WINDOW WIDTH IS SHORTENED TO 1000PX ---------*/
+
+
+
+/*@media (max-width: 1000px) {
+
+  .bcg-other {
+    height: 20em;
+  }
+  .bcg-other h1 {
+    top: 50%;
+    margin-top: -.6em;
+    font-size: 6em;
+  }
+  .bcg-other h1 span {
+    padding-top: 0;
+    height: 100%;
+    font-size: 50%;
+  }
   .header {
     background-color: white;
     overflow: hidden;
     width: 100%;
+    height: 15em;
   }
   .header #logo {
     position: relative;
@@ -255,4 +249,74 @@ footer .tooltip:hover .tooltipText{
   .header ul li a:hover {
     color: #7da3a1;
   }
-}
+
+  footer .social {
+    overflow: hidden;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    top: 50%;
+    margin: 0 .5em;
+    margin-bottom: 1em;
+  }
+
+  footer .social img {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    margin-top: -2em;
+  }
+
+  footer figcaption {
+    margin-top: 2em;
+    font-size: .8em;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  footer a{
+    color: white;
+  }
+}/*
+
+/* ------- FOR WHEN WINDOW WIDTH IS SHORTENED TO 400PX ---------*/
+/*
+@media(max-width: 400px){
+  .bcg-other {
+    height: 20em;
+  }
+  .bcg-other h1 {
+    top: 50%;
+    width: 80%;
+    padding-bottom: .2em;
+    margin-top: 0em;
+  }
+  .bcg-other h1 span {
+    padding-top: 0;
+    height: 100%;
+    font-size: .4em;
+  }
+}*/
+
+/*@media (max-height: 600px) {
+  .bcg-other {
+    height: 18em;
+  }
+  .bcg-other h1 {
+    top: 50%;
+    margin-top: -.5em;
+    height: .8em;
+    font-size: 6em;
+  }
+  .bcg-other h1 span {
+    padding-top: 0;
+    height: 100%;
+    font-size: 50%;
+  }
+}*/

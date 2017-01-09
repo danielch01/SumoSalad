@@ -65,167 +65,66 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/Food\/food1.jpg": {
+	"\/home.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/home.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/images\/Food\/brussels.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 381871,
-		"inputAbbreviatedPath": "\/images\/Food\/food1.jpg",
-		"outputAbbreviatedPath": "\/images\/Food\/food1.jpg",
+		"initialSize": 56126,
+		"inputAbbreviatedPath": "\/images\/Food\/brussels.jpg",
+		"outputAbbreviatedPath": "\/images\/Food\/brussels.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Food\/food2.jpg": {
+	"\/images\/Food\/cucumber.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 664019,
-		"inputAbbreviatedPath": "\/images\/Food\/food2.jpg",
-		"outputAbbreviatedPath": "\/images\/Food\/food2.jpg",
+		"initialSize": 55508,
+		"inputAbbreviatedPath": "\/images\/Food\/cucumber.jpg",
+		"outputAbbreviatedPath": "\/images\/Food\/cucumber.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Food\/food3.jpg": {
+	"\/images\/Food\/fruit.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 481562,
-		"inputAbbreviatedPath": "\/images\/Food\/food3.jpg",
-		"outputAbbreviatedPath": "\/images\/Food\/food3.jpg",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/Food\/fruit.jpg",
+		"outputAbbreviatedPath": "\/images\/Food\/fruit.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Food\/food4.jpg": {
+	"\/images\/Food\/sunset.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.01166e+06,
-		"inputAbbreviatedPath": "\/images\/Food\/food4.jpg",
-		"outputAbbreviatedPath": "\/images\/Food\/food4.jpg",
+		"initialSize": 70719,
+		"inputAbbreviatedPath": "\/images\/Food\/sunset.jpg",
+		"outputAbbreviatedPath": "\/images\/Food\/sunset.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Food\/food5.jpg": {
+	"\/images\/Food\/wilshire.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.04857e+06,
-		"inputAbbreviatedPath": "\/images\/Food\/food5.jpg",
-		"outputAbbreviatedPath": "\/images\/Food\/food5.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Food\/food6.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 588883,
-		"inputAbbreviatedPath": "\/images\/Food\/food6.jpg",
-		"outputAbbreviatedPath": "\/images\/Food\/food6.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Food\/food7.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 72953,
-		"inputAbbreviatedPath": "\/images\/Food\/food7.jpg",
-		"outputAbbreviatedPath": "\/images\/Food\/food7.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Food\/food8.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 62478,
-		"inputAbbreviatedPath": "\/images\/Food\/food8.jpg",
-		"outputAbbreviatedPath": "\/images\/Food\/food8.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Food\/menubcg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 572968,
-		"inputAbbreviatedPath": "\/images\/Food\/menubcg.jpg",
-		"outputAbbreviatedPath": "\/images\/Food\/menubcg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Logo\/freeRange.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 177379,
-		"inputAbbreviatedPath": "\/images\/Logo\/freeRange.jpg",
-		"outputAbbreviatedPath": "\/images\/Logo\/freeRange.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Logo\/images.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 7800,
-		"inputAbbreviatedPath": "\/images\/Logo\/images.jpg",
-		"outputAbbreviatedPath": "\/images\/Logo\/images.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Logo\/sumo_salad.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 89778,
-		"inputAbbreviatedPath": "\/images\/Logo\/sumo_salad.jpg",
-		"outputAbbreviatedPath": "\/images\/Logo\/sumo_salad.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Logo\/sumoTogo.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 7209,
-		"inputAbbreviatedPath": "\/images\/Logo\/sumoTogo.jpg",
-		"outputAbbreviatedPath": "\/images\/Logo\/sumoTogo.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Logo\/vectorTruck.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 43339,
-		"inputAbbreviatedPath": "\/images\/Logo\/vectorTruck.jpg",
-		"outputAbbreviatedPath": "\/images\/Logo\/vectorTruck.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Logo\/vertical_logo.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 89490,
-		"inputAbbreviatedPath": "\/images\/Logo\/vertical_logo.jpg",
-		"outputAbbreviatedPath": "\/images\/Logo\/vertical_logo.jpg",
+		"initialSize": 72519,
+		"inputAbbreviatedPath": "\/images\/Food\/wilshire.jpg",
+		"outputAbbreviatedPath": "\/images\/Food\/wilshire.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -296,6 +195,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Texture\/chalk.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 314948,
+		"inputAbbreviatedPath": "\/images\/Texture\/chalk.jpg",
+		"outputAbbreviatedPath": "\/images\/Texture\/chalk.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Texture\/chalk2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7286,
+		"inputAbbreviatedPath": "\/images\/Texture\/chalk2.jpg",
+		"outputAbbreviatedPath": "\/images\/Texture\/chalk2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/Texture\/wood_80.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -329,13 +250,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Truck\/maico_amorim.jpg": {
+	"\/images\/Truck\/our_story.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 227930,
-		"inputAbbreviatedPath": "\/images\/Truck\/maico_amorim.jpg",
-		"outputAbbreviatedPath": "\/images\/Truck\/maico_amorim.jpg",
+		"initialSize": 67258,
+		"inputAbbreviatedPath": "\/images\/Truck\/our_story.jpg",
+		"outputAbbreviatedPath": "\/images\/Truck\/our_story.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -344,20 +265,9 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5498,
+		"initialSize": 3.31607e+06,
 		"inputAbbreviatedPath": "\/images\/Truck\/ourStory.jpg",
 		"outputAbbreviatedPath": "\/images\/Truck\/ourStory.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Truck\/past.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 55867,
-		"inputAbbreviatedPath": "\/images\/Truck\/past.jpg",
-		"outputAbbreviatedPath": "\/images\/Truck\/past.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -384,36 +294,27 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Truck\/sunset.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63003,
+		"inputAbbreviatedPath": "\/images\/Truck\/sunset.jpg",
+		"outputAbbreviatedPath": "\/images\/Truck\/sunset.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/Truck\/truck1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 448591,
+		"initialSize": 2.01951e+06,
 		"inputAbbreviatedPath": "\/images\/Truck\/truck1.jpg",
 		"outputAbbreviatedPath": "\/images\/Truck\/truck1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/images\/Truck\/truck3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 386680,
-		"inputAbbreviatedPath": "\/images\/Truck\/truck3.jpg",
-		"outputAbbreviatedPath": "\/images\/Truck\/truck3.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/js\/instafeed.min.js": {
 		"fileType": 64,
@@ -454,38 +355,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/README.md": {
-		"criticStyle": 0,
-		"enableFootnotes": 1,
-		"enableLabels": 1,
-		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/README.md",
-		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/README.html",
-		"outputFormat": 0,
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"parseMetadata": 1,
-		"processHTML": 0,
-		"randomFootnoteNumbers": 0,
-		"useCompatibilityMode": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Daniel Choi",
+"lastSavedByUser": "Hwangrak Choi",
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "Sumo_Salad",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "BoulevardSalad",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "pencil_orange"
 	},
 "projectSettings": {

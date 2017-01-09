@@ -1,7 +1,9 @@
 <?php
 if($_POST["message"]) {
 	$fromEmail = "From: " . $_POST['email'];
-    mail("jeff@sumosaladtruck.com", $_POST["subject"], $_POST["message"], $fromEmail);
+	$msg = $_POST["name"] . "\r\n\n";
+	$msg .= $_POST["message"];
+    mail("boulevardsalad@gmail.com", $_POST["subject"], $msg, $fromEmail);
 }
 ?>
 
@@ -14,10 +16,11 @@ if($_POST["message"]) {
 	<meta name="viewport" id = "viewport" content="widht=device-widt, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="robots" content="index, follow">
 	<meta name="googlebot" content="index, follow">
-	<meta name = "keywords" content="Sumo, Salad, Food, Truck, sumosalad, asian green, pesto chicken, taco quinoa salad, balsamic beetroot, basil chicken penne, thai chicken noodle, sweet hawaiian chicken, chipotle pulled pork, jones pure cane soda">
+	<meta name = "keywords" content="Boulevard, boulevard, salad, Salad, Food, Truck, boulevard, salad, food, truck, boulevardsalad, sunset, pacific, long, beach, wilshire, manhattan, wraps, pulled, pork, chili, jeff, Jeffrey, Laudenslager, natural,  wholesome, eating, local, ingredients, los, angeles, healthy, los angeles, jeff, laudy, tofu, salad, kale, cherry, tomato, kale, cucumber, chic, pea, cilantro, homemade, lime, dressing">
 	<title>Contact Us</title><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
+	 <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans%7COswald%7CSigmar+One">
 	 <style type="text/css">
  	#bcg-contact {
 	  background-color: white;
@@ -90,16 +93,15 @@ if($_POST["message"]) {
 </head>
 <body>
 
-<div class = "header nav">
-	<nav>
-		<div id = "logo"><a href = "../index.html"><img src="../images/Logo/images.jpg"><a></div>
-		<ul>
-			<li><a href="../calendar/index.html">Schedule</a></li>
-			<li><a href="../menu/index.html">Menu</a></li>
-			<li><a href="../about/index.html">About</a></li>
-			<li><a href="../contact/index.html">Contact</a></li>
-		</ul>
-	</nav>
+<div class = "header">
+	<div class = 'navHalf' id = "logo"><span>Fast, Fresh, and Friendly</span></div>
+	<ul class = 'navHalf' id = "menu">
+		<li><a href="../home.html">Home</a></li>
+		
+		<li><a href="../menu/ ">Menu</a></li>
+		<li><a href="../about/ ">About</a></li>
+		<li><a href="../contact/ ">Contact</a></li>
+	</ul>
 </div>
 
 <article>
@@ -108,22 +110,40 @@ if($_POST["message"]) {
 		</div>
 		<div class = "container container-other" id = "container-contact">
 			<div id = "contact-menu">
-				<a href = "index.html#contactToHere"><div id = "contactForm"><h3>Contact</h3></div></a>
-				<a href = "../booking/index.html#bookingToHere"><div id = "booking"><h3>Booking</h3></div></a>
+				<a href = "../contact/"><div id = "contactForm"><h3>Contact</h3></div></a>
+				<a href = "../booking/"><div id = "booking"><h3>Booking</h3></div></a>
 			</div>
 			<div id = "contactToHere"></div>
 			<h1>Your Message Has Been Received<br>Thank You!</h1>
-			<img src="../images/Logo/vectorTruck.jpg">
 		</div>
 </article>
 <footer style = "height: 20%; width: 100%">
 	<h1>Connect</h1>
-	<div class = 'social'><a href="https://www.facebook.com/sumosaladtruck/?fref=ts" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
-	<div class = 'social'><a href="https://www.instagram.com/sumosaladtruck/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
-	<div class = 'social'><a href="https://twitter.com/hashtag/sumosaladtruck" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
-	<div class = 'social'><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
+	<div class = 'social'><a href="https://www.facebook.com/boulevardsalad/" target = "_blank"><img src="../images/Social_Media/fb1.jpg" alt = "FB"></a></div>
+	<div class = 'social'><a href="https://www.instagram.com/boulevardsalad/" target = "_blank"><img src="../images/Social_Media/instagram.jpg" alt = "IG"></a></div>
+	<div class = 'social'><a href="https://twitter.com/boulevardsalad" target = "_blank"><img src="../images/Social_Media/twit.png" alt = "TW" style = "background-color: white"></a></div>
+	<div class = 'social' id = "snap"><img src="../images/Social_Media/snapchat.jpg" alt = "SC"></div>
+	<style type="text/css">
+		#caption{
+			font-family: "PT Sans", sans-serif;
+			margin: 0 auto;
+			border-radius: .1em;
+			padding-top: .5em;
+		}
+
+		#caption a, p{
+			font-family: "PT Sans", sans-serif;
+			text-decoration: none;
+			color: black;
+			cursor: pointer;
+		}
+
+		#caption a:hover{
+			font-weight: bold;
+		}
+	</style>
 	<div id = "caption">
-		<p>jeff@sumosaladtruck.com</p> <hr style= "width: 20%; margin: 0 auto"> <p>Website by Daniel Choi</p>
+		<hr style= "width: 20%; margin: .5em auto"> <p>Website By <a href = "https://github.com/danielch01" target = "_blank">danielch01</a></p>
 	</div>
 </footer>
 </body>
