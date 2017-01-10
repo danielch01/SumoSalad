@@ -1,0 +1,129 @@
+$carrot: #eb8921;
+
+#bcg-menu{
+	background:{
+		image: url("../images/Truck/sunset.jpg");
+		size: cover;
+		position: bottom center;
+		attachment: fixed;
+	}
+}
+
+#container-menu{
+	height: 100%;
+	width: 1000px;
+	font-size: 1.2em;
+}
+
+#menu-title{
+	margin-top: 2em;
+	font:{
+		size: 3em;
+		family: 'Sigmar One', cursive;
+	}
+}
+
+.option{
+	height: 60%;
+	width: 100%;
+	position: relative;
+	padding: 5em 0;
+	overflow: auto;
+	margin: 3em 0 10em 0;
+	background-color: white;
+
+	h1{
+		color: $carrot;
+		font-family: 'Sigmar One', cursive;
+	}
+
+	hr{
+		margin: 1em auto;
+		width: 60%;
+	}
+
+	.pref{
+		h3{
+			padding: .5em 0;
+		}
+		padding: 2em 0;
+	}
+
+	.items{
+		height: 50%;
+		width: 50%;
+		float: left;
+		h2{
+			letter-spacing: .1em;
+			padding: 2em 0;
+			font-family: 'Oswald', sans-serif;
+		}
+		span, p{
+			padding: 0.5em 3em;
+
+		}
+		span{
+			font-style: italic;
+		}
+	}
+}
+
+.background-menu{
+	height: 100%;
+	background:{
+		repeat: no-repeat;
+		size: cover;
+		attachment: fixed;
+	}
+}
+
+#container-menu{
+	#option1{
+		#salad-items{
+			padding-bottom: 3em;
+		}
+	}
+
+	#option2{
+		#meat-items{
+			height: 100%;
+		}
+	}
+
+	#option3{
+
+	}
+
+	#option4{
+		h2{
+			letter-spacing: 0;
+			padding: 1em 0;
+		}
+	}
+
+	// Background Images
+	#pic1{
+		background-image: url("../images/Food/food1.jpg");
+	}
+
+	#pic2{
+		background-image: url("../images/Food/food2.jpg");
+	}
+
+	#pic3{
+		background-image: url("../images/Food/food3.jpg");
+	}
+
+	#pic4{
+		background-image: url("../images/Food/food4.jpg");
+	}
+}
+
+
+
+@media(max-width: 1000px){
+	#container-menu{
+		width: 90%;
+		margin: 0 auto;
+	}
+}

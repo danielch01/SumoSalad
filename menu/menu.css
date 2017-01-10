@@ -1,0 +1,75 @@
+#bcg-menu {
+  background-image: url("../images/Truck/sunset.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed; }
+
+#container-menu {
+  height: 100%;
+  width: 1000px;
+  font-size: 1.2em; }
+
+#menu-title {
+  margin-top: 2em;
+  font-size: 3em;
+  font-family: 'Sigmar One', cursive; }
+
+.option {
+  height: 60%;
+  width: 100%;
+  position: relative;
+  padding: 5em 0;
+  overflow: auto;
+  margin: 3em 0 10em 0;
+  background-color: white; }
+  .option h1 {
+    color: #eb8921;
+    font-family: 'Sigmar One', cursive; }
+  .option hr {
+    margin: 1em auto;
+    width: 60%; }
+  .option .pref {
+    padding: 2em 0; }
+    .option .pref h3 {
+      padding: .5em 0; }
+  .option .items {
+    height: 50%;
+    width: 50%;
+    float: left; }
+    .option .items h2 {
+      letter-spacing: .1em;
+      padding: 2em 0;
+      font-family: 'Oswald', sans-serif; }
+    .option .items span, .option .items p {
+      padding: 0.5em 3em; }
+    .option .items span {
+      font-style: italic; }
+
+.background-menu {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#container-menu #option1 #salad-items {
+  padding-bottom: 3em; }
+#container-menu #option2 #meat-items {
+  height: 100%; }
+#container-menu #option4 h2 {
+  letter-spacing: 0;
+  padding: 1em 0; }
+#container-menu #pic1 {
+  background-image: url("../images/Food/food1.jpg"); }
+#container-menu #pic2 {
+  background-image: url("../images/Food/food2.jpg"); }
+#container-menu #pic3 {
+  background-image: url("../images/Food/food3.jpg"); }
+#container-menu #pic4 {
+  background-image: url("../images/Food/food4.jpg"); }
+
+@media (max-width: 1000px) {
+  #container-menu {
+    width: 90%;
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=menu.css.map */

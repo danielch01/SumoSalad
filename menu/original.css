@@ -1,0 +1,310 @@
+ 	#bcg-menu {
+	  background-image: url("../images/Truck/sunset.jpg"); /*--- REPLACE WITH BEACH BACKGROUND ----*/
+	  background-size: cover;
+	  background-position: bottom center;
+	  background-attachment: fixed;
+	}
+
+	#chalk{
+	  height: 100%;
+	  width: 90%;
+	  margin: 0 auto;
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  text-align: center;
+	  background-image: url('../images/Texture/chalk2.jpg');
+	  background-size: contain;
+	}
+
+	#container-menu {
+		position: relative;
+	  height: 100%;
+	  width: 90%;
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  text-align: center;
+	}
+
+	#container-menu #start {
+	  font-family: "Sigmar One", cursive;
+	  padding: .8em 0;
+	  font-size: 3em;
+	}
+
+	#container-menu #start span {
+	  font-size: 1em;
+	  font-family: "PT Sans", sans-serif;
+	}
+
+	#container-menu .option {
+	  width: 60%;
+	  margin: 0 auto;
+	  position: relative;
+	}
+
+	#container-menu .option h2 {
+	  text-decoration: underline;
+	  padding: 1em 0;
+	  font-family: "Oswald", sans-serif;
+	}
+
+	#container-menu .option h1 {
+	  font-size: 2em;
+	  margin-bottom: 1em;
+	  font-family: "Sigmar One", cursive;
+	}
+
+	#container-menu .option table {
+		color: black;
+		background-color: white;
+	  margin-bottom: 2em;
+	  padding: 1em 2em;
+	}
+
+	#container-menu .option table td {
+	  font-family: "PT Sans", sans-serif;
+	  font-size: 1.5em;
+	  padding: 0.3em 0.4em;
+	}
+
+	#container-menu #option1 {
+	  margin-bottom: 0;
+	}
+
+	#container-menu #option1 #regOrLrg{
+	  height: 30vh;
+	  width: 90%;
+	  margin: 0 auto;
+	  clear: both;
+	}
+
+	#container-menu #option1 #regOrLrg .panel{
+	  width: 100%;
+	  padding: 1em 0;
+	}
+
+	#container-menu #option1 #regOrLrg .panel h3 {
+	  font-size: 30px;
+	  font-family: "Sigmar One", cursive;
+	}
+
+	#container-menu #option1 #regOrLrg .panel p {
+	  font-family: "PT Sans", sans-serif;
+	  font-size: 1.4em;
+	}
+
+	#container-menu #option1 #regOrLrg #regular {
+	  float: left;
+	}
+
+	#container-menu #option1 #regOrLrg #large {
+	  float: right;
+	}
+
+	#container-menu #option2 #three-row-panel{
+		position: relative;
+		height: 30vh;
+	}
+
+	#container-menu #option2 .three-row {
+	  width: 100%;
+	}
+
+	#container-menu #option2 .three-row h3 {
+	  font-size: 1.6em;
+	  font-family: "Sigmar One", cursive;
+	}
+
+	#container-menu #option2 .three-row p {
+	  font-family: "PT Sans", sans-serif;
+	  font-size: 1.4em;
+	}
+
+	#container-menu #option2 p {
+	  padding: 20px 0;
+	}
+
+	#container-menu #option3 #three-row-panel{
+		position: relative;
+		height: 30vh;
+	}
+
+	#container-menu #option3 .three-row {
+	  width: 100%;
+	}
+
+	#container-menu #option3 .three-row h3 {
+	  font-size: 1.6em;
+	  font-family: "Sigmar One", cursive;
+	}
+
+	#container-menu #option3 .three-row p {
+	  font-family: "PT Sans", sans-serif;
+	  font-size: 1.4em;
+	}
+
+	#container-menu #option3 p {
+	  padding: 20px 0;
+	}
+
+	#container-menu table {
+	  margin: 0 auto;
+	  border: .3em solid;
+	}
+
+	#container-menu .orange {
+	  color: #F88017;
+	}
+
+	#container-menu img {
+	  max-width: 100%;
+	  height: auto;
+/*	  transform: rotate(0deg);
+	  -webkit-transform: rotate(90deg);
+	  -moz-transform: rotate(90deg);
+	  -ms-transform: rotate(90deg);
+	  -o-transform: rotate(90deg);*/
+	}
+
+	#container-menu figure {
+	  margin: auto;
+	}
+
+
+	#container-menu .menu-pics figure {
+	  position: relative;
+	  height: 30em;
+	  width: 30em;
+	  display: inline-block;
+	  cursor: pointer;
+	  margin: 1em 0em;
+	  overflow: hidden;
+	}
+
+	#container-menu .menu-pics figure img {
+	  height: 100%;
+	  width: 100%;
+	  margin: 0 auto;
+	  display: block;
+	  border-radius: 2em;
+	}
+
+	#container-menu .menu-pics figure:hover figcaption {
+	  left: 0%;
+	}
+
+	#container-menu .menu-pics figure:hover img {
+	  opacity: 0.5;
+	  transition: opacity 0.4s;
+	}
+
+	#container-menu .menu-pics figcaption {
+	  position: absolute;
+	  height: 80px;
+	  width: 100%;
+	  top: 50%;
+	  margin-top: -50px;
+	  left: -110%;
+	  background: white;
+	  color: black;
+	  padding: 10px 20px;
+	  font-size: 30px;
+	  transition: all 0.3s ease-in-out;
+	}
+	#container-menu .menu-pics figcaption strong{
+		font-family: "Sigmar One", cursive;
+	}
+
+	@media(max-width: 1000px) {
+		#container-menu .option{
+			width: 100%;
+		}
+
+		#container-menu #option1 table{
+			width: 90%;
+			margin: 10vw auto;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+
+		#container-menu #option2{
+			width: 100%;
+		}
+
+/*		#container-menu #option2 table{
+			width: 100%;
+			margin: 10vw auto;
+			padding-left: 0;
+			padding-right: 0;
+		}*/
+
+		#container-menu #option2 #three-row-panel{
+			position: relative;
+			height: 30vh;
+		}
+
+
+		#container-menu #drinks table{
+			width: 80%;
+		}
+
+
+		#container-menu .menu-pics figure {
+/*		  border: 1px solid;*/
+		  position: relative;
+		  height: 30em;
+		  width: 30em;
+		  display: inline-block;
+		  cursor: pointer;
+		  margin: 2em auto;
+		  overflow: hidden;
+		}
+
+		#container-menu #option1 #regOrLrg{
+		  width: 90%;
+		  margin: 0 auto;
+
+		}
+
+		#container-menu #option1 #regOrLrg .panel{
+			padding: 0;
+			height: 200px;
+		  	width: 100%;
+		}
+
+/*		#container-menu #option3{
+			width: 100%;
+		}
+		#container-menu #option3 #three-row-panel{
+			position: relative;
+			text-align: center;
+			height: 100vh;
+		}
+		#container-menu #option3 #three-row-panel .three-row {
+			width: 100%;
+			height: 33.3%;
+		}*/
+
+		#container-menu .menu-pics figcaption {
+			left: -150%;
+		}
+
+		#container-menu .option table {
+			width: 90%;
+			color: black;
+			background-color: white;
+		  	margin-bottom: 2em;
+		  	padding: 1em 2em;
+		}
+
+		#container-menu #option2 #three-row-panel{
+			position: relative;
+			height: 100%;
+		}
+
+		#container-menu #option3 #three-row-panel{
+			position: relative;
+			height: 100%;
+		}
+	}
