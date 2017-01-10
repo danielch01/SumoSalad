@@ -130,8 +130,7 @@
 	  margin: 0 auto;
 	  width: 100%;
 	  height: 100%;
-	  background-image: url("../images/Texture/wood_80.jpg");
-	  background-attachment: fixed;
+	  background-color: #FFFFFF;
 	}
 
 	/* ------ OKAY NOW YOU CAN -------- */
@@ -139,7 +138,7 @@
 	.container {
 	  border-top: 0.8em solid #4AA02C;
 	  border-bottom: 0.8em solid #4AA02C;
-	  width: 90%;
+	  width: 100%;
 	  background-color: #fcfdfe;
 	  text-align: center;
 	}
@@ -292,98 +291,43 @@
 
 	/* ---- MOBILE EDIT STARTS HERE -------*/
 
-	#menu{
-		height: 100%;
-		width: 90%;
-		margin-top: 0;
-		margin-bottom: 0;
-		text-align: center;
-	}
+	#menu-title {
+  margin-top: 2em;
+  font-size: 3em;
+  font-family: 'Sigmar One', cursive; }
 
-	#menu .orange{
-		color: #f69454;
-	}
+.option {
+	font-size: 1.3em;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 1em 0;
+  overflow: auto;
+  background-color: white; }
+  .option h1 {
+    color: #eb8921;
+    font-family: 'Sigmar One', cursive; }
+  .option hr {
+    margin: 1em auto;
+    width: 60%; }
+  .option .pref {
+    padding: 2em 0; }
+    .option .pref h3 {
+      padding: .5em 0; }
+  .option .items {
+    height: 50%;
+    width: 100%;
+    }
+    .option .items h2 {
+      letter-spacing: .1em;
+      padding: 2em 0;
+      font-family: 'Oswald', sans-serif; }
+    .option .items span, .option .items p {
+      padding: 0.5em 3em; }
+    .option .items span {
+      font-style: italic; }
 
-	#menu #start, .option h1{
-		font-family: "Sigmar One", cursive;
-		padding: .8em 0;
-		font-size: 2em;
-	}
-
-	#menu #start span, .option table td{
-		font-size: 1em;
-		font-family: 'PT Sans', sans-serif;
-	}
-
-	#menu .option{
-		width: 100%;
-		margin: 2em auto;
-		position: relative;
-	}
-
-	#menu .option h2{
-		font-size: 2em;
-		margin-bottom: 1em;
-	}
-
-	.option table{
-		padding: 1em 1em;
-		border: .2em solid;
-		margin: 2em auto;
-		width: 90%;
-	}
-
-	.option table tr{
-		font-size: 1.2em;
-		padding: 0.5em 0em;
-	}
-
-	.option table td p{
-		font-size: 1.5em;
-		margin-bottom: 2em;
-	}
-
-/*	.option table td{
-		font-size: 1.2em;
-		padding: 0.2em 0em;
-		margin: 0;
-	}*/
-
-	.option h2{
-		text-decoration: underline;
-	}
-
-
-	#regOrLrg .panel{
-		width: 100%;
-		padding: 1.5em 0;
-	}
-
-	#regOrLrg .panel h3{
-		font-size: 2em;
-		font-family: "Sigmar One", cursive;
-	}
-
-	#regOrLrg .panel p {
-	  font-family: "PT Sans", sans-serif;
-	  font-size: 1.4em;
-	}
-
-	.three-row{
-		width: 100%;
-		padding: 1.5em 0;
-	}
-
-	.three-row h3 {
-	  font-size: 1.6em;
-	  font-family: "Sigmar One", cursive;
-	}
-
-
-	.three-row p {
-	  font-family: "PT Sans", sans-serif;
-	  font-size: 1.4em;
-	}
+    /* -- Menu Pics (Don't touch these) -- */
 
 	.menu-pics figure{
 		width: 100%;
@@ -472,148 +416,142 @@
 				<hr>
 			</div>
 
-			<div class="option" id="option1">
-				<h2>OPTION 1</h2>
-				<h1 class = "orange">SPECIALTY SALADS</h1>
-				<div id = "regOrLrg">
-					<div class = "panel" id = "regular">
+			<h1 id="menu-title">Welcome to<br>Boulevard Salad!<br></h1>
+
+			<div class="background-menu" id="pic1">
+				<div class="option" id="option1">
+					<h1>SPECIALTY SALADS</h1>
+					<br>
+					<h3><i>Pre-made</i></h3>
+
+					<!-- Salad preferences -->
+					<div class="pref">
 						<h3>SINGLE PORTION</h3>
 						<p>SELECT ONE BLVD SALAD<br>
-						FROM OPTIONS BELOW<br>$8</p>
+						FROM OPTIONS BELOW<br>$7</p>
 					</div>
-					<div class = "panel" id = "large">
+
+					<div class="pref">
 						<h3>DOUBLE PORTION</h3>
 						<p>SELECT ONE OR TWO BLVD SALADS<br>
 						FROM OPTIONS BELOW<br>$10</p>
 					</div>
-				</div>
-				<table style="padding-bottom: 5em;">
-					<tr>
-						<td><h2>SUNSET</h2>
-						
-						<span><i>with protein</i></span>
-						<br><br>
-						<p>Mixed leaf, baked chicken, mandarins, cherry tomatoes, dried cranberries, goat cheese, slivered almonds, topped with a homemade teriyaki dressing</p></td>
-					</tr>
-					<tr>
-						<td><h2>WILSHIRE</h2>
-						
-						<span><i>vegetarian</i></span>
-						<br><br>
-						<p>Bowtie pasta, broccoli, spinach, red bell pepper, dried cranberries, tossed with a creamy caesar dressing</p></td>
-					</tr>
-					<tr>
-						<td><h2>HOLLYWOOD</h2>
-						
-						<span><i>vegan</i></span><p><br>Diced cucumbers, cherry tomatoes, red onion, tossed with homemade apple cider vinegar dressing</p></td>
-					</tr>
-					<tr>
-						<td><h2>PACIFIC</h2>
-						
-						<span><i>vegan</i></span><p><br>Mixed leaf, black beans, chickpeas, cherry tomatoes, sundried tomatoes, red onion, chopped herbs, tossedin a homemade lemon garlic vinaigrette</p></td>
-					</tr>
-				</table>
-			</div>
-			<div class = "option" id = "option2">
-				<h2>OPTION 2</h2>
-				<h1 class = "orange">SPECIALTY MEATS<br>(SLOW COOKED)</h1>
-				<div id = "three-row-panel">
-					<div class = "three-row">
-						<h3>SINGLE PORTION</h3>
-						<p>SELECT ONE SPECIALTY MEAT<br>FROM THE OPTIONS BELOW<br>$8</p>
-					</div>
-					<div class = "three-row">
-						<h3>MEAT AND SALAD<br>COMBO</h3>
-						<p>SELECT ONE PREMIUM MEAT FROM BELOW<br>AND ONE PREMIUM SALAD FROM ABOVE<br>$12</p>
+
+					<hr>
+
+					<!-- Specialty Salad Items -->
+					<div id="salad-items">
+						<div class="items" id="item1">
+							<h2>SUNSET</h2>
+							<span>with protein</span>
+							<p>Mixed leaf, baked chicken, mandarins, cherry tomatoes, dried cranberries, goat cheese, slivered almonds, topped with a homemade teriyaki dressing</p>
+						</div>
+
+						<div class="items" id="item2">
+							<h2>WILSHIRE</h2>
+							<span>vegetarian</span>
+							<p>Mixed leaf, baked chicken, mandarins, cherry tomatoes, dried cranberries, goat cheese, slivered almonds, topped with a homemade teriyaki dressing</p>
+						</div>
+
+						<div class="items" id="item3">
+							<h2>HOLLYWOOD</h2>
+							<span>vegan</span>
+							<p>Mixed leaf, baked chicken, mandarins, cherry tomatoes, dried cranberries, goat cheese, slivered almonds, topped with a homemade teriyaki dressing</p>
+						</div>
+
+						<div class="items" id="item4">
+							<h2>PACIFIC</h2>
+							<span>vegan</span>
+							<p>Mixed leaf, baked chicken, mandarins, cherry tomatoes, dried cranberries, goat cheese, slivered almonds, topped with a homemade teriyaki dressing</p>
+						</div>
 					</div>
 				</div>
-				<table style="padding-bottom: 5em;">
-					<tr>
-						<td>
-							<p><i>*Meat that you choose is served on brown rice</i><p>
-						</td>
-					</tr>
-					<tr>
-						<td><h2>VENICE</h2><p>Pulled pork cooked slow with a homemade BBQ pineapple sauce, served on top of brown rice</p></td>
-					</tr>
-					<tr>
-						<td><h2>SANTA MONICA</h2><p>Pulled chicken cooked slow with a homemade honey garlic sauce, served on top of brown rice </p></td>
-					</tr>
-				</table>
-			</div>
-			<div class = "option" id = "option3">
-				<h2>OPTION 3</h2>
-				<h1 class = "orange">SPECIALTY WRAP</h1>
-				<div id = "three-row-panel">
-					<div class = "three-row">
-						<h3>WHEAT TORTILLA<br>WRAPS</h3>
-						<p>$9</p>
-					</div>
-				</div>
-				<table style="padding-bottom: 5em;">
-					<tr>
-						<td><p><i>*Both wraps can be a vegan option</i></p></td>
-					</tr>
-					<tr>
-						<td><h2>VENTURA</h2><p>Mixed greens, baked chicken, cherry tomatoes, chickpeas, dressed with a creamy caesar dressing</p></td>
-					</tr>
-					<tr>
-						<td><h2>BEVERLY</h2><p>(Warm Temp) Brown rice, honey garlic chicken, spinach, sliced cucumbers, jalapenos, cherry tomatoes, tossed in a habanero mango sauce</p></td>
-					</tr>
-				</table>
 			</div>
 
-			<div class = "option" id = "option3">
-				<h2>OTHER</h2>
-				<div id = "three-row-panel">
-					<div class = "three-row">
-						<h3>SOUP AND SALAD<br>COMBO</h3>
-						<p>$10</p>
+			<div class="background-menu" id="pic2">
+				<div class="option" id="option2">
+					<h1>SPECIALTY MEATS</h1>
+					<br>
+					<h3><i>Slow-cooked</i></h3>
+
+					<!-- Meats preferences -->
+					<div class="pref">
+						<h3>SINGLE PORTION</h3>
+						<p>SELECT ONE SPECIALTY MEAT<br>
+						FROM THE OPTIONS BELOW<br>$8</p>
 					</div>
-					<div class = "three-row orange">
-						<h3>BOULEVARD<br>SOUPS</h3>
-						<p>$5</p>
+
+					<div class="pref">
+						<h3>MEAT AND SALAD COMBO</h3>
+						<p>SELECT ONE PREMIUM MEAT FROM BELOW<br>
+						AND ONE PREMIUM SALAD FROM ABOVE<br>$12</p>
 					</div>
-					<div class = "three-row">
-						<h3>BOULEVARD<br>DRINKS</h3>
-						<p>$3</p>
+
+					<hr>
+					<div id="meat-items">
+						<div class="items">
+							<h2>VENICE</h2>
+							<p>Pulled pork cooked slow with a homemade BBQ pineapple sauce, served on top of brown rice</p>
+						</div>
+
+						<div class="items">
+							<h2>SANTA MONICA</h2>
+							<p>Pulled chicken cooked slow with a homemade honey garlic sauce, served on top of brown rice </p>
+						</div>
 					</div>
-				</div>
-				<table style="padding-bottom: 5em;">
-					<tr>
-						<td><h2>SOUPS</h2>
-						<p>Tomato Basil Bisque (cup)</p>
-						<p>Seasonal Soup (cup)</p>
-					</tr>
-					<tr>
-						<td><h2>DRINKS</h2>
-						<p>Bai (antioxidant)</p>
-						<p>Honest Tea</p></td>
-					</tr>
-				</table>
-			</div>
-			<div class = "menu-pics" style = "margin-bottom: 3em">
-				<div class = "row img-row">
-					<figure class = "cols four" id = "food1">
-						<div class = "slideMenu"><p><span>PACIFIC</span></p></div>
-						<img src="../images/Food/brussels.jpg" id = "img1">
-					</figure>
-					<figure class = "cols four" id = "food2">
-						<div class = "slideMenu"><p><span style = "color: #3B653D">WILSHIRE</p></div>
-						<img src="../images/Food/wilshire.jpg" id = "img2">
-					</figure>
-				</div>
-				<div class = "row img-row">
-					<figure class = "cols four" id = "food3">
-						<div class = "slideMenu"><p><span>HOLLYWOOD</span></p></div>
-						<img src="../images/Food/cucumber.jpg" id = "img3">
-					</figure>
-					<figure class = "cols four" id = "food4">
-						<div class = "slideMenu"><p><span style = "color: #3B653D">SUNSET</span></p></div>
-						<img src="../images/Food/sunset.jpg" id = "img4">
-					</figure>
 				</div>
 			</div>
+
+			<div class="background-menu" id="pic3">
+				<div class="option" id="option3">
+					<h1>SPECIALTY WRAP</h1>
+					<br>
+					<div class="pref">
+						<h3><i>Wheat tortilla</i></h3>
+						<p>$9</p>
+					</div>
+
+					<hr>
+					<div id="wrap-items">
+						<div class="items">
+							<h2>VENTURA</h2>
+							<p>Mixed greens, baked chicken, cherry tomatoes, chickpeas, dressed with a creamy caesar dressing</p>
+						</div>
+
+						<div class="items">
+							<h2>SANTA MONICA</h2>
+							<p>(Warm temp) Brown rice, honey garlic chicken, spinach, sliced cucumbers, cherry tomatoes, jalapenos, tossed in a habanero mango sauce.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="background-menu" id="pic4">
+				<div class="option" id="option4">
+					<h1>OTHER</h1>
+					<br>
+
+					<hr>
+
+					<div id="wrap-items">
+						<div class="items">
+							<h2>SOUP AND SALAD<br>COMBO - $10</h2>
+							<h2>BOULEVARD SOUPS - $5</h2>
+							<p>Tomato Basil Bisque (cup)</p>
+							<p>Seasonal Soup (cup)</p>
+						</div>
+
+						<div class="items" id = "drinks">
+							<h2>Boulevard Drinks</h2>
+							<p>Bai (antioxidants)<br>$3</p>
+							<p>Honest Tea<br>$3</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
 		</div>
 		<div class = "container" id = "story">
 			<div class = "divide left containerBcg" id = "story-left"></div>
@@ -658,33 +596,6 @@
 		<hr style= "width: 20%; margin: .5em auto"> <p>Website By <a href = "https://github.com/danielch01" target = "_blank">danielch01</a></p>
 	</div>
 </footer>
-
-<script type="text/javascript">
-	$('figure[id^="food"]').on('click', function(){
-		var figSlide = $(this);
-		var picSlide = $(this).find('img');
-		if($('.img-slide')[0]){
-			picSlide.css({
-				'transform' : 'translateX(0%)',
-				'-webkit-transform' : 'translateX(0%)',
-				'-moz-transform' : 'translateX(0%)',
-				'-ms-transform' : 'translateX(0%)',
-				'-o-transform' : 'translateX(0%)'
-			});
-			picSlide.removeClass('img-slide');
-		} else{
-			picSlide.css({
-				'transform' : 'translateX(100%)',
-				'-webkit-transform' : 'translateX(100%)',
-				'-moz-transform' : 'translateX(100%)',
-				'-ms-transform' : 'translateX(100%)',
-				'-o-transform' : 'translateX(100%)'
-			})
-			picSlide.addClass('img-slide');
-		}
-	});
-
-</script>
 
 </body>
 </html>
